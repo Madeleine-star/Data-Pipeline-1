@@ -1,0 +1,28 @@
+<BoeufBourguignonRecipes>
+    <Recipe>
+        <Name>Traditional Boeuf Bourguignon</Name>
+        <Ingredients>
+            <Ingredient>Bœuf pour bourguignon (1.5 kg)</Ingredient>
+            <Ingredient>Lardons (200 g)</Ingredient>
+            <Ingredient>Beurre (60 g)</Ingredient>
+            <Ingredient>Petits oignons (10)</Ingredient>
+            <Ingredient>Carotte (2)</Ingredient>
+            <Ingredient>Ail (2 gousses)</Ingredient>
+            <Ingredient>Farine (4 cuillères à soupe)</Ingredient>
+            <Ingredient>Vin rouge de Bourgogne (50 cl)</Ingredient>
+            <Ingredient>Bouillon de viande (2 cubes de bouillon de bœuf pour 50 cl d'eau)</Ingredient>
+            <Ingredient>Champignon (250 g)</Ingredient>
+            <Ingredient>Bouquet garni (1)</Ingredient>
+            <Ingredient>Sel et poivre</Ingredient>
+        </Ingredients>
+        <PreparationSteps>
+            Tailler le bœuf en cubes de 3 à 4 cm. Peler les oignons, les carottes et l'ail.
+            Faire revenir les oignons entiers et les lardons dans une grande cocotte.
+            Ajouter les morceaux de viande et les carottes, puis saupoudrer de farine.
+            Verser le bouillon, le vin rouge, ajouter le bouquet garni et les gousses d'ail écrasées.
+            Laisser mijoter doucement pendant 3 heures.
+            Ajouter les champignons émincés et cuire encore une demi-heure.
+            Retirer le bouquet garni et servir avec des pâtes ou des pommes de terre vapeur.
+        </PreparationSteps>
+    </Recipe>
+</BoeufBourguignonRecipes>
