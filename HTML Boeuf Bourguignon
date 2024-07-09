@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boeuf Bourguignon Recipe</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <h1>Boeuf Bourguignon Recipe</h1>
+    <h2>Ingredients</h2>
+    <ul>
+        <li>1.5 kg beef for bourguignon</li>
+        <li>200 g lardons (smoked bacon)</li>
+        <li>60 g butter</li>
+        <!-- Add more ingredients -->
+    </ul>
+    <h2>Preparation Steps</h2>
+    <ol>
+        <li>Cut the beef into 3-4 cm cubes.</li>
+        <li>Peel the onions, carrots, and garlic.</li>
+        <!-- Add more steps -->
+    </ol>
+    <h2>Notes</h2>
+    <p>Choose a good-quality red wine for the marinade.</p>
+    <!-- Add more relevant information -->
+</body>
+</html>
