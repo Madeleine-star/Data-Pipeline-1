@@ -1,0 +1,62 @@
+<RecipeBoxCompany>
+    <Ingredients>
+        <Ingredient>
+            <Name>Flour</Name>
+            <Quantity>500</Quantity>
+            <Unit>grams</Unit>
+        </Ingredient>
+        <Ingredient>
+            <Name>Sugar</Name>
+            <Quantity>200</Quantity>
+            <Unit>grams</Unit>
+        </Ingredient>
+        <!-- Add more ingredients -->
+    </Ingredients>
+    <Recipes>
+        <Recipe>
+            <Name>Chocolate Cake</Name>
+            <Ingredients>
+                <Ingredient>Flour</Ingredient>
+                <Ingredient>Sugar</Ingredient>
+                <!-- Add more ingredients -->
+            </Ingredients>
+            <PreparationSteps>
+                Mix flour and sugar. Bake at 180°C for 30 minutes.
+            </PreparationSteps>
+        </Recipe>
+        <!-- Add more recipes -->
+    </Recipes>
+    <Menus>
+        <Menu>
+            <Name>Weekend Special</Name>
+            <Recipes>
+                <Recipe>Chocolate Cake</Recipe>
+                <!-- Add more recipes -->
+            </Recipes>
+        </Menu>
+        <!-- Add more menus -->
+    </Menus>
+    <Customers>
+        <Customer>
+            <Name>Ahmed</Name>
+            <ContactDetails>ahmed@example.com</ContactDetails>
+        </Customer>
+        <!-- Add more customers -->
+    </Customers>
+    <Orders>
+        <Order>
+            <OrderDate>2024-07-07</OrderDate>
+            <MenuSelections>
+                <Menu>Party Special</Menu>
+            </MenuSelections>
+        </Order>
+        <!-- Add more orders -->
+    </Orders>
+    <DeliveryPersonnel>
+        <Personnel>
+            <Name>Marie</Name>
+            <ContactDetails>marie@example.com</ContactDetails>
+        </Personnel>
+        <!-- Add more delivery personnel -->
+    </DeliveryPersonnel>
+</RecipeBoxCompany>
