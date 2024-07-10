@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='recipes' type='RecipesType'/>
+	<xs:element name='ingredients' type='ingredientsType'/>
+	<xs:element name='menus' type='menusType'/>
+	<xs:element name='Categories' type='CategoriesType'/>
+	<!--main database element types-->
+	<xs:complexType name='RecipesType'/>
+	<xs:sequence>
+		<xs:element name='recipe' type='recipeType'/>
+	</xs:sequence>
+	<xs:complexType name='ingredientsType'/>
+	<xs:sequence>
+		<xs:element name='ingredient' type='ingredientType'/>
+	</xs:sequence>
+	<xs:complexType name='menusType'/>
+	<xs:sequence>
+		<xs:element name='menu' type='menuType'/>
+	</xs:sequence>
+	<xs:complexType name='CategoriesType'/>
+	<xs:sequence>
+		<xs:element name='Categorie' type='xs:string'/>
+		<!--restraint the string type here to a list of 5 differents categories-->
+	</xs:sequence>
+	<xs:attribut name='CatID' type='xs:string'/>
+	<!--define a pattern for the id like the 2 first letters of the catégorie-->
+	<!---->
+	<!--definition of the subtypes-->
+	
+</xs:schema>
