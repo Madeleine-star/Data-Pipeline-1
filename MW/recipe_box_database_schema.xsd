@@ -1,30 +1,202 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--key/keyref in the database for the recipe/menu categorie-->
+<xs:key name="Categorykey">
+	<xs:selector xpath='/Categorie'/>
+	<xs:field xpath='@CatID'/>
+</xs:key>	
+<xs:keyref name='recipeRef' refer='Categorykey'>
+	<xs:selector xpath='/recipes/recipe/recipeCategorie'/>
+	<xs:field xpath='@RecRef'/>
+</xs:keyref>
+<xs:keyref name='MenuRef' refer='Categorykey'>
+	<xs:selector xpath='/menus/menu/MenuCategorie'/>
+	<xs:field xpath='@MenuCat'/>
+</xs:keyref>
+
+<!--key/keyref between the ingredient and the recipe-->
+<xs:key name='IngredientKey'>
+	<xs:selector xpath='/ingredients/ingredient'/>
+	<xs:field xpath='@IngredientID'/>
+</xs:key>
+<xs:keyref name='IngredientRef' refer='IngredientKey'>
+	<xs:selector xpath='/recipes/recipe/ingredient_rec'/>
+	<xs:field xpath='@IngRef'/>
+</xs:keyref>
+
+
+<!--the main and subtypes-->
 	<xs:element name='recipes' type='RecipesType'/>
+	<xs:element name='recipe' type='recipeType'/>
 	<xs:element name='ingredients' type='ingredientsType'/>
+	<xs:element name='ingredient' type='ingredientType'/>
 	<xs:element name='menus' type='menusType'/>
-	<xs:element name='Categories' type='CategoriesType'/>
+	<xs:element name='menu' type='menuType'/>
+	
 	<!--main database element types-->
 	<xs:complexType name='RecipesType'/>
 	<xs:sequence>
-		<xs:element name='recipe' type='recipeType'/>
+		<xs:element ref='recipe' minOccurs='0' maxOccurs='unbounded'/>
 	</xs:sequence>
 	<xs:complexType name='ingredientsType'/>
 	<xs:sequence>
-		<xs:element name='ingredient' type='ingredientType'/>
+		<xs:element ref='ingredient' minOccurs='0' maxOccurs='unbounded'/>
 	</xs:sequence>
 	<xs:complexType name='menusType'/>
 	<xs:sequence>
-		<xs:element name='menu' type='menuType'/>
+		<xs:element ref='menu' minOccurs='0' maxOccurs='unbounded'/>
 	</xs:sequence>
-	<xs:complexType name='CategoriesType'/>
-	<xs:sequence>
-		<xs:element name='Categorie' type='xs:string'/>
-		<!--restraint the string type here to a list of 5 differents categories-->
-	</xs:sequence>
-	<xs:attribut name='CatID' type='xs:string'/>
-	<!--define a pattern for the id like the 2 first letters of the catégorie-->
+	<xs:element name='Categorie' type='mylist'/>	
+		<xs:simpleType name='mylist'>
+			<xs:restriction base='xs:string'>
+				<xs:enumeration value='Traditional'/>
+				<xs:enumeration value='Express'/>
+				<xs:enumeration value='World flavors'/>
+				<xs:enumeration value='Light'/>
+			</xs:restriction>
+		</xs:simpleType>
+		<xs:attribut name='CatID'>
+			<xs:simpleType name='stringID'>
+				<xs:restriction base='xs:string'>
+					<xs:pattern value='[A-Z] [A-Z] [1-5]'/> 
+					<!--the pattern of this id is the 2 first letter of the categori + the number of the recipe like:
+					the 1st recipe in traditional categorie = TR1 and the 2st recipe in World flavors categorie = WO2-->
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribut>
 	<!---->
-	<!--definition of the subtypes-->
-	
+	<!--definition of the subtypes recipe-->
+<xs:complexType name='recipeType'>
+	<xs:sequence>
+		<xs:element name='name' type='xs:string'/>
+		<xs:element name='ingredient_rec' minOccurs="1" maxOccurs="unbounded">
+			<xs:union>
+				<xs:complexType>
+					<xs:attribute name='IngRef' type='xs:string'/>
+				</xs:complexType>
+				<xs:complexType>
+					<xs:element name='ingredient_name' type='xs:string'/>
+				</xs:complexType>
+			</xs:union>
+		</xs:element> <!--add an attribut here to refer at the ingredient list-->
+		<xs:element name='ingredient_quantity' type='integer'/>
+		<xs:element name='Type'>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="starter"/>
+					<xs:enumeration value="main"/>
+					<xs:enumeration value="dessert"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name='recipeCategorie'>
+			<xs:complexType>
+				<xs:attribute name='RecRef' type='xs:string'/>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name='Budget' type='price'/><!--define for it a simple type with a string pattern will include numbers and currency symbol-->
+		<xs:element name='step' type='xs:string'/>
+		<xs:element name='cooking_time'>
+			<xs:simpleType name='mytimetype'>
+				<xs:restriction base='xs:string'>
+					<xs:pattern value='[0-60] mm'/>
+					<!--display the time like this 10 min-->
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name='preparation_time' type='mytimetype'/> <!--the same pattern than for cooking_time will be use here-->
+		<xs:element name='Difficulty'><!--think to another name-->
+			<xs:simpleType>
+				<xs:restriction base='xs:string'>
+					<xs:enumeration value="easy"/>
+					<xs:enumeration value="middle"/>
+					<xs:enumeration value="expert"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name='number_serving'>
+			<xs:simpleType>
+				<xs:restriction base='xs:integer'>
+					<xs:minInclusive value="2"/>
+					<xs:maxInclusive value="4"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name='rating'>
+			<xs:union>
+				<xs:simpleType>
+					<xs:restriction base='xs:integer'>
+						<xs:pattern value='[1-5]'/>
+					</xs:restriction>
+				</xs:simpleType>
+				<xs:simpleType>
+					<xs:restriction base='xs:string'>
+						<xs:enumeration value='start'/>
+						<xs:enumeration value='starts'/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:union>
+		</xs:element>
+		<!--the rating element should like this 1 start or 4 starts-->
+	</xs:sequence>
+	<xs:attribute name='RecipeID'>
+		<xs:simpleType>
+			<xs:restriction base='xs:string'>
+				<xs:pattern value='[A-Z] [A-Z]'/>
+				<!--the pattern of the recipe id will be the initial of the recipe like:
+				Boeuf Bourguignon = BB-->
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+</xs:complexType>
+
+<!---->
+<!--definition of the subtype ingredient-->
+<xs:complexType name='ingredientType'>
+	<xs:sequence>
+		<xs:element name='name' type='xs:string'/>
+		<xs:element name='season'>
+			<xs:simpleType>
+				<xs:enumeration value="Winter"/>
+				<xs:enumeration value="Spring"/>
+				<xs:enumeration value="Summer"/>
+				<xs:enumeration value="Autumn"/>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element ref='Budget'/>
+	</xs:sequence>
+	<xs:attribute name='IngredientID'>
+		<xs:simpleType name='ingID'>
+			<xs:restriction base='xs:string'>
+				<xs:pattern value='[A-Z] [A-Z] [A-Z]'/>
+				<!--the id pattern here take the first 3 letters of the ingredient name in uppercase like:
+				tomato = TOM and carrot = CAR-->
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+</xs:complexType>
+
+<!---->
+<!--definition of the menu type-->
+<xs:complexType name='menuType'>
+	<xs:sequence>
+		<xs:element name='MenuCategorie'>
+			<xs:complexType>
+				<xs:attribute name='MenuCat' type='xs:string'/>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name='number_recipe' type='xs:integer'/>
+		<xs:element name='recipe' type='xs:string' minOccurs="2" maxOccurs="4"/><!--here put the recipe reference and put in at list 2 recipes-->
+		<xs:element name='delivery_method'>
+			<xs:simpleType>
+				<xs:restriction base='xs:string'>
+					<xs:enumeration value='once week'/>
+					<xs:enumeration value='twice week'/>
+					<xs:enumeration value='daily'/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element ref='rating'/>
+	</xs:sequence>
+</xs:complexType>
 </xs:schema>
