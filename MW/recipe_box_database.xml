@@ -1,5 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Recipes>
-	<Recipe id='1'>
-</Recipe>
-</Recipes>
+<RecipesDataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipe_box_database_schema.xsd">
+	<recipes>
+		<!--example for the recipe Beouf Bourguignon-->
+		<recipe RecipeID='BB'>
+			<name>Boeuf Bourguignon</name>
+			<ingredient_rec IngRef='BEE'>
+				<ingredient_name>Beef</ingredient_name>
+				<ingredient_quantity unit='kilogram'>1.5</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='BAC'>
+				<ingredient_name>Bacon</ingredient_name>
+				<ingredient_quantity unit='gram'>200</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='BUT'>
+				<ingredient_name>Butter</ingredient_name>
+				<ingredient_quantity unit='gram'>60</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='ONI'>
+				<ingredient_name>Onions</ingredient_name>
+				<ingredient_quantity unit='quantity'>10</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='CAR'>
+				<ingredient_name>Carrot</ingredient_name>
+				<ingredient_quantity unit='quanity'>2</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='GAR'>
+				<ingredient_name>Garlic</ingredient_name>
+				<ingredient_quantity unit='quantity'>2</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='FLO'>
+				<ingredient_name>Flour</ingredient_name>
+				<ingredient_quantity unit='gram'>40</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='WIN'>
+				<ingredient_name>Red Wine</ingredient_name>
+				<ingredient_quantity unit='liter'>0.5</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='BRO'>
+				<ingredient_name>Broth</ingredient_name>
+				<ingredient_quantity unit='liter'>0.5</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='MUS'>
+				<ingredient_name>Mushrooms</ingredient_name>
+				<ingredient_quantity unit='gram'>250</ingredient_quantity>
+			</ingredient_rec>
+			<Categorie CatID='TR1'>Traditional</Categorie>
+			<Budget price='Eur'>60</Budget>
+			<cooking_time time_unit='hours'>4</cooking_time>
+			<preparation_time time_unit='hour'>1</preparation_time>
+			<level>easy</level>
+			<number_serving>4</number_serving>
+			<step>
+			Cut beef into 3 to 4 cm cubes. 
+			Peel onions, carrots and garlic.
+            Brown onions and bacon in a large casserole dish.
+            Add meat and carrots, then sprinkle with flour.
+            Pour in the stock, red wine, bouquet garni and crushed garlic cloves.
+            Simmer gently for 3 hours.
+            Add the sliced mushrooms and cook for a further half-hour.
+            Serve with pasta or steamed potatoes.
+			</step>
+			<rating>4 starts</rating>
+		</recipe>
+	</recipes>
+	<ingredients>
+		<ingredient IngredientID='BEE'>
+			<name>Beef</name>
+			<season>All</season>
+			<Budget price='Eur'>30</Budget>
+		</ingredient>
+		<ingredient IngredientID='BAC'>
+			<name>Bacon</name>
+			<season>All</season>
+			<Budget price='Eur'>5</Budget>
+		</ingredient>
+		<ingredient IngredientID='BUT'>
+			<name>Butter</name>
+			<season>All</season>
+			<Budget price='Eur'>3</Budget>
+		</ingredient>
+		<ingredient IngredientID='ONI'>
+			<name>Onions</name>
+			<season>Summer</season>
+			<Budget price='Eur'>2</Budget>
+		</ingredient>
+		<ingredient IngredientID='CAR'>
+			<name>Carotte</name>
+			<season>All</season>
+			<Budget price='Eur'>1</Budget>
+		</ingredient>
+		<ingredient IngredientID='GAR'>
+			<name>Garlic</name>
+			<season>Summer</season>
+			<Budget price='Eur'>2</Budget>
+		</ingredient>
+		<ingredient IngredientID='FLO'>
+			<name>Flour</name>
+			<season>All</season>
+			<Budget price='Eur'>4</Budget>
+		</ingredient>
+		<ingredient IngredientID='WIN'>
+			<name>Red Wine</name>
+			<season>All</season>
+			<Budget price='Eur'>10</Budget>
+		</ingredient>
+		<ingredient IngredientID='BRO'>
+			<name>Broth</name>
+			<season>All</season>
+			<Budget price='Eur'>1</Budget>
+		</ingredient>
+		<ingredient IngredientID='MUS'>
+			<name>Mushrooms</name>
+			<season>Autumn</season>
+			<Budget price='Eur'>3</Budget>
+		</ingredient>
+	</ingredients>
+	<menus>
+		<menu>
+			<MenuCategorie MenuCat='TR1'>Traditional</MenuCategorie>
+			<number_recipes>2</number_recipes>
+			<recipelist>Boeuf Bourguignon Chocolat cake</recipelist>
+			<delivery_method>daily</delivery_method>
+			<rating>5 starts</rating>
+		</menu>
+	</menus>
+</RecipesDataBase>
+
