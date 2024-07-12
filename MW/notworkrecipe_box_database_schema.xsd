@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	<xs:element name='RecipesDataBase' type='DBtype'/>
+	<xs:element name='RecipesDataBase' type='DBtypes'/>
 	<!--key/keyref in the database for the recipe/menu categorie-->
 	<xs:key name="Categorykey">
 		<xs:selector xpath='/RecipesDataBase/Categorie'/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RecipesDataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipe_box_database_schema.xsd">
+<RecipesDataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipe_box_database_schemaV2.xsd">
 	<recipes>
 		<!--example for the recipe Beouf Bourguignon-->
 		<recipe RecipeID='BB'>
