@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RecipesDataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipe_box_database_schemaV2.xsd">
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipe_box_database_schemaV2.xsd">
 	<recipes>
-		<!--example for the recipe Beouf Bourguignon-->
-		<recipe RecipeID='BB'>
+		<recipe>
 			<name>Boeuf Bourguignon</name>
 			<ingredient_rec IngRef='BEE'>
 				<ingredient_name>Beef</ingredient_name>
@@ -21,8 +20,8 @@
 				<ingredient_quantity unit='quantity'>10</ingredient_quantity>
 			</ingredient_rec>
 			<ingredient_rec IngRef='CAR'>
-				<ingredient_name>Carrot</ingredient_name>
-				<ingredient_quantity unit='quanity'>2</ingredient_quantity>
+				<ingredient_name>Carotte</ingredient_name>
+				<ingredient_quantity unit='quantity'>2</ingredient_quantity>
 			</ingredient_rec>
 			<ingredient_rec IngRef='GAR'>
 				<ingredient_name>Garlic</ingredient_name>
@@ -34,25 +33,24 @@
 			</ingredient_rec>
 			<ingredient_rec IngRef='WIN'>
 				<ingredient_name>Red Wine</ingredient_name>
-				<ingredient_quantity unit='liter'>0.5</ingredient_quantity>
+				<ingredient_quantity unit='liter'>0.50</ingredient_quantity>
 			</ingredient_rec>
 			<ingredient_rec IngRef='BRO'>
 				<ingredient_name>Broth</ingredient_name>
-				<ingredient_quantity unit='liter'>0.5</ingredient_quantity>
+				<ingredient_quantity unit='liter'>0.50</ingredient_quantity>
 			</ingredient_rec>
 			<ingredient_rec IngRef='MUS'>
 				<ingredient_name>Mushrooms</ingredient_name>
 				<ingredient_quantity unit='gram'>250</ingredient_quantity>
 			</ingredient_rec>
-			<Categorie CatID='TR1'>Traditional</Categorie>
-			<Budget price='Eur'>60</Budget>
-			<cooking_time time_unit='hours'>4</cooking_time>
-			<preparation_time time_unit='hour'>1</preparation_time>
+			<RefCategorie RefCatID='TRA'>Traditional</RefCategorie>
+			<Budget devise='Eur'>60</Budget>
+			<cooking_time unit='hour'>1</cooking_time>
+			<preparation_time unit='hours'>4</preparation_time>
 			<level>easy</level>
 			<number_serving>4</number_serving>
 			<step>
-			Cut beef into 3 to 4 cm cubes. 
-			Peel onions, carrots and garlic.
+			Cut beef into 3 to 4 cm cubes. Peel onions, carrots and garlic.
             Brown onions and bacon in a large casserole dish.
             Add meat and carrots, then sprinkle with flour.
             Pour in the stock, red wine, bouquet garni and crushed garlic cloves.
@@ -60,69 +58,96 @@
             Add the sliced mushrooms and cook for a further half-hour.
             Serve with pasta or steamed potatoes.
 			</step>
-			<rating>4 starts</rating>
+			<rating>4</rating>
+			<rating>starts</rating>
 		</recipe>
 	</recipes>
 	<ingredients>
 		<ingredient IngredientID='BEE'>
 			<name>Beef</name>
 			<season>All</season>
-			<Budget price='Eur'>30</Budget>
+			<Budget devise='Eur'>40</Budget>
 		</ingredient>
 		<ingredient IngredientID='BAC'>
 			<name>Bacon</name>
 			<season>All</season>
-			<Budget price='Eur'>5</Budget>
+			<Budget devise='Eur'>5</Budget>
 		</ingredient>
 		<ingredient IngredientID='BUT'>
 			<name>Butter</name>
 			<season>All</season>
-			<Budget price='Eur'>3</Budget>
+			<Budget devise='Eur'>5</Budget>
 		</ingredient>
 		<ingredient IngredientID='ONI'>
 			<name>Onions</name>
 			<season>Summer</season>
-			<Budget price='Eur'>2</Budget>
+			<Budget devise='Eur'>2</Budget>
 		</ingredient>
 		<ingredient IngredientID='CAR'>
 			<name>Carotte</name>
-			<season>All</season>
-			<Budget price='Eur'>1</Budget>
+			<season>Summer</season>
+			<Budget devise='Eur'>3</Budget>
 		</ingredient>
 		<ingredient IngredientID='GAR'>
 			<name>Garlic</name>
 			<season>Summer</season>
-			<Budget price='Eur'>2</Budget>
+			<Budget devise='Eur'>4</Budget>
 		</ingredient>
 		<ingredient IngredientID='FLO'>
 			<name>Flour</name>
 			<season>All</season>
-			<Budget price='Eur'>4</Budget>
+			<Budget devise='Eur'>4</Budget>
 		</ingredient>
 		<ingredient IngredientID='WIN'>
 			<name>Red Wine</name>
 			<season>All</season>
-			<Budget price='Eur'>10</Budget>
+			<Budget devise='Eur'>10</Budget>
 		</ingredient>
 		<ingredient IngredientID='BRO'>
 			<name>Broth</name>
 			<season>All</season>
-			<Budget price='Eur'>1</Budget>
+			<Budget devise='Eur'>1</Budget>
 		</ingredient>
 		<ingredient IngredientID='MUS'>
-			<name>Mushrooms</name>
+			<name>Mushroom</name>
 			<season>Autumn</season>
-			<Budget price='Eur'>3</Budget>
+			<Budget devise='Eur'>10</Budget>
 		</ingredient>
 	</ingredients>
 	<menus>
 		<menu>
-			<MenuCategorie MenuCat='TR1'>Traditional</MenuCategorie>
-			<number_recipes>2</number_recipes>
+			<name>Family Dinner</name>
+			<number_recipe>2</number_recipe>
 			<recipelist>Boeuf Bourguignon Chocolat cake</recipelist>
-			<delivery_method>daily</delivery_method>
-			<rating>5 starts</rating>
+			<rating>4</rating>
+			<rating>starts</rating>
 		</menu>
 	</menus>
-</RecipesDataBase>
+	<Delivery>
+		<delivery_frequency>once week</delivery_frequency>
+		<CustomerName>Charles Dupont</CustomerName>
+		<CustomerAddress>19 liberty avenue </CustomerAddress>
+		<CustomerAddress>New York NY</CustomerAddress>
+		<CustomerAddress> 10461 USA</CustomerAddress>
+		<Phone_number>84-56-89-34-17</Phone_number>
+		<Cust_email>CharlesD@gmail.com</Cust_email>
+	</Delivery>
+	<Categories CatID='TRA'>
+		<Categorie>Traditional</Categorie>
+		<recipelist>Boeuf Bourguinon Carbonnade Flammande chocolat cake </recipelist>
+	</Categories>
+	<Categories CatID='EXP'>
+		<Categorie>Express</Categorie>
+		<recipelist>spinash and cheese houmous milk jam</recipelist>
+	</Categories>
+	<Categories CatID='WOR'>
+		<Categorie>World flavors</Categorie>
+		<recipelist>Vegan Chili Mango Panacotta</recipelist>
+	</Categories>
+	<Categories CatID='LIG'>
+		<Categorie>Light</Categorie>
+		<recipelist>Mechouia Salad Broccoli tabbouleh with grilled vegetables</recipelist>
+	</Categories>
+</Root>
+
 
