@@ -47,3 +47,7 @@ The database will be inspired from [goodfood] (https://www.bbcgoodfood.com/revie
 
 - The Category will have an attribute to refer to it and will contain:
   - The list of recipies in the category with their id 
+
+  XSLT transformation ideas:
+  - make an invoice 
+  - make the sum of the ingredient for the recipe
