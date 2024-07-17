@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='Root'>
+	<!--definition of the main content of the database-->
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='recipes'>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name='recipe' type='recipeType' minOccurs='0' maxOccurs='unbounded'/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name='ingredients'>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name='ingredient' type='ingredientType' minOccurs='0' maxOccurs='unbounded'/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name='menus'>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name='menu' type='menuType' minOccurs='0' maxOccurs='unbounded'/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name='Customers'>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name='Customer' type='delivery_method' minOccurs='0' maxOccurs='unbounded'/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name='Categories' type='CategorieType' minOccurs='0' maxOccurs='unbounded'/>
+			</xs:sequence>
+		</xs:complexType>
+		<!--a key/keyref relation between the categorie and the recipe categorie
+		not work for the moment need to be debug because if we change the data in the database
+		no error is retrun
+		<xs:key name='Categorykey'>
+			<xs:selector xpath="Categories"/>
+			<xs:field xpath="@CatID"/>
+		</xs:key>
+		<xs:keyref name='RecRef' refer='Categorykey'>
+			<xs:selector xpath='recipes/recipe/RefCategorie'/>
+			<xs:field xpath='RefCatID'/>
+		</xs:keyref>-->
+	</xs:element>
+	<!---->
+	<!--definition of the subtypes recipe-->
+	<xs:complexType name='recipeType'>
+		<xs:sequence>
+			<xs:element name='name' type='RecNameType'/>
+			<!--this part contain the ingredient in the recipe with their name and atttribute as well as
+			quanity needed-->
+			<xs:element name='ingredient_rec' minOccurs="1" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name='ingredient_name' type='xs:string'/>
+						<xs:element name='ingredient_quantity' type='quantity'/>
+					</xs:sequence>
+					<xs:attribute name='IngRef' type='xs:string'/>
+				</xs:complexType>
+				<!--the attribute here need to follow the pattern define for IngredientKey
+						meaning the 3 first letters of the ingredient name in uppercase-->
+			</xs:element>
+			<!--the RefCategorie must follow the categorie type list because of the key/keyref-->
+			<xs:element name='RefCategorie' type='RefCat'/>
+			<xs:element name='Budget' type='price' minOccurs='0' maxOccurs='1'/> <!--To allow this element to be empty and complete it with a XSLT transformation by the sum of the ingredient price-->
+			<xs:element name='cooking_time' type='quantity'/>
+			<xs:element name='preparation_time' type='quantity'/>
+			<!--the pattern foolow the quantity pattern like 
+			<preparation_time unit='hours'>3</preparation_time>-->
+			<xs:element name='level'>
+				<xs:simpleType>
+					<xs:restriction base='xs:string'>
+						<xs:enumeration value="easy"/>
+						<xs:enumeration value="middle"/>
+						<xs:enumeration value="expert"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name='number_serving'>
+				<xs:simpleType>
+					<xs:restriction base='xs:integer'>
+						<xs:minInclusive value="2"/>
+						<xs:maxInclusive value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name='step'>
+				<xs:simpleType>
+					<xs:restriction base='xs:string'>
+						<xs:whiteSpace value='preserve'/>
+						<!--allow to preserve all white space in the step element
+			to write all the step in one element with several paragraphe-->
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name='rating' type='RatingTypes' minOccurs='0' maxOccurs='2'/>
+			<!--Because the rating type is a union type it need to can appear twice, one time for the 
+			integer and one time for the start word-->
+		</xs:sequence>
+	</xs:complexType>
+	<!--the simple and complex types attached to the element in recipe-->
+	<xs:complexType name='RefCat'>
+	<!--this type add an attribute to the recipe categorie-->
+		<xs:simpleContent>
+			<xs:extension base='xs:string'>
+				<xs:attribute name='RefCatID' type='xs:string'/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name='RatingTypes'>
+	<!--here we define a simple type with the union of 2 types
+	the first is for restricting the integer from 1 to 5 
+	then it is defined the list of string allowed for this type
+	it must look like this:
+	<rating>3</rating>
+	<rating>starts</rating>-->
+		<xs:union memberTypes='RatingType'> 
+			<xs:simpleType>
+				<xs:restriction base='xs:integer'>
+					<xs:pattern value='[1-5]'/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:simpleType name='RatingType'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='start'/>
+			<xs:enumeration value='starts'/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!---->
+	<xs:complexType name='price'>
+		<!--To add the currency for the budget price of the recipe
+	the element should look like this 
+	<Budget price = 'dollars'> 20 </Budget>-->
+		<xs:simpleContent>
+			<xs:extension base='xs:decimal'>
+				<xs:attribute name='devise' type='xs:string'/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!---->
+	<!--Definition of the recipe name which is a list of string separate 
+	by white space with minimum 2 words and maximum 11
+	for exemple:
+	<name>Broccoli tabbouleh with grilled vegetables</name>
+	-->
+	<xs:simpleType name='RecNameType'>
+	<!--Definition of the recipe name which is a list of string separate 
+	by white space with minimum 2 words and maximum 11
+	for exemple:
+	<name>Broccoli tabbouleh with grilled vegetables</name>
+	-->
+		<xs:list itemType='xs:string'/>
+	</xs:simpleType>
+	<xs:simpleType name='RecNameTypeLength'>
+		<xs:restriction base='RecNameType'>
+			<xs:minLength value='2'/>
+			<xs:maxLength value='11'/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name='quantity'>
+		<!--definition of the quantity type which can be apply to the 
+	ingredient quantity as well as the time type the element will look like this
+	<element unit='kilogram'>1.5</element>
+	<element2 unit='hours'>4</element2>-->
+		<xs:simpleContent>
+			<xs:extension base="xs:decimal">
+				<xs:attribute name='unit' type="unitlist"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name='unitlist'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='kilogram'/>
+			<xs:enumeration value='gram'/>
+			<xs:enumeration value='quantity'/>
+			<xs:enumeration value='liter'/>
+			<xs:enumeration value='sec'/>
+			<xs:enumeration value='min'/>
+			<xs:enumeration value='hours'/>
+			<xs:enumeration value='hour'/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!---->
+	<!--definition of the subtype ingredient-->
+	<xs:complexType name='ingredientType'>
+		<xs:sequence>
+			<xs:element name='name' type='xs:string'/>
+			<xs:element name='season'>
+			<!--definition of the season list where the ingredient grow
+			the type is restricted the list of 4 seasons-->
+				<xs:simpleType>
+					<xs:restriction base='xs:string'>
+						<xs:enumeration value="Winter"/>
+						<xs:enumeration value="Spring"/>
+						<xs:enumeration value="Summer"/>
+						<xs:enumeration value="Autumn"/>
+						<xs:enumeration value="All"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<!--follow the type price define above-->
+			<xs:element name='Budget' type='price'/>
+		</xs:sequence>
+		<xs:attribute name='IngredientID' type='ingID'/>
+	</xs:complexType>
+	<!--definition of the simple type attached to the ingID
+	the id pattern here take the first 3 letters of the ingredient name in uppercase like:
+	tomato = TOM and carrot = CAR-->
+	<xs:simpleType name='ingID'>
+		<xs:restriction base='xs:string'>
+			<xs:pattern value='[A-Z]{3}'/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!---->
+	<!--definition of the menu type-->
+	<xs:complexType name='menuType'>
+		<xs:sequence>
+			<xs:element name='name' type='xs:string'/>
+			<xs:element name='number_recipe'>
+			<!--the number of recipes in the menu should be between 2 to 4-->
+				<xs:simpleType>
+					<xs:restriction base='xs:integer'>
+						<xs:pattern value='[2-4]'/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name='recipelist' type='stringlist'/>
+			<xs:element name='rating' type='RatingTypes' minOccurs='0' maxOccurs='2'/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name='stringlist'>
+		<!--definition of the simple type which is a string with maximum 200 
+		words-->
+		<xs:list itemType='xs:string'/>
+	</xs:simpleType>
+	<xs:simpleType name='stringlistlim'>
+		<xs:restriction base='stringlist'>
+			<xs:minLength value='0'/>
+			<xs:maxLength value='200'/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--this section will described the customer information with
+	the delivery frequency-->
+	<xs:complexType name='delivery_method'>
+		<xs:sequence>
+			<xs:element name='CustomerName' type='xs:string'/>
+			<xs:element name='CustomerAddress' type='xs:string' minOccurs='1' maxOccurs='unbounded'/>
+			<xs:element name='Phone_number' type='Phone'/>
+			<xs:element name='Cust_email' type='email'/>
+			<xs:element name='delivery_frequency'>
+			<!--define a list of string usuable for the delivery frequency of the menu and/or recipe-->
+				<xs:simpleType>
+					<xs:restriction base='xs:string'>
+						<xs:enumeration value='once week'/>
+						<xs:enumeration value='twice week'/>
+						<xs:enumeration value='daily'/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name='number_menu' type='xs:positiveInteger' minOccurs='0' maxOccurs='unbounded'/>
+			<!--the occurence of the element is define from 0 to unbounded
+			because the customer can choose to order menu or recipe. In that case, this element can be empty
+			and/or complete by an XSLT transformation-->
+			<xs:element name='recipelist' type='stringlist' minOccurs='0' maxOccurs='unbounded'/>
+			<!--this element can be empty and complete by a XSLT with the recipe order by the custommer-->
+			<xs:element name='order_price' type='price' minOccurs='0' maxOccurs='unbounded'/>
+			<!--this element is the sum of the menu and/or recipe price to create the order price
+			this can be done with an XSLT tranformation without that it will contain a 0-->
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name='Phone'>
+		<xs:restriction base='xs:string'>
+			<xs:pattern value='[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}'/>
+			<!--this pattern for phone number
+			allow 5 sequences of 2 numeric between 0 to 9 separated by - 
+			it can look like this 03-27-48-17-10-->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name='email'>
+		<xs:restriction base='xs:string'>
+			<xs:pattern value="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,4}"/>
+			<!--the email address will look like this name@food.org or name19@rec-box.com
+		the [a-zA-Z0-9._%+-] mean one or more alphanumeric character in lower or upper cases
+		as well as special character such as _ and -  
+		the +@ allow to add a @ between the 2 string element
+		the [a-zA-Z0-9.-] mean one or more alphanumeric character in lower or upper cases 
+		and only accept the - special character
+		the \.[a-zA-Z]{2,4} mean after the . we can find 2 to 4 character in lower or upper case-->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name='CategorieType'>
+		<xs:sequence>
+			<xs:element name='Categorie' minOccurs='1' maxOccurs='unbounded'>
+			<!--the list of recipe categories available in our database-->
+				<xs:simpleType>
+					<xs:restriction base='xs:string'>
+						<xs:enumeration value='Traditional'/>
+						<xs:enumeration value='Express'/>
+						<xs:enumeration value='World flavors'/>
+						<xs:enumeration value='Light'/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name='recipe_cat' type='stringlist' minOccurs='1' maxOccurs='unbounded'/>
+		</xs:sequence>
+		<xs:attribute name='CatID' type='CatIDType'/>
+		<!--this attribute take part of the key/keyref relation with the recipe categorie-->
+	</xs:complexType>
+	<xs:simpleType name='CatIDType'>
+		<xs:restriction base='xs:string'>
+			<xs:pattern value='[A-Z0-9]{4}'/>
+			<!--the pattern will look like this CatID='TRA1' where it is the 3 first letter of the 
+			categorie and the number in the list-->
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
