@@ -49,5 +49,6 @@ The database will be inspired from [goodfood] (https://www.bbcgoodfood.com/revie
   - The list of recipies in the category with their id 
 
   XSLT transformation ideas:
-  - make an invoice 
-  - make the sum of the ingredient for the recipe
+  - make an invoice link toward the ressource : https://www.reddit.com/r/web_dev_help/comments/3vhoph/using_xslt_to_generate_an_invoice/
+  - make a table with all the ingredient sort by season the ressource : https://learning.oreilly.com/library/view/inside-xslt/0735711364/0735711364_ch11lev1sec13.html#:~:text=Creating%20tables%20in%20XSL%2DFO,to%20specify%20the%20table's%20body.
+  - make a menu 

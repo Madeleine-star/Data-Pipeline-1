@@ -559,7 +559,27 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<rating>4</rating>
 			<rating>starts</rating>
 		</menu>
+		<menu>
+			<name>Romantic Dinner</name>
+			<number_recipe>3</number_recipe>
+			<recipelist>Gaspacho Wok of chinese noodles with vegetables Raspberry foam</recipelist>
+			<rating>5</rating>
+			<rating>starts</rating>
+		</menu>
+		<menu>
+			<name>Light Dinner</name>
+			<number_recipe>2</number_recipe>
+			<recipelist>chicory and ham Express tuna brandade</recipelist>
+			<rating>2</rating>
+			<rating>starts</rating>
+		</menu>
 	</menus>
+	<Compagny_infos>
+		<name>RecBox</name>
+		<Compagny_address>9 recipe road 10461 NY USA</Compagny_address>
+		<compagny_phone>88-77-66-55-44</compagny_phone>
+		<compagny_email>RecBox@gmail.com</compagny_email>
+	</Compagny_infos>
 	<Customers>
 		<Customer>
 			<CustomerName>Charles Dupont</CustomerName>
@@ -568,37 +588,43 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<CustomerAddress> 10461 USA</CustomerAddress>
 			<Phone_number>84-56-89-34-17</Phone_number>
 			<Cust_email>CharlesD@gmail.com</Cust_email>
-			<delivery_frequency>once week</delivery_frequency>
-			<number_menu>7</number_menu>
-			<recipelist></recipelist>
-			<order_price devise='Eur'>0</order_price>
-			
 		</Customer>
-				<Customer>
+		<Customer>
 			<CustomerName>Senera Durand</CustomerName>
 			<CustomerAddress>18 union road </CustomerAddress>
 			<CustomerAddress>Tarrytown NY</CustomerAddress>
 			<CustomerAddress> 10863 USA</CustomerAddress>
 			<Phone_number>98-65-98-17-34</Phone_number>
 			<Cust_email>SeneraD@yahoo.com</Cust_email>
-			<delivery_frequency>daily</delivery_frequency>
-			<number_menu>1</number_menu>
-			<recipelist>Boeuf Bourguignon Chocolat cake</recipelist>
-			<order_price devise='Eur'>0</order_price>
 		</Customer>
 		<Customer>
 			<CustomerName>Alexis Wimbledon</CustomerName>
 			<CustomerAddress>509 toto avenue </CustomerAddress>
-			<CustomerAddress>Buffalo NY</CustomerAddress>
-			<CustomerAddress> 49863 USA</CustomerAddress>
+			<CustomerAddress>Buffalo</CustomerAddress>
+			<CustomerAddress>NY 49863 USA</CustomerAddress>
 			<Phone_number>52-90-36-71-43</Phone_number>
 			<Cust_email>AlexisW@hotmail.com</Cust_email>
-			<delivery_frequency>twice week</delivery_frequency>
-			<number_menu>3</number_menu>
-			<recipelist>Gaspacho Express tuna brandade Raspberry foam</recipelist>
-			<order_price devise='Eur'>50</order_price>
+			<Invoice CustInvID='AW01'></Invoice>
 		</Customer>
 	</Customers>
+	<Invoices>
+		<invoice invoiceID='AW01'>
+			<rec_list>
+				<recipe>Gaspacho</recipe>
+				<recipe_price>25</recipe_price>
+			</rec_list>
+			<rec_list>
+				<recipe>Wok of chinese noodles with vegetables </recipe>
+				<recipe_price>20</recipe_price>
+			</rec_list>
+			<rec_list>
+				<recipe>Raspberry foam</recipe>
+				<recipe_price>20</recipe_price>
+			</rec_list>
+			<number_delivered>1</number_delivered>
+			<delivery_date>2024-09-29</delivery_date>
+		</invoice>
+	</Invoices>
 	<Categories CatID='TRA1'>
 		<Categorie>Traditional</Categorie>
 		<recipe_cat>Boeuf Bourguinon </recipe_cat>
