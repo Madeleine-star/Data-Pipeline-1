@@ -1,0 +1,23 @@
+The aim of this file is to do a JSON schema which follow the data in the Customer.json file
+create by the JSON_customers.xsl file. 
+
+{
+	"$schema":"http://json-schema.org/schema#",
+	"$id":"http://yourdomain.com/schemas/myschema.json",
+	"title":"Customer",
+	"description":"Customer from RecBox",
+	"type":"object",
+	"properties":{
+		"Customer":{"$ref":"http://yourdomain.com/schemas/myschema.json"
+		}
+		
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+}
