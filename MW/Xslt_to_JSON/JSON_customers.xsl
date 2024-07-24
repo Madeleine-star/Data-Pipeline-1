@@ -6,13 +6,15 @@ This XSLT document aim to transformed the xml data into a JSON file.
 In the JSON file we will only have the data about the customer of the compagny.
 -->
 	<xsl:template match="/">
-{"Customer":[{ 
+{
+"Customer":[ 
 <xsl:apply-templates select="Root/Customers/Customer"/>
-}]
+] 
+}
 	</xsl:template>
 	<xsl:template match="Root/Customers/Customer">
 {"Customer_Name":
-"<xsl:value-of select="CustomerName"/>"
+"<xsl:value-of select="CustomerName"/>",
 "Customer_Address":
 "<xsl:value-of select="CustomerAddress[1]"/>",
 "Customer_City":
