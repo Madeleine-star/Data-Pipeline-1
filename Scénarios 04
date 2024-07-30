@@ -1,0 +1,29 @@
+#Scénario 04 : Afficher les recettes par catégorie
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  version="1.0">
+
+  <xsl:output method="html" indent="yes"/>
+
+  <xsl:key name="category-key" match="recipe" use="category"/>
+
+  <xsl:template match="/">
+    <html>
+      <body>
+        <h1>Recettes par catégorie</h1>
+        <xsl:for-each select="//category[generate-id() = generate-id(key('category-key', .)[1])]">
+          <h2><xsl:value-of select="."/></h2>
+          <ul>
+            <xsl:for-each select="key('category-key', .)">
+              <li>
+                <h3><xsl:value-of select="name"/></h3>
+                <p><xsl:value-of select="description"/></p>
+              </li>
+            </xsl:for-each>
+          </ul>
+        </xsl:for-each>
+      </body>
+    </html>
+  </xsl:template>
+
+</xsl:stylesheet>
