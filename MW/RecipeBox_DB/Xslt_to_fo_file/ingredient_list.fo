@@ -1,0 +1,330 @@
+<?xml version="1.0"?><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"><fo:layout-master-set><fo:simple-page-master master-name="page" page-height="400mm" page-width="300mm" margin-top="10mm" margin-bottom="10mm" margin-left="20mm" margin-right="20mm"><fo:region-body margin-top="0mm" margin-bottom="10mm" margin-left="0mm" margin-right="0mm" /><fo:region-after extent="10mm" /></fo:simple-page-master></fo:layout-master-set><fo:page-sequence master-reference="page"><fo:flow flow-name="xsl-region-body"><fo:block text-align="center" font-weight="bold" font-size="36pt" line-height="48pt" font-family="Times" color="blue">
+				RecBox's ingredients list
+				</fo:block><fo:block font-weight="bold" font-size="28pt" line-height="48pt" font-family="Times" font-style="italic">
+		Ingredient List:
+		
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Bacon</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 5 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Balsamic vinegar</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 5 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Beef</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 40 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Broth</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 1 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Butter</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 5 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Carotte</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 3 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Chicory</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Autumn</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 4 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Chocolat</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 5 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Cucumber</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 3 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Deshydrate mashed potato</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 2 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Eggs</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 3 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Flour</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 4 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Garlic</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 4 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Ginger</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Autumn</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 5 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Green Pepper</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 3 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Gruyere</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 3 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Ham</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 5 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Hot pepper</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 5 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Lemon</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 5 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Milk</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 1 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Mushroom</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Autumn</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 10 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Noodles</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 1 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Olive Oil</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 10 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Onions</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 2 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Parmesan</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 3 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Quinoa</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Spring</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 5 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Raspberry</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 10 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Red pepper</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 2 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Red Wine</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 10 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: shallot</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Autumn</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 5 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Sugar</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 1 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Thyme</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 10 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Tomatoe</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 2 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Tuna</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 3 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Water</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: All</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 1 Eur
+				</fo:block></fo:block>
+	
+	
+		<fo:block font-size="24pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Ingredient name</fo:inline>: Zucchini</fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Growing season</fo:inline>: Summer</fo:block></fo:block>
+		<fo:block start-indent="40pt"><fo:block font-size="20pt" line-height="32pt" font-family="Times"><fo:inline text-decoration="underline">
+				Price in season</fo:inline>: 2 Eur
+				</fo:block></fo:block>
+	
+</fo:block></fo:flow></fo:page-sequence></fo:root>

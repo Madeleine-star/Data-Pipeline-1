@@ -39,15 +39,15 @@
 		</xs:complexType>
 		<!--a key/keyref relation between the categorie and the recipe categorie
 		not work for the moment need to be debug because if we change the data in the database
-		no error is retrun
+		no error is retrun-->
 		<xs:key name='Categorykey'>
 			<xs:selector xpath="Categories"/>
 			<xs:field xpath="@CatID"/>
 		</xs:key>
 		<xs:keyref name='RecRef' refer='Categorykey'>
 			<xs:selector xpath='recipes/recipe/RefCategorie'/>
-			<xs:field xpath='RefCatID'/>
-		</xs:keyref>-->
+			<xs:field xpath='@RefCatID'/>
+		</xs:keyref>
 	</xs:element>
 	<!---->
 	<!--definition of the subtypes recipe-->
