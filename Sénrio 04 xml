@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <recipes>
+    <recipe>
+      <name>Spaghetti Carbonara</name>
+      <description>Pâtes avec pancetta, œufs et parmesan.</description>
+      <category>Traditional</category>
+    </recipe>
+    <recipe>
+      <name>Chicken Curry</name>
+      <description>Poulet épicé avec du curry.</description>
+      <category>World flavors</category>
+    </recipe>
+    <recipe>
+      <name>Salade César</name>
+      <description>Salade avec poulet, croutons et sauce césar.</description>
+      <category>Light</category>
+    </recipe>
+    <recipe>
+      <name>Ratatouille</name>
+      <description>Légumes provençaux cuits dans une sauce tomate.</description>
+      <category>Traditional</category>
+    </recipe>
+  </recipes>
+</Root>
