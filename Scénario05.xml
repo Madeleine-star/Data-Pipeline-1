@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Orders>
+  <Customer>
+    <CustomerName>Jean Dupont</CustomerName>
+    <CustomerAddress>123 Rue de la Paix, Paris</CustomerAddress>
+    <Phone_number>+33123456789</Phone_number>
+    <Cust_email>jean.dupont@example.com</Cust_email>
+    <recipelist>
+      <item>Spaghetti Carbonara</item>
+      <item>Chicken Curry</item>
+    </recipelist>
+    <order_price>25.99</order_price>
+  </Customer>
+  <Customer>
+    <CustomerName>Marie Curie</CustomerName>
+    <CustomerAddress>456 Boulevard Saint-Germain, Paris</CustomerAddress>
+    <Phone_number>+33987654321</Phone_number>
+    <Cust_email>marie.curie@example.com</Cust_email>
+    <recipelist>
+      <item>Salade César</item>
+      <item>Ratatouille</item>
+    </recipelist>
+    <order_price>18.75</order_price>
+  </Customer>
+</Orders>
