@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BoeufBourguignonRecipes>
+    <Recipe>
+        <Title>Boeuf Bourguignon</Title>
+        <Ingredients>
+            <Ingredient>
+                <Name>Boeuf</Name>
+                <Quantity>1 kg</Quantity>
+            </Ingredient>
+            <Ingredient>
+                <Name>Carottes</Name>
+                <Quantity>4</Quantity>
+            </Ingredient>
+            <Ingredient>
+                <Name>Oignons</Name>
+                <Quantity>2</Quantity>
+            </Ingredient>
+            <Ingredient>
+                <Name>Vin Rouge</Name>
+                <Quantity>750 ml</Quantity>
+            </Ingredient>
+            <Ingredient>
+                <Name>Champignons</Name>
+                <Quantity>200 g</Quantity>
+            </Ingredient>
+            <Ingredient>
+                <Name>Thym</Name>
+                <Quantity>1 brin</Quantity>
+            </Ingredient>
+            <Ingredient>
+                <Name>Laurier</Name>
+                <Quantity>1 feuille</Quantity>
+            </Ingredient>
+            <Ingredient>
+                <Name>Ail</Name>
+                <Quantity>2 gousses</Quantity>
+            </Ingredient>
+            <Ingredient>
+                <Name>Sel</Name>
+                <Quantity>Au goût</Quantity>
+            </Ingredient>
+            <Ingredient>
+                <Name>Poivre</Name>
+                <Quantity>Au goût</Quantity>
+            </Ingredient>
+        </Ingredients>
+        <PreparationSteps>
+            <Step>1. Coupez le boeuf en morceaux.</Step>
+            <Step>2. Faites revenir les oignons et les carottes dans une cocotte.</Step>
+            <Step>3. Ajoutez les morceaux de boeuf et faites-les dorer.</Step>
+            <Step>4. Versez le vin rouge et ajoutez le thym, le laurier et l'ail.</Step>
+            <Step>5. Laissez mijoter à feu doux pendant 3 heures.</Step>
+            <Step>6. Ajoutez les champignons 30 minutes avant la fin de la cuisson.</Step>
+            <Step>7. Assaisonnez avec du sel et du poivre selon votre goût.</Step>
+            <Step>8. Servez chaud.</Step>
+        </PreparationSteps>
+    </Recipe>
+</BoeufBourguignonRecipes>
