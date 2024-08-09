@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipes>
+  <recipe>
+    <name>Chocoloat cake</name>
+    <ingredient_rec IngRef='FLO'>
+      <ingredient_name>Flour</ingredient_name>
+      <ingredient_quantity unit='gram'>33.5</ingredient_quantity>
+    </ingredient_rec>
+    <ingredient_rec IngRef='SUG'>
+      <ingredient_name>Sugar</ingredient_name>
+      <ingredient_quantity unit='gram'>66.5</ingredient_quantity>
+    </ingredient_rec>
+    <ingredient_rec IngRef='BUT'>
+      <ingredient_name>Butter</ingredient_name>
+      <ingredient_quantity unit='gram'>66.5</ingredient_quantity>
+    </ingredient_rec>
+    <ingredient_rec IngRef='CHO'>
+      <ingredient_name>Chocolat</ingredient_name>
+      <ingredient_quantity unit='gram'>133.5</ingredient_quantity>
+    </ingredient_rec>
+    <ingredient_rec IngRef='EGG'>
+      <ingredient_name>Eggs</ingredient_name>
+      <ingredient_quantity unit='quantity'>2</ingredient_quantity>
+    </ingredient_rec>
+    <RefCategorie RefCatID='TRA2'>Traditional</RefCategorie>
+    <Budget devise='Eur'>10</Budget>
+    <cooking_time unit='min'>30</cooking_time>
+    <preparation_time unit='min'>10</preparation_time>
+    <level>easy</level>
+    <number_serving>4</number_serving>
+  </recipe>
+</recipes>
