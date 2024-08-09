@@ -1,0 +1,78 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<recipes>
+    <recipe>
+        <name>Boeuf Bourguignon</name>
+        <category>Traditional</category>
+        <budget>60 Eur</budget>
+        <cooking_time>1 hour</cooking_time>
+        <preparation_time>4 hours</preparation_time>
+        <level>Easy</level>
+        <number_serving>4</number_serving>
+    </recipe>
+    <recipe>
+        <name>Chocoloat cake</name>
+        <category>Traditional</category>
+        <budget>10 Eur</budget>
+        <cooking_time>30 minutes</cooking_time>
+        <preparation_time>10 minutes</preparation_time>
+        <level>Easy</level>
+        <number_serving>4</number_serving>
+    </recipe>
+    <recipe>
+        <name>Wok of chinese noodles with vegetables</name>
+        <category>World flavors</category>
+        <budget>20 Eur</budget>
+        <cooking_time>10 minutes</cooking_time>
+        <preparation_time>5 minutes</preparation_time>
+        <level>Middle</level>
+        <number_serving>3</number_serving>
+    </recipe>
+    <recipe>
+        <name>Gaspacho</name>
+        <category>World flavors</category>
+        <budget>25 Eur</budget>
+        <cooking_time>0 minutes</cooking_time>
+        <preparation_time>15 minutes</preparation_time>
+        <level>Middle</level>
+        <number_serving>4</number_serving>
+    </recipe>
+    <recipe>
+        <name>Express tuna brandade</name>
+        <category>Express</category>
+        <budget>5 Eur</budget>
+        <cooking_time>10 minutes</cooking_time>
+        <preparation_time>20 minutes</preparation_time>
+        <level>Easy</level>
+        <number_serving>2</number_serving>
+    </recipe>
+    <recipe>
+        <name>Quinoa pancake</name>
+        <category>Express</category>
+        <budget>10 Eur</budget>
+        <cooking_time>15 minutes</cooking_time>
+        <preparation_time>5 minutes</preparation_time>
+        <level>Expert</level>
+        <number_serving>4</number_serving>
+    </recipe>
+    <recipe>
+        <name>Raspberry foam</name>
+        <category>Light</category>
+        <budget>20 Eur</budget>
+        <cooking_time>2 minutes</cooking_time>
+        <preparation_time>20 minutes</preparation_time>
+        <level>Expert</level>
+        <number_serving>?</number_serving>
+    </recipe>
+    <recipe>
+        <name>Chicory and Ham</name>
+        <category>Traditional</category>
+        <budget>15 Eur</budget>
+        <cooking_time>20 minutes</cooking_time>
+        <preparation_time>10 minutes</preparation_time>
+        <level>Easy</level>
+        <number_serving>4</number_serving>
+    </recipe>
+</recipes>
+
+
