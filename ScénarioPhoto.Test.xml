@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipeBook>
+    <recipe>
+        <image src="https://2.bp.blogspot.com/-cWcQAc1hUzk/XEczXGdFtfI/AAAAAAAAAEc/uI3qOXC9cpEDfhexj8YyT6LpFUNVGHINACLcBGAs/s1600/dynamic_resize.jpg" alt="Boeuf Bourguignon"/>
+        <name>Boeuf Bourguignon</name>
+        <category>Traditional</category>
+        <budget>60Eur</budget>
+        <times>
+            <cookingTime>1hours</cookingTime>
+            <preparationTime>4hours</preparationTime>
+        </times>
+        <level>easy</level>
+        <serving>4</serving>
+        <rating>4stars</rating>
+        <ingredients>
+            <ingredient>Beef - 1.5kilogram</ingredient>
+            <ingredient>Bacon - 200gram</ingredient>
+            <ingredient>Butter - 60gram</ingredient>
+            <ingredient>Onions - 10quantity</ingredient>
+            <ingredient>Carrot - 2quantity</ingredient>
+            <ingredient>Garlic - 2quantity</ingredient>
+            <ingredient>Flour - 40gram</ingredient>
+            <ingredient>Red Wine - 0.50liter</ingredient>
+            <ingredient>Broth - 0.50liter</ingredient>
+            <ingredient>Mushrooms - 250gram</ingredient>
+        </ingredients>
+        <steps>
+            <step>Cut beef into 3 to 4 cm cubes. Peel onions, carrots, and garlic.</step>
+            <step>Brown onions and bacon in a large casserole dish.</step>
+            <step>Add meat and carrots, then sprinkle with flour.</step>
+            <step>Pour in the stock, red wine, bouquet garni, and crushed garlic cloves.</step>
+            <step>Simmer gently for 3 hours.</step>
+            <step>Add the sliced mushrooms and cook for a further half-hour.</step>
+            <step>Serve with pasta or steamed potatoes.</step>
+        </steps>
+    </recipe>
+    <recipe>
+        <image src="https://i.pinimg.com/originals/c0/c6/95/c0c695dc63a639849b231aa4adeb25f4.jpg" alt="Chocolate Cake"/>
+        <name>Chocolate Cake</name>
+        <category>Traditional</category>
+        <budget>10Eur</budget>
+        <times>
+            <cookingTime>30min</cookingTime>
+            <preparationTime>10min</preparationTime>
+        </times>
+        <level>easy</level>
+        <serving>4</serving>
+        <rating>5stars</rating>
+        <ingredients>
+            <ingredient>Flour - 33.5gram</ingredient>
+            <ingredient>Sugar - 66.5gram</ingredient>
+            <ingredient>Butter - 66.5gram</ingredient>
+            <ingredient>Chocolate - 133.5gram</ingredient>
+            <ingredient>Eggs - 2quantity</ingredient>
+        </ingredients>
+        <steps>
+            <step>Preheat your oven to 180°C (gas mark 6).</step>
+            <step>In a saucepan, melt the chocolate and chopped butter over a very low heat.</step>
+            <step>In a bowl, add the sugar, eggs, and flour. Mix well.</step>
+            <step>Add the chocolate/butter mixture. Mix well.</step>
+            <step>Butter and flour your cake tin, then pour in the cake batter.</step>
+            <step>Bake for approximately 20 minutes.</step>
+            <step>When you take the cake out of the oven, it doesn't look quite cooked. Let it cool, then remove from the mold.</step>
+        </steps>
+    </recipe>
+    <recipe>
+        <image src="https://elavegan.com/wp-content/uploads/2020/10/eating-vegetable-stir-fry-noodles-with-chopsticks.jpg" alt="Wok of Chinese Noodles with Vegetables"/>
+        <name>Wok of Chinese Noodles with Vegetables</name>
+        <category>World flavors</category>
+        <budget>20Eur</budget>
+        <times>
+            <cookingTime>10min</cookingTime>
+            <preparationTime>5min</preparationTime>
+        </times>
+        <level>middle</level>
+        <serving>3</serving>
+        <rating>3stars</rating>
+        <ingredients>
+            <ingredient>Noodles - 200gram</ingredient>
+            <ingredient>Olive oil - 0.1liter</ingredient>
+            <ingredient>Ginger - 10gram</ingredient>
+            <ingredient>Red pepper - 250gram</ingredient>
+            <ingredient>Zucchini - 1quantity</ingredient>
+            <ingredient>Shallot - 1quantity</ingredient>
+        </ingredients>
+        <steps>
+            <step>Heat the water for the pasta.</step>
+            <step>Chop the garlic, ginger, and shallot.</step>
+            <step>Cut the zucchini, bell pepper, and broccoli into small cubes.</step>
+            <step>When the water boils, add the noodles and cook for 5 minutes.</step>
+            <step>Heat the oil in a wok.</step>
+            <step>Quickly fry the ginger, then add the garlic and shallot.</step>
+            <step>Add the zucchini pieces and cover for 3 minutes, stirring occasionally.</step>
+            <step>If the mixture tends to burn, add a little more water.</step>
+            <step>Remove the noodles from the water, drain slightly, and add to the wok mixture.</step>
+            <step>Add the bell pepper and broccoli pieces and 3 tablespoons of soy sauce.</step>
+            <step>Cover for 3 minutes over medium heat.</step>
+            <step>Add sashimi sauce or classic wok sauce and stir.</step>
+            <step>Cook until water has almost evaporated.</step>
+            <step>Serve hot in bowls with chopsticks.</step>
+        </steps>
+    </recipe>
+    <recipe>
+        <image src="https://unpointculture.com/wp-content/uploads/2023/06/meilleure-recette-gaspacho.jpg" alt="Gaspacho"/>
+        <name>Gaspacho</name>
+        <category>Soup</category>
+        <budget>10Eur</budget>
+        <times>
+            <cookingTime>0min</cookingTime>
+            <preparationTime>15min</preparationTime>
+        </times>
+        <level>easy</level>
+        <serving>4</serving>
+        <rating>4stars</rating>
+        <ingredients>
+            <ingredient>Sugar - 5gram</ingredient>
+            <ingredient>Olive oil - 0.2liter</ingredient>
+            <ingredient>Balsamic vinegar - 0.1liter</ingredient>
+            <ingredient>Green pepper - 500gram</ingredient>
+            <ingredient>Tomato - 1kilogram</ingredient>
+            <ingredient>Cucumber - 1quantity</ingredient>
+            <ingredient>Garlic - 1clove</ingredient>
+        </ingredients>
+        <steps>
+            <step>Peel and chop the cucumber, green pepper, and garlic.</step>
+            <step>In a blender, combine the cucumber, green pepper, tomatoes, garlic, and a little water.</step>
+            <step>Add the balsamic vinegar, olive oil, and sugar.</step>
+            <step>Blend until smooth.</step>
+            <step>Season with salt and pepper to taste.</step>
+            <step>Chill in the refrigerator for at least 1 hour before serving.</step>
+            <step>Serve cold with a drizzle of olive oil and a sprinkle of herbs.</step>
+        </steps>
+    </recipe>
+    <recipe>
+        <image src="https://assets.afcdn.com/recipe/20171019/73572_w1944h1242c1cx1759cy2639.jpg" alt="Express Tuna Brandade"/>
+        <name>Express Tuna Brandade</name>
+        <category>Traditional</category>
+        <budget>15Eur</budget>
+        <times>
+            <cookingTime>20min</cookingTime>
+            <preparationTime>15min</preparationTime>
+        </times>
+        <level>easy</level>
+        <serving>4</serving>
+        <rating>3stars</rating>
+        <ingredients>
+            <ingredient>Potatoes - 0.5kilogram</ingredient>
+            <ingredient>Tuna - 2can</ingredient>
+            <ingredient>Garlic - 2clove</ingredient>
+            <ingredient>Olive oil - 0.1liter</ingredient>
+        </ingredients>
+        <steps>
+            <step>Peel and boil the potatoes until tender.</step>
+            <step>Mash the potatoes with the olive oil and crushed garlic.</step>
+            <step>Drain and flake the tuna, then mix it into the potato mash.</step>
+            <step>Adjust seasoning with salt and pepper to taste.</step>
+            <step>Serve hot, garnished with parsley or chives.</step>
+        </steps>
+    </recipe>
+    <recipe>
+        <image src="https://i.pinimg.com/originals/45/bc/07/45bc073d9543885a6316815eeedaf79b.jpg" alt="Quinoa Pancake"/>
+        <name>Quinoa Pancake</name>
+        <category>Healthy</category>
+        <budget>5Eur</budget>
+        <times>
+            <cookingTime>10min</cookingTime>
+            <preparationTime>5min</preparationTime>
+        </times>
+        <level>easy</level>
+        <serving>4</serving>
+        <rating>4stars</rating>
+        <ingredients>
+            <ingredient>Quinoa - 200gram</ingredient>
+            <ingredient>Eggs - 2quantity</ingredient>
+            <ingredient>Flour - 50gram</ingredient>
+            <ingredient>Milk - 0.2liter</ingredient>
+            <ingredient>Olive oil - 0.05liter</ingredient>
+        </ingredients>
+        <steps>
+            <step>Cook the quinoa according to package instructions and let cool.</step>
+            <step>In a bowl, mix the cooked quinoa, eggs, and flour.</step>
+            <step>Add the milk and mix until smooth.</step>
+            <step>Heat oil in a non-stick frying pan.</step>
+            <step>Pour small portions of the batter into the pan to form pancakes.</step>
+            <step>Cook for 2-3 minutes on each side until golden brown.</step>
+            <step>Serve warm with a topping of your choice.</step>
+        </steps>
+    </recipe>
+    <recipe>
+        <image src="https://girlcooksworld.com/wp-content/uploads/2019/04/IMG_4906.jpg" alt="Raspberry Foam"/>
+        <name>Raspberry Foam</name>
+        <category>Dessert</category>
+        <budget>8Eur</budget>
+        <times>
+            <cookingTime>0min</cookingTime>
+            <preparationTime>10min</preparationTime>
+        </times>
+        <level>easy</level>
+        <serving>4</serving>
+        <rating>5stars</rating>
+        <ingredients>
+            <ingredient>Raspberries - 250gram</ingredient>
+            <ingredient>Sugar - 50gram</ingredient>
+            <ingredient>Egg whites - 2quantity</ingredient>
+        </ingredients>
+        <steps>
+            <step>Puree the raspberries with the sugar.</step>
+            <step>Whisk the egg whites until stiff peaks form.</step>
+            <step>Gently fold the raspberry puree into the egg whites.</step>
+            <step>Chill in the refrigerator for at least 1 hour before serving.</step>
+            <step>Serve in individual glasses, garnished with fresh raspberries or mint leaves.</step>
+        </steps>
+    </recipe>
+    <recipe>
+        <image src="https://ovenschotels.com/wp-content/uploads/2021/09/witlofschotel-ham-kaas.jpg" alt="Chicory and Ham"/>
+        <name>Chicory and Ham</name>
+        <category>Traditional</category>
+        <budget>12Eur</budget>
+        <times>
+            <cookingTime>20min</cookingTime>
+            <preparationTime>10min</preparationTime>
+        </times>
+        <level>easy</level>
+        <serving>4</serving>
+        <rating>4stars</rating>
+        <ingredients>
+            <ingredient>Chicory - 4quantity</ingredient>
+            <ingredient>Ham - 4slice</ingredient>
+            <ingredient>Butter - 30gram</ingredient>
+            <ingredient>Cheese - 100gram</ingredient>
+        </ingredients>
+        <steps>
+            <step>Preheat your oven to 180°C (gas mark 6).</step>
+            <step>Cook the chicory in salted water for 10 minutes, then drain.</step>
+            <step>Wrap each chicory in a slice of ham and place in a baking dish.</step>
+            <step>In a saucepan, melt the butter, add flour, and cook for a minute.</step>
+            <step>Gradually add milk, stirring constantly until thickened.</step>
+            <step>Pour the sauce over the chicory and ham, and sprinkle with grated cheese.</step>
+            <step>Bake in the oven for 20 minutes until golden brown.</step>
+        </steps>
+    </recipe>
+</recipeBook>
