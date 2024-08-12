@@ -40,7 +40,7 @@
         </table>
     </xsl:template>
 
-    <!-- Template for each recipe --
+    <!-- Template for each recipe -->
     <xsl:template match="recipe">
         <tr>
             <td><xsl:value-of select="name"/></td>
