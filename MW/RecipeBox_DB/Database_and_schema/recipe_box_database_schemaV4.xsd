@@ -235,7 +235,9 @@
 				</xs:simpleType>
 			</xs:element>
 			<xs:element name='recipelist' type='stringlist'/>
+			<xs:element name='Budget' type='price'/>
 			<xs:element name='rating' type='RatingTypes' minOccurs='0' maxOccurs='2'/>
+			<xs:element name='Description' type='xs:string'/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:simpleType name='stringlist'>
