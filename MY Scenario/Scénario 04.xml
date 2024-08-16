@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <recipes>
+    <!-- Recipe 1 -->
+    <recipe>
+      <name>Boeuf Bourguignon</name>
+      <description>Beef stew slow-cooked with red wine and mushrooms.</description>
+      <category>Traditional</category>
+    </recipe>
+
+    <!-- Recipe 2 -->
+    <recipe>
+      <name>Chocolate Cake</name>
+      <description>Moist chocolate cake.</description>
+      <category>Traditional</category>
+    </recipe>
+
+    <!-- Recipe 3 -->
+    <recipe>
+      <name>Express Tuna Brandade</name>
+      <description>Quickly prepared tuna brandade.</description>
+      <category>Express</category>
+    </recipe>
+
+    <!-- Recipe 4 -->
+    <recipe>
+      <name>Quinoa Pancake</name>
+      <description>Light quinoa pancake.</description>
+      <category>Express</category>
+    </recipe>
+
+    <!-- Recipe 5 -->
+    <recipe>
+      <name>Wok of Chinese Noodles with Vegetables</name>
+      <description>Chinese noodles stir-fried with assorted vegetables.</description>
+      <category>World flavors</category>
+    </recipe>
+
+    <!-- Recipe 6 -->
+    <recipe>
+      <name>Gazpacho</name>
+      <description>Cold vegetable soup, typical of Spanish cuisine.</description>
+      <category>World flavors</category>
+    </recipe>
+
+    <!-- Recipe 7 -->
+    <recipe>
+      <name>Raspberry Foam</name>
+      <description>Light raspberry mousse.</description>
+      <category>Light</category>
+    </recipe>
+
+    <!-- Recipe 8 -->
+    <recipe>
+      <name>Chicory and Ham</name>
+      <description>Endives with ham, baked with cheese.</description>
+      <category>Light</category>
+    </recipe>
+  </recipes>
+</Root>
