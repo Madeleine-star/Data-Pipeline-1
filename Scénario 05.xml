@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Orders>
-  <!-- Fiche de commande pour Charles Dupont -->
+  <!-- Order details for Charles Dupont -->
   <Customer>
     <CustomerName>Charles Dupont</CustomerName>
-    <CustomerAddress>19 liberty avenue, New York, NY 10461, USA</CustomerAddress>
+    <CustomerAddress>19 Liberty Avenue, New York, NY 10461, USA</CustomerAddress>
     <Phone_number>84-56-89-34-17</Phone_number>
     <Cust_email>CharlesD@gmail.com</Cust_email>
     <recipelist>
@@ -13,23 +13,23 @@
     <delivery_date>2024-09-29</delivery_date>
   </Customer>
 
-  <!-- Fiche de commande pour Senera Durand -->
+  <!-- Order details for Senera Durand -->
   <Customer>
     <CustomerName>Senera Durand</CustomerName>
-    <CustomerAddress>18 union road, Tarrytown, NY 10863, USA</CustomerAddress>
+    <CustomerAddress>18 Union Road, Tarrytown, NY 10863, USA</CustomerAddress>
     <Phone_number>98-65-98-17-34</Phone_number>
     <Cust_email>SeneraD@yahoo.com</Cust_email>
     <recipelist>
-      <item>Wok of chinese noodles with vegetables</item>
+      <item>Wok of Chinese noodles with vegetables</item>
     </recipelist>
     <order_price>20</order_price>
     <delivery_date>2024-09-29</delivery_date>
   </Customer>
 
-  <!-- Fiche de commande pour Alexis Wimbledon -->
+  <!-- Order details for Alexis Wimbledon -->
   <Customer>
     <CustomerName>Alexis Wimbledon</CustomerName>
-    <CustomerAddress>509 toto avenue, Buffalo, NY 49863, USA</CustomerAddress>
+    <CustomerAddress>509 Toto Avenue, Buffalo, NY 49863, USA</CustomerAddress>
     <Phone_number>52-90-36-71-43</Phone_number>
     <Cust_email>AlexisW@hotmail.com</Cust_email>
     <recipelist>
