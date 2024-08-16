@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <menus>
+        <menu>
+            <name>Family Dinner</name>
+            <number_recipe>2</number_recipe>
+            <recipelist>Boeuf Bourguignon Chocolat cake</recipelist>
+            <Budget devise='Eur'>60</Budget>
+            <rating>4</rating>
+            <rating>starts</rating>
+            <Description>A complete menu for all the family</Description>
+        </menu>
+        <menu>
+            <name>Romantic Dinner</name>
+            <number_recipe>3</number_recipe>
+            <recipelist>Gaspacho Wok of chinese noodles with vegetables Raspberry foam</recipelist>
+            <Budget devise='Eur'>45</Budget>
+            <rating>5</rating>
+            <rating>starts</rating>
+            <Description>A menu for romantic occasion with a dessert for free!</Description>
+        </menu>
+        <menu>
+            <name>Light Dinner</name>
+            <number_recipe>2</number_recipe>
+            <recipelist>chicory and ham Express tuna brandade</recipelist>
+            <Budget devise='Eur'>10</Budget>
+            <rating>2</rating>
+            <rating>starts</rating>
+            <Description>Light, quick, and efficiency for all occasions</Description>
+        </menu>
+    </menus>
+    <Compagny_infos>
+        <name>RecBox</name>
+        <Compagny_address>9 recipe road 10461 NY USA</Compagny_address>
+        <compagny_phone>88-77-66-55-44</compagny_phone>
+        <compagny_email>RecBox@gmail.com</compagny_email>
+    </Compagny_infos>
+</Root>
