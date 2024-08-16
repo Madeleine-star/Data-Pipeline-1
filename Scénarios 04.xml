@@ -1,25 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root>
   <recipes>
+    <!-- Recette 1 -->
     <recipe>
-      <name>Spaghetti Carbonara</name>
-      <description>Pâtes avec pancetta, œufs et parmesan.</description>
+      <name>Boeuf Bourguinon</name>
+      <description>Ragoût de bœuf mijoté au vin rouge et aux champignons.</description>
       <category>Traditional</category>
     </recipe>
+
+    <!-- Recette 2 -->
     <recipe>
-      <name>Chicken Curry</name>
-      <description>Poulet épicé avec du curry.</description>
+      <name>Chocolat cake</name>
+      <description>Gâteau moelleux au chocolat.</description>
+      <category>Traditional</category>
+    </recipe>
+
+    <!-- Recette 3 -->
+    <recipe>
+      <name>Express tuna brandade</name>
+      <description>Brandade de thon rapide à préparer.</description>
+      <category>Express</category>
+    </recipe>
+
+    <!-- Recette 4 -->
+    <recipe>
+      <name>Quinoa pancake</name>
+      <description>Galette légère de quinoa.</description>
+      <category>Express</category>
+    </recipe>
+
+    <!-- Recette 5 -->
+    <recipe>
+      <name>Wok of chinese noodles with vegetables</name>
+      <description>Nouilles chinoises sautées aux légumes variés.</description>
       <category>World flavors</category>
     </recipe>
+
+    <!-- Recette 6 -->
     <recipe>
-      <name>Salade César</name>
-      <description>Salade avec poulet, croutons et sauce césar.</description>
+      <name>Gaspacho</name>
+      <description>Soupe froide de légumes, typique de la cuisine espagnole.</description>
+      <category>World flavors</category>
+    </recipe>
+
+    <!-- Recette 7 -->
+    <recipe>
+      <name>Raspberry foam</name>
+      <description>Mousse légère aux framboises.</description>
       <category>Light</category>
     </recipe>
+
+    <!-- Recette 8 -->
     <recipe>
-      <name>Ratatouille</name>
-      <description>Légumes provençaux cuits dans une sauce tomate.</description>
-      <category>Traditional</category>
+      <name>Chicory and ham</name>
+      <description>Endives au jambon gratinées.</description>
+      <category>Light</category>
     </recipe>
   </recipes>
 </Root>
