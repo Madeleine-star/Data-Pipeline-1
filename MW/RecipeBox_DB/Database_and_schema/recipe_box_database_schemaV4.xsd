@@ -25,6 +25,13 @@
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
+				<xs:element name='Nutritions'>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name='Nutrition' type='nutType' minOccurs='0' maxOccurs='unbounded'/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
 				<xs:element name='Compagny_infos' type="CompagnyType"/>
 				<xs:element name='Customers'>
 					<xs:complexType>
@@ -48,12 +55,26 @@
 			<xs:selector xpath='recipes/recipe/RefCategorie'/>
 			<xs:field xpath='@RefCatID'/>
 		</xs:keyref>
+		<!--A key/keyref relation between recipe and nutritional fact for it-->
+		<xs:key name='Nutkey'>
+			<xs:selector xpath='Nutritions/Nutrition/RecipeID'/>
+			<xs:field xpath='@nutRef'/>
+		</xs:key>
+		<xs:keyref name='NutReckey' refer='Nutkey'>
+			<xs:selector xpath='recipes/recipe/NutID'/>
+			<xs:field xpath='@nutRef'/>
+		</xs:keyref>
 	</xs:element>
 	<!---->
 	<!--definition of the subtypes recipe-->
 	<xs:complexType name='recipeType'>
 		<xs:sequence>
 			<xs:element name='name' type='RecNameType'/>
+			<xs:element name='NutID'>
+				<xs:complexType>
+					<xs:attribute name='nutRef' type='nut_rec_ref'/>
+				</xs:complexType>
+			</xs:element>
 			<!--this part contain the ingredient in the recipe with their name and atttribute as well as
 			quanity needed-->
 			<xs:element name='ingredient_rec' minOccurs="1" maxOccurs="unbounded">
@@ -188,6 +209,8 @@
 			<xs:enumeration value='min'/>
 			<xs:enumeration value='hours'/>
 			<xs:enumeration value='hour'/>
+			<xs:enumeration value='kcal'/>
+			<xs:enumeration value='mgram'/>
 		</xs:restriction>
 	</xs:simpleType>
 	<!---->
@@ -249,6 +272,32 @@
 		<xs:restriction base='stringlist'>
 			<xs:minLength value='0'/>
 			<xs:maxLength value='200'/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--Definition of the nutrition element
+	here we reuse the quantity type because it contain the list of quantity measure for all the database-->
+	<xs:complexType name='nutType'>
+		<xs:sequence>
+			<xs:element name='RecipeID'>
+				<xs:complexType>
+					<xs:attribute name='nutRef' type='nut_rec_ref'/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name='recipe_name' type='xs:string'/>
+			<!--The name of the recipe in the database part recipe with an attribute to identify the recipe-->
+			<xs:element name='energy' type='quantity'/>
+			<xs:element name='total_fat' type='quantity'/>
+			<xs:element name='cholesterol' type='quantity'/>
+			<xs:element name='salt' type='quantity'/>
+			<xs:element name='total_carbohydrate' type='quantity'/>
+			<xs:element name='protein' type='quantity'/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name='nut_rec_ref'>
+		<xs:restriction base='xs:string'>
+			<xs:pattern value='[A-Z]{3}_NUT'/>
+			<!--the pattern will look like this nut_rec_ref='BEE_NUT' where it is the 3 first letter of the 
+			recipe follow by _NUT-->
 		</xs:restriction>
 	</xs:simpleType>
 	<!--this section will described the compagny information for invoices-->

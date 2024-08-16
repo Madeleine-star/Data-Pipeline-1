@@ -3,6 +3,7 @@
 	<recipes>
 		<recipe>
 			<name>Boeuf Bourguignon</name>
+			<NutID nutRef='BEE_NUT'/>
 			<ingredient_rec IngRef='BEE'>
 				<ingredient_name>Beef</ingredient_name>
 				<ingredient_quantity unit='kilogram'>1.5</ingredient_quantity>
@@ -63,6 +64,7 @@
 		</recipe>
 		<recipe>
 			<name>Chocoloat cake</name>
+			<NutID nutRef='CHO_NUT'/>
 			<ingredient_rec IngRef='FLO'>
 				<ingredient_name>Flour</ingredient_name>
 				<ingredient_quantity unit='gram'>33.5</ingredient_quantity>
@@ -102,6 +104,7 @@
 		</recipe>
 		<recipe>
 			<name>Wok of chinese noodles with vegetables</name>
+			<NutID nutRef='WOK_NUT'/>
 			<ingredient_rec IngRef='NOO'>
 				<ingredient_name>Noodles</ingredient_name>
 				<ingredient_quantity unit='gram'>200</ingredient_quantity>
@@ -153,6 +156,7 @@ Serve hot in bowls with chopsticks.
 		</recipe>
 		<recipe>
 			<name>Gaspacho</name>
+			<NutID nutRef='GAS_NUT'/>
 			<ingredient_rec IngRef='SUG'>
 				<ingredient_name>Sugar</ingredient_name>
 				<ingredient_quantity unit='gram'>5</ingredient_quantity>
@@ -209,6 +213,7 @@ Add ice cubes just before serving.
 		</recipe>
 		<recipe>
 			<name>Express tuna brandade</name>
+			<NutID nutRef='EXP_NUT'/>
 			<ingredient_rec IngRef='MAS'>
 				<ingredient_name>Deshydrate mashed potato</ingredient_name>
 				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
@@ -242,6 +247,7 @@ Brown in the oven for 10 to 15 minutes and serve immediately with a green salad 
 		</recipe>
 		<recipe>
 			<name>Quinoa pancake</name>
+			<NutID nutRef='QUI_NUT'/>
 			<ingredient_rec IngRef='QUI'>
 				<ingredient_name>Quinoa</ingredient_name>
 				<ingredient_quantity unit='gram'>200</ingredient_quantity>
@@ -292,6 +298,7 @@ Heat a frying pan with a drizzle of olive oil. Form the dough into small balls a
 		</recipe>
 		<recipe>
 			<name>Raspberry foam</name>
+			<NutID nutRef='RAS_NUT'/>
 			<ingredient_rec IngRef='SUG'>
 				<ingredient_name>Sugar</ingredient_name>
 				<ingredient_quantity unit='gram'>30</ingredient_quantity>
@@ -328,6 +335,7 @@ Incorporate the raspberry pulp and mix again until you obtain an airy mousse.
 		</recipe>
 		<recipe>
 			<name>Chicory and ham</name>
+			<NutID nutRef='CHI_NUT'/>
 			<ingredient_rec IngRef='CHI'>
 				<ingredient_name>Chicory</ingredient_name>
 				<ingredient_quantity unit='quantity'>4</ingredient_quantity>
@@ -556,7 +564,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<name>Family Dinner</name>
 			<number_recipe>2</number_recipe>
 			<recipelist>Boeuf Bourguignon Chocolat cake</recipelist>
-			<Budget devise ='Eur'>60</Budget>
+			<Budget devise='Eur'>60</Budget>
 			<rating>4</rating>
 			<rating>starts</rating>
 			<Description>A complete menu for all the family</Description>
@@ -565,7 +573,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<name>Romantic Dinner</name>
 			<number_recipe>3</number_recipe>
 			<recipelist>Gaspacho Wok of chinese noodles with vegetables Raspberry foam</recipelist>
-			<Budget devise ='Eur'>45</Budget>
+			<Budget devise='Eur'>45</Budget>
 			<rating>5</rating>
 			<rating>starts</rating>
 			<Description>A menu for romantic occasion with a dessert for free!</Description>
@@ -574,12 +582,94 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<name>Light Dinner</name>
 			<number_recipe>2</number_recipe>
 			<recipelist>chicory and ham Express tuna brandade</recipelist>
-			<Budget devise ='Eur'>10</Budget>
+			<Budget devise='Eur'>10</Budget>
 			<rating>2</rating>
 			<rating>starts</rating>
 			<Description>Ligth, quick, and efficacity for all occasions</Description>
 		</menu>
 	</menus>
+	<Nutritions>
+		<Nutrition>
+			<RecipeID nutRef='BEE_NUT'/>
+			<recipe_name>Boeuf Bourguignon</recipe_name>
+			<energy>711</energy>
+			<total_fat unit='gram'>37</total_fat>
+			<cholesterol unit='mgram'>189</cholesterol>
+			<salt unit='gram'>0.6</salt>
+			<total_carbohydrate unit='gram'>24</total_carbohydrate>
+			<protein unit='gram'>59</protein>
+		</Nutrition>
+		<Nutrition>
+			<RecipeID nutRef='GAS_NUT'/>
+			<recipe_name>Gaspacho</recipe_name>
+			<energy>243</energy>
+			<total_fat unit='gram'>17</total_fat>
+			<cholesterol unit='mgram'>0</cholesterol>
+			<salt unit='mgram'>1599</salt>
+			<total_carbohydrate unit='gram'>20</total_carbohydrate>
+			<protein unit='gram'>4.1</protein>
+		</Nutrition>
+		<Nutrition>
+			<RecipeID nutRef='EXP_NUT'/>
+			<recipe_name>Express tuna brandade</recipe_name>
+			<energy>102</energy>
+			<total_fat unit='gram'>7.3</total_fat>
+			<cholesterol unit='mgram'>18</cholesterol>
+			<salt unit='mgram'>814</salt>
+			<total_carbohydrate unit='gram'>1.5</total_carbohydrate>
+			<protein unit='gram'>7.4</protein>
+		</Nutrition>
+		<Nutrition>
+			<RecipeID nutRef='CHO_NUT'/>
+			<recipe_name>Chocolat cake</recipe_name>
+			<energy>424</energy>
+			<total_fat unit='gram'>22</total_fat>
+			<cholesterol unit='mgram'>24</cholesterol>
+			<salt unit='mgram'>379</salt>
+			<total_carbohydrate unit='gram'>58</total_carbohydrate>
+			<protein unit='gram'>3.8</protein>
+		</Nutrition>
+		<Nutrition>
+			<RecipeID nutRef='QUI_NUT'/>
+			<recipe_name>Quinoa pancakes</recipe_name>
+			<energy>185</energy>
+			<total_fat unit='gram'>7</total_fat>
+			<cholesterol unit='mgram'>104</cholesterol>
+			<salt unit='mgram'>163</salt>
+			<total_carbohydrate unit='gram'>24</total_carbohydrate>
+			<protein unit='gram'>8</protein>
+		</Nutrition>
+		<Nutrition>
+			<RecipeID nutRef='RAS_NUT'/>
+			<recipe_name>Raspberry foam</recipe_name>
+			<energy>260</energy>
+			<total_fat unit='gram'>14</total_fat>
+			<cholesterol unit='mgram'>5</cholesterol>
+			<salt unit='mgram'>100</salt>
+			<total_carbohydrate unit='gram'>29</total_carbohydrate>
+			<protein unit='gram'>2</protein>
+		</Nutrition>
+		<Nutrition>
+			<RecipeID nutRef='WOK_NUT'/>
+			<recipe_name>Wok of chinese noodles with vegetables</recipe_name>
+			<energy>480</energy>
+			<total_fat unit='gram'>21</total_fat>
+			<cholesterol unit='mgram'>0</cholesterol>
+			<salt unit='mgram'>780</salt>
+			<total_carbohydrate unit='gram'>53</total_carbohydrate>
+			<protein unit='gram'>14</protein>
+		</Nutrition>
+		<Nutrition>
+			<RecipeID nutRef='CHI_NUT'/>
+			<recipe_name>Chicory and ham</recipe_name>
+			<energy>247</energy>
+			<total_fat unit='gram'>15.4</total_fat>
+			<cholesterol unit='mgram'>60.2</cholesterol>
+			<salt unit='gram'>1.8</salt>
+			<total_carbohydrate unit='gram'>12</total_carbohydrate>
+			<protein unit='gram'>17.6</protein>
+		</Nutrition>
+	</Nutritions>
 	<Compagny_infos>
 		<name>RecBox</name>
 		<Compagny_address>9 recipe road 10461 NY USA</Compagny_address>
@@ -610,7 +700,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<CustomerAddress>NY 49863 USA</CustomerAddress>
 			<Phone_number>52-90-36-71-43</Phone_number>
 			<Cust_email>AlexisW@hotmail.com</Cust_email>
-			<Invoice CustInvID='AW01'></Invoice>
+			<Invoice CustInvID='AW01'/>
 		</Customer>
 	</Customers>
 	<Invoices>
