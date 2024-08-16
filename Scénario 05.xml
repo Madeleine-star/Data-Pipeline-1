@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Orders>
+  <!-- Fiche de commande pour Charles Dupont -->
   <Customer>
-    <CustomerName>Jean Dupont</CustomerName>
-    <CustomerAddress>123 Rue de la Paix, Paris</CustomerAddress>
-    <Phone_number>+33123456789</Phone_number>
-    <Cust_email>jean.dupont@example.com</Cust_email>
+    <CustomerName>Charles Dupont</CustomerName>
+    <CustomerAddress>19 liberty avenue, New York, NY 10461, USA</CustomerAddress>
+    <Phone_number>84-56-89-34-17</Phone_number>
+    <Cust_email>CharlesD@gmail.com</Cust_email>
     <recipelist>
-      <item>Spaghetti Carbonara</item>
-      <item>Chicken Curry</item>
+      <item>Gaspacho</item>
     </recipelist>
-    <order_price>25.99</order_price>
+    <order_price>25</order_price>
+    <delivery_date>2024-09-29</delivery_date>
   </Customer>
+
+  <!-- Fiche de commande pour Senera Durand -->
   <Customer>
-    <CustomerName>Marie Curie</CustomerName>
-    <CustomerAddress>456 Boulevard Saint-Germain, Paris</CustomerAddress>
-    <Phone_number>+33987654321</Phone_number>
-    <Cust_email>marie.curie@example.com</Cust_email>
+    <CustomerName>Senera Durand</CustomerName>
+    <CustomerAddress>18 union road, Tarrytown, NY 10863, USA</CustomerAddress>
+    <Phone_number>98-65-98-17-34</Phone_number>
+    <Cust_email>SeneraD@yahoo.com</Cust_email>
     <recipelist>
-      <item>Salade César</item>
-      <item>Ratatouille</item>
+      <item>Wok of chinese noodles with vegetables</item>
     </recipelist>
-    <order_price>18.75</order_price>
+    <order_price>20</order_price>
+    <delivery_date>2024-09-29</delivery_date>
+  </Customer>
+
+  <!-- Fiche de commande pour Alexis Wimbledon -->
+  <Customer>
+    <CustomerName>Alexis Wimbledon</CustomerName>
+    <CustomerAddress>509 toto avenue, Buffalo, NY 49863, USA</CustomerAddress>
+    <Phone_number>52-90-36-71-43</Phone_number>
+    <Cust_email>AlexisW@hotmail.com</Cust_email>
+    <recipelist>
+      <item>Raspberry foam</item>
+    </recipelist>
+    <order_price>20</order_price>
+    <delivery_date>2024-09-29</delivery_date>
   </Customer>
 </Orders>
