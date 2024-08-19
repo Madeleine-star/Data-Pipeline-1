@@ -36,7 +36,7 @@
                         <h2><xsl:value-of select="name"/></h2>
                         <div class="info">
                             <p><span class="label">Category:</span> <xsl:value-of select="category"/></p>
-                            <p><span class="label">Budget:</span> <xsl:value-of select="budget/@devis"/></p>
+                            <p><span class="label">Budget:</span> <xsl:value-of select="budget/@devise"/></p>
                             <p><span class="label">Cooking Time:</span> <xsl:value-of select="times/cookingTime"/> <xsl:value-of select="times/cookingTime/@unit"/></p>
                             <p><span class="label">Preparation Time:</span> <xsl:value-of select="times/preparationTime"/> <xsl:value-of select="times/preparationTime/@unit"/></p>
                             <p><span class="label">Level:</span> <xsl:value-of select="level"/></p>
