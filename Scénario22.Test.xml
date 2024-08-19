@@ -3,7 +3,7 @@
     <recipe>
         <image src="https://2.bp.blogspot.com/-cWcQAc1hUzk/XEczXGdFtfI/AAAAAAAAAEc/uI3qOXC9cpEDfhexj8YyT6LpFUNVGHINACLcBGAs/s1600/dynamic_resize.jpg" alt="Boeuf Bourguignon"/>
         <name>Boeuf Bourguignon</name>
-        <category>Traditional</category>
+        <RefCategorie RefCatID='TRA1'>Traditional</RefCategorie>
         <budget devise="60 Eur"/>
         <times>
             <cookingTime unit="hours">1</cookingTime>
@@ -67,7 +67,7 @@
     <recipe>
         <image src="https://i.pinimg.com/originals/c0/c6/95/c0c695dc63a639849b231aa4adeb25f4.jpg" alt="Chocolate Cake"/>
         <name>Chocolate Cake</name>
-        <category>Traditional</category>
+        <RefCategorie RefCatID='TRA2'>Traditional</RefCategorie>
         <budget devise="10 Eur"/>
         <times>
             <cookingTime unit="minutes">30</cookingTime>
@@ -111,7 +111,7 @@
     <recipe>
         <image src="https://elavegan.com/wp-content/uploads/2020/10/eating-vegetable-stir-fry-noodles-with-chopsticks.jpg" alt="Wok of Chinese Noodles with Vegetables"/>
         <name>Wok of Chinese Noodles with Vegetables</name>
-        <category>World flavors</category>
+        <RefCategorie RefCatID='WOR1'>World flavors</RefCategorie>
         <budget devise="20 Eur"/>
         <times>
             <cookingTime unit="minutes">10</cookingTime>
@@ -166,7 +166,7 @@
     <recipe>
         <image src="https://unpointculture.com/wp-content/uploads/2023/06/meilleure-recette-gaspacho.jpg" alt="Gaspacho"/>
         <name>Gaspacho</name>
-        <category>Soup</category>
+        <RefCategorie RefCatID='WOR2'>World flavors</RefCategorie>
         <budget devise="10 Eur"/>
         <times>
             <cookingTime unit="minutes">0</cookingTime>
@@ -218,7 +218,7 @@
     <recipe>
         <image src="https://assets.afcdn.com/recipe/20171019/73572_w1944h1242c1cx1759cy2639.jpg" alt="Express Tuna Brandade"/>
         <name>Express Tuna Brandade</name>
-        <category>Traditional</category>
+        <RefCategorie RefCatID='EXP1'>Express</RefCategorie>
         <budget devise="15 Eur"/>
         <times>
             <cookingTime unit="minutes">20</cookingTime>
@@ -256,7 +256,7 @@
     <recipe>
         <image src="https://i.pinimg.com/originals/45/bc/07/45bc073d9543885a6316815eeedaf79b.jpg" alt="Quinoa Pancake"/>
         <name>Quinoa Pancake</name>
-        <category>Healthy</category>
+        <RefCategorie RefCatID='EXP2'>Express</RefCategorie>
         <budget devise="5 Eur"/>
         <times>
             <cookingTime unit="minutes">10</cookingTime>
@@ -300,7 +300,7 @@
     <recipe>
         <image src="https://girlcooksworld.com/wp-content/uploads/2019/04/IMG_4906.jpg" alt="Raspberry Foam"/>
         <name>Raspberry Foam</name>
-        <category>Dessert</category>
+        <RefCategorie RefCatID='LIG1'>Light</RefCategorie>
         <budget devise="8 Eur"/>
         <times>
             <cookingTime unit="minutes">0</cookingTime>
@@ -334,7 +334,7 @@
     <recipe>
         <image src="https://ovenschotels.com/wp-content/uploads/2021/09/witlofschotel-ham-kaas.jpg" alt="Chicory and Ham"/>
         <name>Chicory and Ham</name>
-        <category>Traditional</category>
+       <RefCategorie RefCatID='LIG2'>Light</RefCategorie>
         <budget devise="12 Eur"/>
         <times>
             <cookingTime unit="minutes">20</cookingTime>
