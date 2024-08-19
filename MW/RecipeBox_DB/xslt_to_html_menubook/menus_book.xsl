@@ -1,49 +1,331 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version='2.0' xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
-	<xsl:output method='html' encoding='UTF-8'/>
-	<xsl:output method='html' encoding='UTF-8' name='html'/>
+<!--An xslt transformation for the romantic dinner menu with its number of serving,
+specific price and rating. In this document it have the recipe total description and their nutritional fact
+for each recipe in the menu-->
+<xsl:stylesheet version='1.0' xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:output method='html' encoding='UTF-8' indent='yes'/>
 	<xsl:template match='/'>
 		<html>
 			<body>
-				<h3>Menus</h3>
-				<ul>
-					<xsl:for-each select='Root/menus/menu'>
-						<li>
-							<a href='{name}.htm'>
-								<xsl:value-of select='/name'/>
-							</a>
-						</li>
-					</xsl:for-each>
-				</ul>
-				<xsl:apply-templates select='Root/menus/menu'/>
+				<Div Align='CENTER'>
+					<h1>Romantic Dinner Menu</h1>
+					<xsl:apply-templates select='Root/menus/menu[2]'/>
+				</Div>
+				<h2>Entrance</h2>
+				<blockquote>
+				<xsl:apply-templates select='Root/recipes/recipe[4]'/>
+				<h4>Nutrition fact:</h4>
+				<xsl:apply-templates select='Root/Nutritions/Nutrition[2]'/>
+				</blockquote>
+				<h2>Main</h2>
+				<blockquote>
+					<xsl:apply-templates select='Root/recipes/recipe[3]'/>
+					<h4>Nutrition fact:</h4>
+					<xsl:apply-templates select='Root/Nutritions/Nutrition[7]'/>
+				</blockquote>
+				<h2>Dessert</h2>
+				<blockquote>
+					<xsl:apply-templates select='Root/recipes/recipe[7]'/>
+					<h4>Nutrition fact:</h4>
+					<xsl:apply-templates select='Root/Nutritions/Nutrition[6]'/>
+				</blockquote>
 			</body>
 		</html>
 	</xsl:template>
-	<xsl:template match='menu'>
-		<xsl:result-document format='html' encoding='UTF-8' href='{name}.htm'>
-			<html>
-				<body>
-				<h4>
-						<xsl:value-of select='/name'/>
-					</h4>
-					<h4>
-						<xsl:text>Recipe list:</xsl:text>
-						<xsl:value-of select='./recipelist'/>
-					</h4>
-					<h4>
-						<xsl:text>Menu price:</xsl:text>
-						<xsl:value-of select='./Budget'/>
+	<!--This will fill the first part of the document with the main info on the menu-->
+	<xsl:template match='menus/menu[2]'>
+		<p>
+			<h3>
+			Number of recipe:
+			<xsl:value-of select='number_recipe'/> - Price: 
+			<xsl:value-of select='Budget'/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select='Budget/@devise'/> - Rating: 
+			<xsl:value-of select='rating[1]'/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select='rating[2]'/>
+			</h3>
+		</p>
+	</xsl:template>
+	<!--The following block will be repeat for the 3 part of the document to define the template
+	for the entrance, main and dessert
+	In fisrt the Entrance-->
+	<!--This part concern the infos of the recipe in the menu-->
+	<xsl:template match='recipes/recipe[4]'>
+		<p>
+			<h4>Recipe Name: 
+			<xsl:value-of select='name'/>
+			</h4>
+		</p>
+		<p>
+			<h4>Cooking time: 
+			<xsl:value-of select="cooking_time"/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select="cooking_time/@unit"/> - 
+			Preparation time: 
+			<xsl:value-of select="preparation_time"/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select="preparation_time/@unit"/>
+			</h4>
+		</p>
+		<p>
+			
+		</p>
+		<h4>Ingredient: </h4>
+		<table border="1" cellpadding="3">
+			<tbody>
+				<tr>
+					<th style="font-size:11pt">Ingredient</th>
+					<th style="font-size:11pt">quantity</th>
+				</tr>
+				<xsl:for-each select="ingredient_rec">
+					<tr>
+						<td style="font-size:9pt">
+							<xsl:value-of select="ingredient_name"/>
+						</td>
+						<td style="font-size:9pt">
+							<xsl:value-of select="ingredient_quantity"/>
+							<xsl:text> </xsl:text>
+							<xsl:value-of select="ingredient_quantity/@unit"/>
+						</td>
+					</tr>
+				</xsl:for-each>
+			</tbody>
+		</table>
+		<p>
+			<h4>Recipe steps:</h4>
+			<xsl:value-of select='step'/>
+		</p>
+	</xsl:template>
+	<!--Here we defined a template for the nutritional fact of the recipe in the menu-->
+	<xsl:template match='Nutritions/Nutrition[2]'>
+		<table border="1" cellpadding="3">
+			<tbody>
+				<tr>
+					<td style="font-size:10pt">
+	Energy: 
+			<xsl:value-of select='energy'/>
 						<xsl:text> </xsl:text>
-						<xsl:value-of select='./Budget/@devise'/>
-					</h4>
-					<h4>
-						<xsl:text>Rating:</xsl:text>
-						<xsl:value-of select='./rating[1]'/>
+						<xsl:value-of select='energy/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Total Fat: 
+			<xsl:value-of select='total_fat'/>
 						<xsl:text> </xsl:text>
-						<xsl:value-of select='./rating[2]'/>
-					</h4>
-				</body>
-			</html>
-		</xsl:result-document>
+						<xsl:value-of select='total_fat/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Cholesterol: 
+			<xsl:value-of select='cholesterol'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='cholesterol/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Salt: 
+			<xsl:value-of select='salt'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='salt/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Total Carbohydrate: 
+			<xsl:value-of select='total_carbohydrate'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='total_carbohydrate/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Protein: 
+			<xsl:value-of select='protein'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='protein/@unit'/>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</xsl:template>
+	<!--For the main-->
+<xsl:template match='recipes/recipe[7]'>
+		<p>
+			<h4>Recipe Name: 
+			<xsl:value-of select='name'/>
+			</h4>
+		</p>
+		<p>
+			<h4>Cooking time: 
+			<xsl:value-of select="cooking_time"/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select="cooking_time/@unit"/> - 
+			Preparation time: 
+			<xsl:value-of select="preparation_time"/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select="preparation_time/@unit"/>
+			</h4>
+		</p>
+		<p>
+			
+		</p>
+		<h4>Ingredient: </h4>
+		<table border="1" cellpadding="3">
+			<tbody>
+				<tr>
+					<th style="font-size:11pt">Ingredient</th>
+					<th style="font-size:11pt">quantity</th>
+				</tr>
+				<xsl:for-each select="ingredient_rec">
+					<tr>
+						<td style="font-size:9pt">
+							<xsl:value-of select="ingredient_name"/>
+						</td>
+						<td style="font-size:9pt">
+							<xsl:value-of select="ingredient_quantity"/>
+							<xsl:text> </xsl:text>
+							<xsl:value-of select="ingredient_quantity/@unit"/>
+						</td>
+					</tr>
+				</xsl:for-each>
+			</tbody>
+		</table>
+		<p>
+			<h4>Recipe steps:</h4>
+			<xsl:value-of select='step'/>
+		</p>
+	</xsl:template>
+	<!--Here we defined a template for the nutritional fact of the recipe in the menu-->
+	<xsl:template match='Nutritions/Nutrition[6]'>
+		<table border="1" cellpadding="3">
+			<tbody>
+				<tr>
+					<td style="font-size:10pt">
+	Energy: 
+			<xsl:value-of select='energy'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='energy/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Total Fat: 
+			<xsl:value-of select='total_fat'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='total_fat/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Cholesterol: 
+			<xsl:value-of select='cholesterol'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='cholesterol/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Salt: 
+			<xsl:value-of select='salt'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='salt/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Total Carbohydrate: 
+			<xsl:value-of select='total_carbohydrate'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='total_carbohydrate/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Protein: 
+			<xsl:value-of select='protein'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='protein/@unit'/>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</xsl:template>
+	<!--For the Dessert-->
+<xsl:template match='recipes/recipe[3]'>
+		<p>
+			<h4>Recipe Name: 
+			<xsl:value-of select='name'/>
+			</h4>
+		</p>
+		<p>
+			<h4>Cooking time: 
+			<xsl:value-of select="cooking_time"/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select="cooking_time/@unit"/> - 
+			Preparation time: 
+			<xsl:value-of select="preparation_time"/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select="preparation_time/@unit"/>
+			</h4>
+		</p>
+		<p>
+			
+		</p>
+		<h4>Ingredient: </h4>
+		<table border="1" cellpadding="3">
+			<tbody>
+				<tr>
+					<th style="font-size:11pt">Ingredient</th>
+					<th style="font-size:11pt">quantity</th>
+				</tr>
+				<xsl:for-each select="ingredient_rec">
+					<tr>
+						<td style="font-size:9pt">
+							<xsl:value-of select="ingredient_name"/>
+						</td>
+						<td style="font-size:9pt">
+							<xsl:value-of select="ingredient_quantity"/>
+							<xsl:text> </xsl:text>
+							<xsl:value-of select="ingredient_quantity/@unit"/>
+						</td>
+					</tr>
+				</xsl:for-each>
+			</tbody>
+		</table>
+		<p>
+			<h4>Recipe steps:</h4>
+			<xsl:value-of select='step'/>
+		</p>
+	</xsl:template>
+	<!--Here we defined a template for the nutritional fact of the recipe in the menu-->
+	<xsl:template match='Nutritions/Nutrition[7]'>
+		<table border="1" cellpadding="3">
+			<tbody>
+				<tr>
+					<td style="font-size:10pt">
+	Energy: 
+			<xsl:value-of select='energy'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='energy/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Total Fat: 
+			<xsl:value-of select='total_fat'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='total_fat/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Cholesterol: 
+			<xsl:value-of select='cholesterol'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='cholesterol/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Salt: 
+			<xsl:value-of select='salt'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='salt/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Total Carbohydrate: 
+			<xsl:value-of select='total_carbohydrate'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='total_carbohydrate/@unit'/>
+					</td>
+					<td style="font-size:10pt">
+	Protein: 
+			<xsl:value-of select='protein'/>
+						<xsl:text> </xsl:text>
+						<xsl:value-of select='protein/@unit'/>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</xsl:template>
 </xsl:stylesheet>
+
+

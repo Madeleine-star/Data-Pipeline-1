@@ -592,7 +592,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 		<Nutrition>
 			<RecipeID nutRef='BEE_NUT'/>
 			<recipe_name>Boeuf Bourguignon</recipe_name>
-			<energy>711</energy>
+			<energy unit='kcal'>711</energy>
 			<total_fat unit='gram'>37</total_fat>
 			<cholesterol unit='mgram'>189</cholesterol>
 			<salt unit='gram'>0.6</salt>
@@ -602,7 +602,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 		<Nutrition>
 			<RecipeID nutRef='GAS_NUT'/>
 			<recipe_name>Gaspacho</recipe_name>
-			<energy>243</energy>
+			<energy unit='kcal'>243</energy>
 			<total_fat unit='gram'>17</total_fat>
 			<cholesterol unit='mgram'>0</cholesterol>
 			<salt unit='mgram'>1599</salt>
@@ -612,7 +612,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 		<Nutrition>
 			<RecipeID nutRef='EXP_NUT'/>
 			<recipe_name>Express tuna brandade</recipe_name>
-			<energy>102</energy>
+			<energy unit='kcal'>102</energy>
 			<total_fat unit='gram'>7.3</total_fat>
 			<cholesterol unit='mgram'>18</cholesterol>
 			<salt unit='mgram'>814</salt>
@@ -622,7 +622,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 		<Nutrition>
 			<RecipeID nutRef='CHO_NUT'/>
 			<recipe_name>Chocolat cake</recipe_name>
-			<energy>424</energy>
+			<energy unit='kcal'>424</energy>
 			<total_fat unit='gram'>22</total_fat>
 			<cholesterol unit='mgram'>24</cholesterol>
 			<salt unit='mgram'>379</salt>
@@ -632,7 +632,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 		<Nutrition>
 			<RecipeID nutRef='QUI_NUT'/>
 			<recipe_name>Quinoa pancakes</recipe_name>
-			<energy>185</energy>
+			<energy unit='kcal'>185</energy>
 			<total_fat unit='gram'>7</total_fat>
 			<cholesterol unit='mgram'>104</cholesterol>
 			<salt unit='mgram'>163</salt>
@@ -642,7 +642,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 		<Nutrition>
 			<RecipeID nutRef='RAS_NUT'/>
 			<recipe_name>Raspberry foam</recipe_name>
-			<energy>260</energy>
+			<energy unit='kcal'>260</energy>
 			<total_fat unit='gram'>14</total_fat>
 			<cholesterol unit='mgram'>5</cholesterol>
 			<salt unit='mgram'>100</salt>
@@ -652,7 +652,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 		<Nutrition>
 			<RecipeID nutRef='WOK_NUT'/>
 			<recipe_name>Wok of chinese noodles with vegetables</recipe_name>
-			<energy>480</energy>
+			<energy unit='kcal'>480</energy>
 			<total_fat unit='gram'>21</total_fat>
 			<cholesterol unit='mgram'>0</cholesterol>
 			<salt unit='mgram'>780</salt>
@@ -662,7 +662,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 		<Nutrition>
 			<RecipeID nutRef='CHI_NUT'/>
 			<recipe_name>Chicory and ham</recipe_name>
-			<energy>247</energy>
+			<energy unit='kcal'>247</energy>
 			<total_fat unit='gram'>15.4</total_fat>
 			<cholesterol unit='mgram'>60.2</cholesterol>
 			<salt unit='gram'>1.8</salt>
