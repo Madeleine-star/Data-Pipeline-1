@@ -24,6 +24,7 @@
                         <h2><xsl:value-of select="name"/></h2>
                         <img src="{image/@src}" alt="{image/@alt}"/>
                         <p><strong>Category:</strong> <xsl:value-of select="RefCategorie"/></p>
+                        <p><strong>Type:</strong> <xsl:value-of select="type"/></p>
                         <p><strong>Budget:</strong> <xsl:value-of select="budget/@devise"/></p>
                         <p><strong>Cooking Time:</strong> <xsl:value-of select="times/cookingTime"/> <xsl:value-of select="times/cookingTime/@unit"/></p>
                         <p><strong>Preparation Time:</strong> <xsl:value-of select="times/preparationTime"/> <xsl:value-of select="times/preparationTime/@unit"/></p>
