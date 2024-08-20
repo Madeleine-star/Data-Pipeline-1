@@ -4,6 +4,7 @@
         <image src="https://2.bp.blogspot.com/-cWcQAc1hUzk/XEczXGdFtfI/AAAAAAAAAEc/uI3qOXC9cpEDfhexj8YyT6LpFUNVGHINACLcBGAs/s1600/dynamic_resize.jpg" alt="Boeuf Bourguignon"/>
         <name>Boeuf Bourguignon</name>
         <RefCategorie RefCatID='TRA1'>Traditional</RefCategorie>
+        <type>main course</type>
         <budget devise="60 Eur"/>
         <times>
             <cookingTime unit="hours">1</cookingTime>
@@ -30,7 +31,7 @@
                 <ingredient_quantity>10 quantity</ingredient_quantity>
             </ingredient>
             <ingredient>
-                <ingredient_name>Carrot</ingredient_name>
+                <ingredient_name>Carotte</ingredient_name>
                 <ingredient_quantity>2 quantity</ingredient_quantity>
             </ingredient>
             <ingredient>
@@ -68,6 +69,7 @@
         <image src="https://i.pinimg.com/originals/c0/c6/95/c0c695dc63a639849b231aa4adeb25f4.jpg" alt="Chocolate Cake"/>
         <name>Chocolate Cake</name>
         <RefCategorie RefCatID='TRA2'>Traditional</RefCategorie>
+        <type>dessert</type>
         <budget devise="10 Eur"/>
         <times>
             <cookingTime unit="minutes">30</cookingTime>
@@ -112,6 +114,7 @@
         <image src="https://elavegan.com/wp-content/uploads/2020/10/eating-vegetable-stir-fry-noodles-with-chopsticks.jpg" alt="Wok of Chinese Noodles with Vegetables"/>
         <name>Wok of Chinese Noodles with Vegetables</name>
         <RefCategorie RefCatID='WOR1'>World flavors</RefCategorie>
+        <type>main course</type>
         <budget devise="20 Eur"/>
         <times>
             <cookingTime unit="minutes">10</cookingTime>
@@ -150,9 +153,9 @@
             <step>Heat the water for the pasta.</step>
             <step>Chop the garlic, ginger, and shallot.</step>
             <step>Cut the zucchini, bell pepper, and broccoli into small cubes.</step>
-            <step>When the water boils, add the noodles and cook for 5 minutes.</step>
+            <step>When the water boils, add the noodles and cook for 5 minutes, or as long as you normally cook your noodles. They should not be too soft.</step>
             <step>Heat the oil in a wok.</step>
-            <step>Quickly fry the ginger, then add the garlic and shallot.</step>
+            <step>When it's very hot, quickly fry the ginger, then add the garlic and shallot.</step>
             <step>Add the zucchini pieces and cover for 3 minutes, stirring occasionally.</step>
             <step>If the mixture tends to burn, add a little more water.</step>
             <step>Remove the noodles from the water, drain slightly, and add to the wok mixture.</step>
@@ -167,14 +170,15 @@
         <image src="https://unpointculture.com/wp-content/uploads/2023/06/meilleure-recette-gaspacho.jpg" alt="Gaspacho"/>
         <name>Gaspacho</name>
         <RefCategorie RefCatID='WOR2'>World flavors</RefCategorie>
-        <budget devise="10 Eur"/>
+        <type>main course</type>
+        <budget devise="25 Eur"/>
         <times>
             <cookingTime unit="minutes">0</cookingTime>
             <preparationTime unit="minutes">15</preparationTime>
         </times>
-        <level>easy</level>
+        <level>miiddle</level>
         <number_serving>4</number_serving>
-        <rating>4 stars</rating>
+        <rating>5stars</rating>
         <ingredients>
             <ingredient>
                 <ingredient_name>Sugar</ingredient_name>
@@ -194,7 +198,19 @@
             </ingredient>
             <ingredient>
                 <ingredient_name>Tomato</ingredient_name>
-                <ingredient_quantity>1 kilogram</ingredient_quantity>
+                <ingredient_quantity>800 gram</ingredient_quantity>
+            </ingredient>
+            <ingredient>
+                <ingredient_name>Water</ingredient_name>
+                <ingredient_quantity>0.15 liter</ingredient_quantity>
+            </ingredient>
+            <ingredient>
+                <ingredient_name>Onion</ingredient_name>
+                <ingredient_quantity>0.5 gram</ingredient_quantity>
+            </ingredient>
+            <ingredient>
+                <ingredient_name>Hot pepper</ingredient_name>
+                <ingredient_quantity>1 quantity</ingredient_quantity>
             </ingredient>
             <ingredient>
                 <ingredient_name>Cucumber</ingredient_name>
@@ -206,65 +222,62 @@
             </ingredient>
         </ingredients>
         <steps>
-            <step>Peel and chop the cucumber, green pepper, and garlic.</step>
-            <step>In a blender, combine the cucumber, green pepper, tomatoes, garlic, and a little water.</step>
-            <step>Add the balsamic vinegar, olive oil, and sugar.</step>
-            <step>Blend until smooth.</step>
-            <step>Season with salt and pepper to taste.</step>
-            <step>Chill in the refrigerator for at least 1 hour before serving.</step>
-            <step>Serve cold with a drizzle of olive oil and a sprinkle of herbs.</step>
-        </steps>
+            <step>Place all coarsely chopped ingredients in a blender.</step>
+            <step>Start the machine on low speed and finish on high speed. If you're in a hurry, freeze for 30 minutes. Otherwise, refrigerate as long as possible.</step>
+            <step>Add ice cubes just before serving.</step>
+             </steps>
     </recipe>
     <recipe>
         <image src="https://assets.afcdn.com/recipe/20171019/73572_w1944h1242c1cx1759cy2639.jpg" alt="Express Tuna Brandade"/>
         <name>Express Tuna Brandade</name>
         <RefCategorie RefCatID='EXP1'>Express</RefCategorie>
-        <budget devise="15 Eur"/>
+        <type>main course</type>
+        <budget devise="5 Eur"/>
         <times>
-            <cookingTime unit="minutes">20</cookingTime>
-            <preparationTime unit="minutes">15</preparationTime>
+            <cookingTime unit="minutes">10</cookingTime>
+            <preparationTime unit="minutes">20</preparationTime>
         </times>
         <level>easy</level>
-        <number_serving>4</number_serving>
-        <rating>3 stars</rating>
+        <number_serving>2</number_serving>
+        <rating>2 stars</rating>
         <ingredients>
             <ingredient>
-                <ingredient_name>Potatoes</ingredient_name>
-                <ingredient_quantity>0.5 kilogram</ingredient_quantity>
+                <ingredient_name>Deshydrate mashed potato</ingredient_name>
+                <ingredient_quantity>1 quantity</ingredient_quantity>
             </ingredient>
             <ingredient>
                 <ingredient_name>Tuna</ingredient_name>
-                <ingredient_quantity>2 can</ingredient_quantity>
+                <ingredient_quantity>200 gram</ingredient_quantity>
             </ingredient>
             <ingredient>
                 <ingredient_name>Garlic</ingredient_name>
-                <ingredient_quantity>2 clove</ingredient_quantity>
+                <ingredient_quantity>1 quantity</ingredient_quantity>
             </ingredient>
             <ingredient>
                 <ingredient_name>Olive oil</ingredient_name>
-                <ingredient_quantity>0.1 liter</ingredient_quantity>
+                <ingredient_quantity>0.2 liter</ingredient_quantity>
             </ingredient>
         </ingredients>
         <steps>
-            <step>Peel and boil the potatoes until tender.</step>
-            <step>Mash the potatoes with the olive oil and crushed garlic.</step>
-            <step>Drain and flake the tuna, then mix it into the potato mash.</step>
-            <step>Adjust seasoning with salt and pepper to taste.</step>
-            <step>Serve hot, garnished with parsley or chives.</step>
-        </steps>
+            <step>Preheat oven to thermostat 8 (250°C). Prepare the purée according to the packet instructions.</step>
+            <step>Mash the tuna crumbs with the olive oil and pressed garlic.</step>
+            <step>Mix the tuna with the purée and place in a buttered baking dish.</step>
+            <step>Brown in the oven for 10 to 15 minutes and serve immediately with a green salad or carrot salad.</step>
+            </steps>
     </recipe>
     <recipe>
         <image src="https://i.pinimg.com/originals/45/bc/07/45bc073d9543885a6316815eeedaf79b.jpg" alt="Quinoa Pancake"/>
         <name>Quinoa Pancake</name>
         <RefCategorie RefCatID='EXP2'>Express</RefCategorie>
-        <budget devise="5 Eur"/>
+        <type>entrance</type>
+        <budget devise="10 Eur"/>
         <times>
-            <cookingTime unit="minutes">10</cookingTime>
+            <cookingTime unit="minutes">15</cookingTime>
             <preparationTime unit="minutes">5</preparationTime>
         </times>
-        <level>easy</level>
+        <level>expert</level>
         <number_serving>4</number_serving>
-        <rating>4 stars</rating>
+        <rating>3 stars</rating>
         <ingredients>
             <ingredient>
                 <ingredient_name>Quinoa</ingredient_name>
@@ -275,74 +288,93 @@
                 <ingredient_quantity>2 quantity</ingredient_quantity>
             </ingredient>
             <ingredient>
-                <ingredient_name>Flour</ingredient_name>
-                <ingredient_quantity>50 gram</ingredient_quantity>
+                <ingredient_name>Parmesan</ingredient_name>
+                <ingredient_quantity>10 gram</ingredient_quantity>
             </ingredient>
             <ingredient>
-                <ingredient_name>Milk</ingredient_name>
-                <ingredient_quantity>0.2 liter</ingredient_quantity>
+                <ingredient_name>Onion</ingredient_name>
+                <ingredient_quantity>1 quantity</ingredient_quantity>
             </ingredient>
             <ingredient>
                 <ingredient_name>Olive oil</ingredient_name>
-                <ingredient_quantity>0.05 liter</ingredient_quantity>
+                <ingredient_quantity>0.2 liter</ingredient_quantity>
+            </ingredient>
+            <ingredient>
+                <ingredient_name>Garlic</ingredient_name>
+                <ingredient_quantity>1 quantity</ingredient_quantity>
+            </ingredient>
+            <ingredient>
+                <ingredient_name>Thyme</ingredient_name>
+                <ingredient_quantity>4 quantity</ingredient_quantity>
+            </ingredient>
+            <ingredient>
+                <ingredient_name>Hot pepper</ingredient_name>
+                <ingredient_quantity>1 quantity</ingredient_quantity>
             </ingredient>
         </ingredients>
         <steps>
-            <step>Cook the quinoa according to package instructions and let cool.</step>
-            <step>In a bowl, mix the cooked quinoa, eggs, and flour.</step>
-            <step>Add the milk and mix until smooth.</step>
-            <step>Heat oil in a non-stick frying pan.</step>
-            <step>Pour small portions of the batter into the pan to form pancakes.</step>
-            <step>Cook for 2-3 minutes on each side until golden brown.</step>
-            <step>Serve warm with a topping of your choice.</step>
-        </steps>
+            <step>Cook the quinoa in boiling water for ten minutes.</step>
+            <step>Finely dice the garlic and onion.</step>
+            <step>Drain the quinoa and add the onions and garlic, along with the spices, thyme, grated Parmesan and olive oil.</step>
+            <step>Add the eggs and mix well.</step>
+            <step>Heat a frying pan with a drizzle of olive oil. Form the dough into small balls and cook for about 2 minutes on each side. </step>
+            </steps>
     </recipe>
     <recipe>
         <image src="https://girlcooksworld.com/wp-content/uploads/2019/04/IMG_4906.jpg" alt="Raspberry Foam"/>
         <name>Raspberry Foam</name>
         <RefCategorie RefCatID='LIG1'>Light</RefCategorie>
-        <budget devise="8 Eur"/>
+        <type>dessert</type>
+        <budget devise="20 Eur"/>
         <times>
-            <cookingTime unit="minutes">0</cookingTime>
-            <preparationTime unit="minutes">10</preparationTime>
+            <cookingTime unit="minutes">2</cookingTime>
+            <preparationTime unit="minutes">20</preparationTime>
         </times>
-        <level>easy</level>
-        <number_serving>4</number_serving>
+        <level>expert</level>
+        <number_serving>2</number_serving>
         <rating>5 stars</rating>
         <ingredients>
             <ingredient>
-                <ingredient_name>Raspberries</ingredient_name>
-                <ingredient_quantity>250 gram</ingredient_quantity>
+                <ingredient_name>Raspberry</ingredient_name>
+                <ingredient_quantity>86.5 gram</ingredient_quantity>
             </ingredient>
             <ingredient>
                 <ingredient_name>Sugar</ingredient_name>
-                <ingredient_quantity>50 gram</ingredient_quantity>
+                <ingredient_quantity>30 gram</ingredient_quantity>
             </ingredient>
             <ingredient>
-                <ingredient_name>Egg whites</ingredient_name>
-                <ingredient_quantity>2 quantity</ingredient_quantity>
+                <ingredient_name>Eggs</ingredient_name>
+                <ingredient_quantity>1 quantity</ingredient_quantity>
+            </ingredient>
+            <ingredient>
+                <ingredient_name>Lemon</ingredient_name>
+                <ingredient_quantity>0.1 liter</ingredient_quantity>
             </ingredient>
         </ingredients>
         <steps>
-            <step>Puree the raspberries with the sugar.</step>
-            <step>Whisk the egg whites until stiff peaks form.</step>
-            <step>Gently fold the raspberry puree into the egg whites.</step>
-            <step>Chill in the refrigerator for at least 1 hour before serving.</step>
-            <step>Serve in individual glasses, garnished with fresh raspberries or mint leaves.</step>
+            <step>Blend the raspberries and strain to remove the seeds.</step>
+            <step>Add a dash of lemon juice to soften the acidity.</step>
+            <step>Add 10 g of sugar to the raspberry pulp and blend. Set aside.
+</step>
+            <step>Start whipping the egg whites until stiff. At the same time, prepare a sugar syrup with 30 g water and 80 g sugar.</step>
+            <step>As soon as the mixture begins to bubble, stop cooking.</step>
+            <step>Drizzle in the sugar syrup while continuing to whisk the egg whites. The texture should be smooth and shiny.</step>
+            <step>Incorporate the raspberry pulp and mix again until you obtain an airy mousse.</step>   
         </steps>
     </recipe>
     <recipe>
         <image src="https://ovenschotels.com/wp-content/uploads/2021/09/witlofschotel-ham-kaas.jpg" alt="Chicory and Ham"/>
         <name>Chicory and Ham</name>
        <RefCategorie RefCatID='LIG2'>Light</RefCategorie>
-        <budget devise="12 Eur"/>
+        <type>main course</type>
+        <budget devise="10 Eur"/>
         <times>
-            <cookingTime unit="minutes">20</cookingTime>
-            <preparationTime unit="minutes">10</preparationTime>
+            <cookingTime unit="minutes">15</cookingTime>
+            <preparationTime unit="minutes">20</preparationTime>
         </times>
-        <level>easy</level>
+        <level>middle</level>
         <number_serving>4</number_serving>
-        <rating>4 stars</rating>
+        <rating>2 stars</rating>
         <ingredients>
             <ingredient>
                 <ingredient_name>Chicory</ingredient_name>
@@ -350,25 +382,33 @@
             </ingredient>
             <ingredient>
                 <ingredient_name>Ham</ingredient_name>
-                <ingredient_quantity>4 slice</ingredient_quantity>
+                <ingredient_quantity>300 gram</ingredient_quantity>
             </ingredient>
             <ingredient>
-                <ingredient_name>Butter</ingredient_name>
-                <ingredient_quantity>30 gram</ingredient_quantity>
+                <ingredient_name>Milk</ingredient_name>
+                <ingredient_quantity>0.1 liter</ingredient_quantity>
             </ingredient>
             <ingredient>
-                <ingredient_name>Cheese</ingredient_name>
-                <ingredient_quantity>100 gram</ingredient_quantity>
+                <ingredient_name>Olive oil</ingredient_name>
+                <ingredient_quantity>0.1 liter</ingredient_quantity>
+            </ingredient>
+            <ingredient>
+                <ingredient_name>Flour</ingredient_name>
+                <ingredient_quantity>10 gram</ingredient_quantity>
+            </ingredient>
+            <ingredient>
+                <ingredient_name>Gruyere</ingredient_name>
+                <ingredient_quantity>60 gram</ingredient_quantity>
             </ingredient>
         </ingredients>
         <steps>
-            <step>Preheat your oven to 180°C (gas mark 6).</step>
-            <step>Cook the chicory in salted water for 10 minutes, then drain.</step>
+            <step>Preheat oven to th.7 (210°C).</step>
+            <step>Steam endives</step>
             <step>Wrap each chicory in a slice of ham and place in a baking dish.</step>
-            <step>In a saucepan, melt the butter, add flour, and cook for a minute.</step>
-            <step>Gradually add milk, stirring constantly until thickened.</step>
-            <step>Pour the sauce over the chicory and ham, and sprinkle with grated cheese.</step>
-            <step>Bake in the oven for 20 minutes until golden brown.</step>
+            <step>Meanwhile, prepare the béchamel sauce: pour the cornflour into a saucepan and dissolve it first in a small amount of cold skimmed milk, then gradually add the rest of the milk while stirring. </step>
+            <step>Allow to thicken over low heat, stirring constantly. Add nutmeg and pepper. Set aside.</step>
+            <step>Wrap each endive in a slice of ham and place in a lightly oiled gratin dish. Cover with béchamel sauce and sprinkle with grated Gruyère.</step>
+            <step>Place in the oven for 15 to 20 min, then grill for a few minutes.</step>
         </steps>
     </recipe>
 </recipeBook>
