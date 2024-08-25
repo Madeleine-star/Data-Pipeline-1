@@ -31,7 +31,7 @@
                 <type>Starter</type>
             </recipe>
             <recipe>
-                <nameBoeuf Bourguignon</name>
+                <name>Boeuf Bourguignon</name>
                 <budget devise="Eur">60</budget>
                 <type>main course</type>
             </recipe>
