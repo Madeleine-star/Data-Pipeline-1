@@ -1,0 +1,67 @@
+<menuPlans>
+     Menu Plan 1
+    <menuPlan>
+        <totalBudget devise="Eur">55</totalBudget>
+        <recipes>
+            <recipe>
+                <name>Gaspacho</name>
+                <budget devise="Eur">25</budget>
+                <type>Starter</type>
+            </recipe>
+            <recipe>
+                <name>Wok of Chinese Noodles with Vegetables</name>
+                <budget devise="Eur">10</budget>
+                <type>Main Course</type>
+            </recipe>
+            <recipe>
+                <name>Raspberry foam</name>
+                <budget devise="Eur">20</budget>
+                <type>Dessert</type>
+            </recipe>
+        </recipes>
+    </menuPlan>
+
+     Menu Plan 2 
+    <menuPlan>
+        <totalBudget devise="Eur">75</totalBudget>
+        <recipes>
+            <recipe>
+                <name>Express tuna brandade</name>
+                <budget devise="Eur">5</budget>
+                <type>Starter</type>
+            </recipe>
+            <recipe>
+                <nameBoeuf Bourguignon</name>
+                <budget devise="Eur">60</budget>
+                <type>main course</type>
+            </recipe>
+            <recipe>
+                <name>Chocolate Cake</name>
+                <budget currency="Eur">10</budget>
+                <type>Dessert</type>
+            </recipe>
+        </recipes>
+    </menuPlan>
+
+     Menu Plan 3
+    <menuPlan>
+        <totalBudget devise="Eur">50</totalBudget>
+        <recipes>
+            <recipe>
+                <name>Quinoa pancake</name>
+                <budget devise="Eur">10</budget>
+                <type>entrance</type>
+            </recipe>
+            <recipe>
+                <name>Wok of chinese noodles with vegetables</name>
+                <budget devise="Eur">20</budget>
+                <type>Main Course</type>
+            </recipe>
+            <recipe>
+                <name>Raspberry Foam</name>
+                <budget devise="Eur">20</budget>
+                <type>Dessert</type>
+            </recipe>
+        </recipes>
+    </menuPlan>
+</menuPlans>
