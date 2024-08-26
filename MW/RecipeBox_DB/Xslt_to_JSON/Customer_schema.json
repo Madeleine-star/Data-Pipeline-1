@@ -1,64 +1,42 @@
-The aim of this file is to do a JSON schema which follow the data in the Customer.json file
-create by the JSON_customers.xsl file. 
-For the customer object, we choose to set the minimum of properties
-at 5 because we need at least the name, the full address and a way to contact it either by email or phone.
-They are also required except the phone number. 
-We don't allow here to add any array type because we want one element correspond to one information. 
-We constraint all the element in the object to have at least one item 
-
-
 {
 	"$schema":"http://json-schema.org/schema#",
 	"$id":"http://yourdomain.com/schemas/myschema.json",
 	"title":"Customer",
 	"description":"Customer from RecBox",
+	"minProperties":5,
+	"additionalProperties":{"type":"string"},
 	"type":"object",
 	"properties":{
-		"Customer":{"type":"object",
-		"minProperties":5,
-		"additionalProperties":{"type":"array"},
-		"properies":{
 			"Customer_Name":{
 				"description":"First and last name of the customer",
 				"type":"string",
-					"minItems":1
+				"exclusiveMinimum": 0
 			},
 			"Customer_Address":{
-				"description":"The street and the number, e.g. 19 liberty avenu"
+				"description":"The street and the number, e.g. 19 liberty avenu",
 				"type":"string",
 					"minItems":1
 			},
 			"Customer_City":{
-				"description":"The city and state initial, e.g. New York NY"
+				"description":"The city and state initial, e.g. New York NY",
 				"type":"string",
 					"minItems":1
 			},
 			"Customer_PostalCode":{
-				"description":"Postal code and country, e.g. 10461 USA"
+				"description":"Postal code and country, e.g. 10461 USA",
 				"type":"string",
 					"minItems":1
 			},
 			"Customer_PhoneNumber":{
-					"description":"Phone number"
+				"description":"Phone number",
 				"type":"string",
-				"pattern":"[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}",
+				"pattern":"/^(([0-9]{2})-([0-9]{2})-([0-9]{2})-([0-9]{2})-([0-9]{2}))$/"
 			},
 			"Customer_email":{
-					"description":"Customer email address, e.g. AlexisW@hotmail.com"
+					"description":"Customer email address, e.g. AlexisW@hotmail.com",
 				"type":"string"
 			}
-			"required":["Customer_Name","Customer_Address","Customer_City","Customer_PostalCode",
-			"Customer_email"]
-		}
-		}
-		
-		}
-		
-		
-	}
-	
-	
-	
-	
-	
+	},
+	"required":["Customer_Name","Customer_Address","Customer_City","Customer_PostalCode"],
+	"dependencies":{"Customer_email":["Customer_Name"], "Customer_PhoneNumber":["Customer_Name"]}
 }

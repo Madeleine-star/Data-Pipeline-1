@@ -39,7 +39,7 @@ meaning the sum of the cooking and preparation time) as well as the budget for i
 						<xsl:value-of select="preparation_time"/>
 					</xsl:variable>
 					<!--by converting the variable in number that allow us to compute
-					the some of them and return the total time for the recipe-->
+					the sum of them and return the total time for the recipe-->
 					<xsl:value-of select="number($cook_time)+number($prep_time)"/>
 					<xsl:text> </xsl:text>
 					<xsl:value-of select="cooking_time/@unit"/>
@@ -47,7 +47,6 @@ meaning the sum of the cooking and preparation time) as well as the budget for i
 				<xsl:element name="Budget">
 					<xsl:value-of select='Budget'/><xsl:text> </xsl:text>
 					<xsl:value-of select="Budget/@devise"/>
-					<!--find the way to add the attribute after the budget-->
 				</xsl:element>
 			</xsl:if>
 		</xsl:for-each>

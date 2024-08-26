@@ -195,7 +195,7 @@ of the price. It should look like this:
 	</xs:complexType>
 	<xs:simpleType name='recType'>
 		<xs:restriction base='xs:string'>
-			<xs:enumeration value='entrance'/>
+			<xs:enumeration value='starter'/>
 			<xs:enumeration value='main course'/>
 			<xs:enumeration value='dessert'/>
 		</xs:restriction>
