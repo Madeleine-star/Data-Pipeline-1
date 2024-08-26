@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipe_box_database_schemaV4.xsd">
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="recipe_box_database_schemaV6.xsd">
 	<recipes>
 		<recipe>
 			<name>Boeuf Bourguignon</name>
@@ -201,7 +202,7 @@ Serve hot in bowls with chopsticks.
 				<ingredient_quantity unit='liter'>0.15</ingredient_quantity>
 			</ingredient_rec>
 			<RefCategorie RefCatID='WOR2'>World flavors</RefCategorie>
-			<type>main course</type>
+			<type>starter</type>
 			<Budget devise='Eur'>25</Budget>
 			<cooking_time unit='min'>0</cooking_time>
 			<preparation_time unit='min'>15</preparation_time>
@@ -235,7 +236,7 @@ Add ice cubes just before serving.
 				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
 			</ingredient_rec>
 			<RefCategorie RefCatID='EXP1'>Express</RefCategorie>
-			<type>main course</type>
+			<type>starter</type>
 			<Budget devise='Eur'>5</Budget>
 			<cooking_time unit='min'>10</cooking_time>
 			<preparation_time unit='min'>20</preparation_time>
@@ -726,6 +727,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 				<recipe_price>20</recipe_price>
 			</rec_list>
 			<number_delivered>1</number_delivered>
+			<delivery_frequency>daily</delivery_frequency>
 			<delivery_date>2024-09-29</delivery_date>
 		</invoice>
 	</Invoices>
