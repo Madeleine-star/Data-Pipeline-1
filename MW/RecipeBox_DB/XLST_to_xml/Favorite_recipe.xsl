@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-	<xsl:output method='xml' indent='yes'/>
+	<xsl:output method='xml' indent='yes'/><!--Specify the type of file for the XSLT output, the indent="yes" allow to put indentation in the xml result file-->
 	<!-- 
 This scenario aim to create an xml file with all the recipe in the database with a rating equal or 
 greater than 4. for the recipe we will return the name, the category, the level, the total time (
@@ -12,15 +12,14 @@ meaning the sum of the cooking and preparation time) as well as the budget for i
 		<xsl:text>Favorite Recipes</xsl:text>
 		<xsl:text>
 </xsl:text>
-		<xsl:for-each select="/Root/recipes/recipe">
-			<xsl:if test="rating &gt; 3">
-				<!--Return all the recipe with a rating superior to 3-->
+		<xsl:for-each select="/Root/recipes/recipe"><!--This declared a loop to get the elements recipe from the recipes part of the database-->
+			<xsl:if test="rating &gt; 3"><!--This put a condition for select the recipe in the database for returning only the recipe with a rating higher than 3-->
 				<xsl:element name="Recipe">
 					<xsl:value-of select="name"/>
 				</xsl:element>
 				<xsl:element name="Note">
-					<xsl:value-of select="rating[1]"/>
-					<xsl:text> </xsl:text>
+					<xsl:value-of select="rating[1]"/><!--Allow to select the first rating node in the recipe of the loop iteration, this is specified by the number inside [ ] after the node name-->
+					<xsl:text> </xsl:text><!--Ensure to keep a white space between the two elements-->
 					<xsl:value-of select="rating[2]"/>
 				</xsl:element>
 				<xsl:element name="Category">
@@ -46,7 +45,7 @@ meaning the sum of the cooking and preparation time) as well as the budget for i
 				</xsl:element>
 				<xsl:element name="Budget">
 					<xsl:value-of select='Budget'/><xsl:text> </xsl:text>
-					<xsl:value-of select="Budget/@devise"/>
+					<xsl:value-of select="Budget/@devise"/><!--The /@ specified we want to return the value of the attribute attached at the node-->
 				</xsl:element>
 			</xsl:if>
 		</xsl:for-each>

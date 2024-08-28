@@ -1,28 +1,28 @@
+
 {
-    "Customer": [
-        {
-            "Customer_Name": "Charles Dupont",
-            "Customer_Address": "19 liberty avenue ",
-            "Customer_City": "New York NY",
-            "Customer_PostalCode": " 10461 USA",
-            "Customer_PhoneNumber": "84-56-89-34-17",
-            "Customer_email": "CharlesD@gmail.com"
-        },
-        {
-            "Customer_Name": "Senera Durand",
-            "Customer_Address": "18 union road ",
-            "Customer_City": "Tarrytown NY",
-            "Customer_PostalCode": " 10863 USA",
-            "Customer_PhoneNumber": "98-65-98-17-34",
-            "Customer_email": "SeneraD@yahoo.com"
-        },
-        {
-            "Customer_Name": "Alexis Wimbledon",
-            "Customer_Address": "509 toto avenue ",
-            "Customer_City": "Buffalo",
-            "Customer_PostalCode": "NY 49863 USA",
-            "Customer_PhoneNumber": "52-90-36-71-43",
-            "Customer_email": "AlexisW@hotmail.com"
-        }
-    ]
+"Customer": [
+
+{"Customer_Name":"Charles Dupont",
+"Customer_Address":"19 liberty avenue ",
+"Customer_City":"New York NY",
+"Customer_PostalCode":" 10461 USA",
+"Customer_PhoneNumber":"84-56-89-34-17",
+"Customer_email":"CharlesD@gmail.com"}
+,
+{"Customer_Name":"Senera Durand",
+"Customer_Address":"18 union road ",
+"Customer_City":"Tarrytown NY",
+"Customer_PostalCode":" 10863 USA",
+"Customer_PhoneNumber":"98-65-98-17-34",
+"Customer_email":"SeneraD@yahoo.com"}
+,
+{"Customer_Name":"Alexis Wimbledon",
+"Customer_Address":"509 toto avenue ",
+"Customer_City":"Buffalo",
+"Customer_PostalCode":"NY 49863 USA",
+"Customer_PhoneNumber":"52-90-36-71-43",
+"Customer_email":"AlexisW@hotmail.com"}
+
+]
 }
+	
