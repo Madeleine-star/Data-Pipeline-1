@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name='Root'>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name='Favorite' type='FavoriteType' minOccurs='0' maxOccurs='unbounded'/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name='FavoriteType'>
+		<xs:sequence>
+			<xs:element name='Recipe' type='xs:string' minOccurs='0' maxOccurs='unbounded'/>
+			<xs:element name='Note' type='xs:string' minOccurs='0' maxOccurs='unbounded'/>
+			<xs:element name='Category' type='xs:string' minOccurs='0' maxOccurs='unbounded'/>
+			<xs:element name='Level' type='xs:string' minOccurs='0' maxOccurs='unbounded'/>
+			<xs:element name='Total_time' type='xs:string' minOccurs='0' maxOccurs='unbounded'/>
+			<xs:element name='Budget' type='xs:string' minOccurs='0' maxOccurs='unbounded'/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
