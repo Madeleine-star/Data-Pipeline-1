@@ -10,18 +10,29 @@ In the JSON file we will only have the data about the customer of the compagny.
 		<!--We declared in first match="/" because we want the template is apply to all the xml hierarchie because the / symbolize the root element-->
 {<!--the JSON file need { } to declared the object which is the main structure of the JSON-->
 "Customer": [<!--This allow us to create an array inside the main JSON object-->
-		<xsl:apply-templates select="Root/Customers/Customer"/>
+		<!--<xsl:apply-templates select='Root/Customers'/>-->
+		<xsl:apply-templates select="Root/Customers/Customer">
+					<xsl:sort select="CustomerAddress[2]" order='ascending'/><!--Here we sort each JSON object create by the template by the city name in alphabetic order
+					this allow to group all the customers by cities-->
+		</xsl:apply-templates>
 ]
 }
 	</xsl:template>
+	
+	<xsl:templates match='Root/Customers/Customer'>
+
+	</xsl:templates>
+	
 	<xsl:template match="Root/Customers/Customer">
-		<!--Here we declare a second object which will contains the value of the array, for each customer a new object is created-->
 {"Customer_Name":"<xsl:value-of select="CustomerName"/>",
 "Customer_Address":"<xsl:value-of select="CustomerAddress[1]"/>",
 "Customer_City":"<xsl:value-of select="CustomerAddress[2]"/>",
 "Customer_PostalCode":"<xsl:value-of select="CustomerAddress[3]"/>",
 "Customer_PhoneNumber":"<xsl:value-of select="Phone_number"/>",
-"Customer_email":"<xsl:value-of select="Cust_email"/>"}
+"Customer_email":"<xsl:value-of select="Cust_email"/>"}	
+			<!--Here we declare a second object which will contains the value of the array, for each customer a new object is created-->
+
+
 		<xsl:if test="position() != last()">,</xsl:if>
 		<!--Because in a JSON file the last element must don't have a comma after the curlybracket we used the if condition to test the iteration position and 
 if it is the last the parser don't put the comma, if not it will put a comma-->

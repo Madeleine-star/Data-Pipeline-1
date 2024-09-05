@@ -16,12 +16,14 @@ In the JSON file we will only have the data about the customer of the compagny.
 	</xsl:template>
 	<xsl:template match="Root/Customers/Customer">
 		<!--Here we declare a second object which will contains the value of the array, for each customer a new object is created-->
+		<xsl:for-each select='Root/Customers/Customer'>
 {"Customer_Name":"<xsl:value-of select="CustomerName"/>",
 "Customer_Address":"<xsl:value-of select="CustomerAddress[1]"/>",
 "Customer_City":"<xsl:value-of select="CustomerAddress[2]"/>",
 "Customer_PostalCode":"<xsl:value-of select="CustomerAddress[3]"/>",
 "Customer_PhoneNumber":"<xsl:value-of select="Phone_number"/>",
 "Customer_email":"<xsl:value-of select="Cust_email"/>"}
+</xsl:for-each>
 		<xsl:if test="position() != last()">,</xsl:if>
 		<!--Because in a JSON file the last element must don't have a comma after the curlybracket we used the if condition to test the iteration position and 
 if it is the last the parser don't put the comma, if not it will put a comma-->

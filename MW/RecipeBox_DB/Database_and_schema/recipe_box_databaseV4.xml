@@ -711,6 +711,14 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<Cust_email>AlexisW@hotmail.com</Cust_email>
 			<Invoice CustInvID='AW01'/>
 		</Customer>
+		<Customer>
+			<CustomerName>Caroline Start</CustomerName>
+			<CustomerAddress>344 MainStreet </CustomerAddress>
+			<CustomerAddress>New York NY</CustomerAddress>
+			<CustomerAddress> 10461 USA</CustomerAddress>
+			<Phone_number>48-65-98-43-71</Phone_number>
+			<Cust_email>CarolineS@gmail.com</Cust_email>
+		</Customer>
 	</Customers>
 	<Invoices>
 		<invoice invoiceID='AW01'>
