@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding='UTF-8'?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	<xs:element name='Root'>
-		<xs:complexType>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--This start the schema declaration-->
+	<xs:element name='Root'><!--This declare the main element of the xml file-->
+		<xs:complexType><!--Here we declared the element inside the main element-->
 			<xs:sequence>
 				<xs:element name='Favorite' type='FavoriteType' minOccurs='0' maxOccurs='unbounded'/>
+				<!--We choose to allow this element to be empty because the xml file is the output 
+				of a bigger another xml file and the stylesheet transformed only a part of the
+				total xml creating empty favorite element-->
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:complexType name='FavoriteType'>
+	<xs:complexType name='FavoriteType'><!--Here we declared the element contain in Favorite-->
 		<xs:sequence>
 			<xs:element name='Recipe' type='xs:string' minOccurs='0' maxOccurs='unbounded'/>
 			<xs:element name='Note' type='xs:string' minOccurs='0' maxOccurs='unbounded'/>
