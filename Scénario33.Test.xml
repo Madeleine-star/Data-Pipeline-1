@@ -50,7 +50,7 @@
             <recipe>
                 <name>Quinoa pancake</name>
                 <budget devise="Eur">10</budget>
-                <type>entrance</type>
+                <type>Starter</type>
             </recipe>
             <recipe>
                 <name>Wok of chinese noodles with vegetables</name>
