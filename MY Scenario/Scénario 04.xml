@@ -1,59 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root>
+  <!-- Root element containing all recipes -->
+
   <recipes>
-    <!-- Recipe 1 -->
+    <!-- Container for all recipe elements -->
+
+    <!-- Recipe 1: Boeuf Bourguignon -->
     <recipe>
+      <!-- Name of the recipe -->
       <name>Boeuf Bourguignon</name>
+      <!-- Description of the recipe -->
       <description>Beef stew slow-cooked with red wine and mushrooms.</description>
+      <!-- Category of the recipe -->
       <category>Traditional</category>
     </recipe>
 
-    <!-- Recipe 2 -->
+    <!-- Recipe 2: Chocolate Cake -->
     <recipe>
+      <!-- Name of the recipe -->
       <name>Chocolate Cake</name>
+      <!-- Description of the recipe -->
       <description>Moist chocolate cake.</description>
+      <!-- Category of the recipe -->
       <category>Traditional</category>
     </recipe>
 
-    <!-- Recipe 3 -->
+    <!-- Recipe 3: Express Tuna Brandade -->
     <recipe>
+      <!-- Name of the recipe -->
       <name>Express Tuna Brandade</name>
+      <!-- Description of the recipe -->
       <description>Quickly prepared tuna brandade.</description>
+      <!-- Category of the recipe -->
       <category>Express</category>
     </recipe>
 
-    <!-- Recipe 4 -->
+    <!-- Recipe 4: Quinoa Pancake -->
     <recipe>
+      <!-- Name of the recipe -->
       <name>Quinoa Pancake</name>
+      <!-- Description of the recipe -->
       <description>Light quinoa pancake.</description>
+      <!-- Category of the recipe -->
       <category>Express</category>
     </recipe>
 
-    <!-- Recipe 5 -->
+    <!-- Recipe 5: Wok of Chinese Noodles with Vegetables -->
     <recipe>
+      <!-- Name of the recipe -->
       <name>Wok of Chinese Noodles with Vegetables</name>
+      <!-- Description of the recipe -->
       <description>Chinese noodles stir-fried with assorted vegetables.</description>
+      <!-- Category of the recipe -->
       <category>World flavors</category>
     </recipe>
 
-    <!-- Recipe 6 -->
+    <!-- Recipe 6: Gazpacho -->
     <recipe>
+      <!-- Name of the recipe -->
       <name>Gazpacho</name>
+      <!-- Description of the recipe -->
       <description>Cold vegetable soup, typical of Spanish cuisine.</description>
+      <!-- Category of the recipe -->
       <category>World flavors</category>
     </recipe>
 
-    <!-- Recipe 7 -->
+    <!-- Recipe 7: Raspberry Foam -->
     <recipe>
+      <!-- Name of the recipe -->
       <name>Raspberry Foam</name>
+      <!-- Description of the recipe -->
       <description>Light raspberry mousse.</description>
+      <!-- Category of the recipe -->
       <category>Light</category>
     </recipe>
 
-    <!-- Recipe 8 -->
+    <!-- Recipe 8: Chicory and Ham -->
     <recipe>
+      <!-- Name of the recipe -->
       <name>Chicory and Ham</name>
+      <!-- Description of the recipe -->
       <description>Endives with ham, baked with cheese.</description>
+      <!-- Category of the recipe -->
       <category>Light</category>
     </recipe>
   </recipes>
