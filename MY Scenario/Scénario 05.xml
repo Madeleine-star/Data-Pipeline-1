@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Scenario Description: Customer Order Invoice
+
+Purpose: This scenario generates an HTML invoice for each customer based on XML order data. Each invoice includes customer details, ordered items, total price, and delivery date.
+
+Formatting Addresses: The updated XML format assumes the address is a single string, so the XSLT code outputs it directly without additional concatenation.
+
+Clickable Email Links: The XSLT stylesheet ensures that email addresses are displayed as clickable links for easy access.
+
+Functionality: The XSLT stylesheet transforms XML data into a well-organized HTML document. Customer addresses are presented as single, formatted strings for clarity, and email addresses are clickable. Headers separate each customer’s invoice, making the document readable and well-structured for both printing and online viewing.
+
+The final HTML document is designed to present the information clearly and professionally, suitable for use as an invoice.
+-->
+
 <Orders>
   <!-- Order details for Charles Dupont -->
+  <!-- This section contains all necessary information for Charles Dupont's order. -->
   <Customer>
     <CustomerName>Charles Dupont</CustomerName>
     <CustomerAddress>19 Liberty Avenue, New York, NY 10461, USA</CustomerAddress>
@@ -14,6 +29,7 @@
   </Customer>
 
   <!-- Order details for Senera Durand -->
+  <!-- This section includes the order details for Senera Durand, another customer. -->
   <Customer>
     <CustomerName>Senera Durand</CustomerName>
     <CustomerAddress>18 Union Road, Tarrytown, NY 10863, USA</CustomerAddress>
@@ -27,6 +43,7 @@
   </Customer>
 
   <!-- Order details for Alexis Wimbledon -->
+  <!-- This section contains information about Alexis Wimbledon’s order. -->
   <Customer>
     <CustomerName>Alexis Wimbledon</CustomerName>
     <CustomerAddress>509 Toto Avenue, Buffalo, NY 49863, USA</CustomerAddress>
@@ -36,6 +53,20 @@
       <item>Raspberry foam</item>
     </recipelist>
     <order_price>20</order_price>
+    <delivery_date>2024-09-29</delivery_date>
+  </Customer>
+
+  <!-- Order details for Caroline Start -->
+  <!-- This section includes the details for Caroline Start’s order, including her address and items. -->
+  <Customer>
+    <CustomerName>Caroline Start</CustomerName>
+    <CustomerAddress>344 MainStreet, New York, NY 10461, USA</CustomerAddress>
+    <Phone_number>48-65-98-43-71</Phone_number>
+    <Cust_email>CarolineS@gmail.com</Cust_email>
+    <recipelist>
+      <item>Quinoa pancake</item>
+    </recipelist>
+    <order_price>15</order_price>
     <delivery_date>2024-09-29</delivery_date>
   </Customer>
 </Orders>
