@@ -437,7 +437,7 @@ of the price. It should look like this:
 		<xs:attribute name='invoiceID' type='CatIDType'/>
 		<!--This attribute will follow the same pattern as the one define by CatIDType
 			here it should be the initial of the customer follow by the invoice number for example
-			the first order of Alexis Wimbledon will be AW01, the 10th order of Charles Dupont will be 
+			the first invoices of Alexis Wimbledon will be AW01, the 10th order of Charles Dupont will be 
 			CD10-->
 	</xs:complexType>
 	<!--

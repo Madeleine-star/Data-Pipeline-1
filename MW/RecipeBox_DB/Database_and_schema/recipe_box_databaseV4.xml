@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="recipe_box_database_schemaV6.xsd">
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipe_box_database_schemaV6.xsd">
 	<recipes>
 		<recipe>
 			<name>Boeuf Bourguignon</name>
@@ -693,6 +692,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<CustomerAddress> 10461 USA</CustomerAddress>
 			<Phone_number>84-56-89-34-17</Phone_number>
 			<Cust_email>CharlesD@gmail.com</Cust_email>
+			<Invoice CustInvID='CD01'/>			
 		</Customer>
 		<Customer>
 			<CustomerName>Senera Durand</CustomerName>
@@ -701,6 +701,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<CustomerAddress> 10863 USA</CustomerAddress>
 			<Phone_number>98-65-98-17-34</Phone_number>
 			<Cust_email>SeneraD@yahoo.com</Cust_email>
+			<Invoice CustInvID='SD01'/>
 		</Customer>
 		<Customer>
 			<CustomerName>Alexis Wimbledon</CustomerName>
@@ -718,25 +719,45 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<CustomerAddress> 10461 USA</CustomerAddress>
 			<Phone_number>48-65-98-43-71</Phone_number>
 			<Cust_email>CarolineS@gmail.com</Cust_email>
+			<Invoice CustInvID='CS01'/>
 		</Customer>
 	</Customers>
 	<Invoices>
-		<invoice invoiceID='AW01'>
+		<invoice invoiceID='CD01'>
 			<rec_list>
 				<recipe>Gaspacho</recipe>
 				<recipe_price>25</recipe_price>
 			</rec_list>
+			<number_delivered>1</number_delivered>
+			<delivery_frequency>daily</delivery_frequency>
+			<delivery_date>2024-09-29</delivery_date>
+		</invoice>
+		<invoice invoiceID='SD01'>
 			<rec_list>
 				<recipe>Wok of chinese noodles with vegetables </recipe>
 				<recipe_price>20</recipe_price>
 			</rec_list>
+			<number_delivered>3</number_delivered>
+			<delivery_frequency>twice week</delivery_frequency>
+			<delivery_date>2023-08-08</delivery_date>
+		</invoice>
+		<invoice invoiceID='AW01'>
 			<rec_list>
 				<recipe>Raspberry foam</recipe>
 				<recipe_price>20</recipe_price>
 			</rec_list>
 			<number_delivered>1</number_delivered>
 			<delivery_frequency>daily</delivery_frequency>
-			<delivery_date>2024-09-29</delivery_date>
+			<delivery_date>2024-12-21</delivery_date>
+		</invoice>
+		<invoice invoiceID='CS01'>
+			<rec_list>
+				<recipe>Quinoa pancake</recipe>
+				<recipe_price>10</recipe_price>
+			</rec_list>
+			<number_delivered>2</number_delivered>
+			<delivery_frequency>once week</delivery_frequency>
+			<delivery_date>2024-04-03</delivery_date>
 		</invoice>
 	</Invoices>
 	<Categories CatID='TRA1'>
