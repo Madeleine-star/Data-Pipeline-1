@@ -15,7 +15,7 @@
 
         <times> <!-- Cooking and preparation times -->
 
-            <cookingTime unit="hours">1</cookingTime  <!-- Cooking time and unit -->
+            <cookingTime unit="hours">1</cookingTime>  <!-- Cooking time and unit -->
             <preparationTime unit="hours">4</preparationTime>  <!-- Preparation time and unit -->
         </times>
         <level>easy</level>  <!-- Difficulty level -->
