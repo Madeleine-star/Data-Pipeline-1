@@ -1,82 +1,104 @@
- <!-- Main section containing all the menu plans -->
+<?xml version="1.0" encoding="UTF-8"?>
 <menuPlans>
-
-  <!-- Start of the first menu plan -->
-     Menu Plan 1
+    <!-- Main section containing all the menu plans -->
+    
+    <!-- Start of the first menu plan -->
     <menuPlan>
-        <totalBudget devise="Eur">55</totalBudget>   <!-- Total budget for menu plan 1 (in Euros) -->
-
-        <recipes>   <!-- List of recipes for this menu plan -->
+        <totalBudget devise="Eur">55</totalBudget>
+        <!-- Total budget for menu plan 1 (in Euros) -->
+        
+        <recipes>
+            <!-- List of recipes for this menu plan -->
             <recipe>
-  <!-- First recipe: Gaspacho -->
-                <name>Gaspacho</name>    <!-- Name of the recipe: Gaspacho -->
-                <budget devise="Eur">25</budget>   <!-- Budget for this recipe (in Euros) -->
-                <type>Starter</type>  <!-- Type of recipe: Starter -->
+                <!-- First recipe: Gaspacho -->
+                <name>Gaspacho</name>
+                <budget devise="Eur">25</budget>
+                <!-- Budget for this recipe (in Euros) -->
+                <type>Starter</type>
+                <!-- Type of recipe: Starter -->
             </recipe>
             <recipe>
-  <!-- Second recipe: Wok of Chinese Noodles with Vegetables -->
-                <name>Wok of Chinese Noodles with Vegetables</name>   <!-- Name of the recipe: Wok of Chinese Noodles with Vegetables -->
-                <budget devise="Eur">10</budget>  <!-- Budget for this recipe (in Euros) -->
-                <type>Main Course</type>   <!-- Type of recipe: Main Course -->
+                <!-- Second recipe: Wok of Chinese Noodles with Vegetables -->
+                <name>Wok of Chinese Noodles with Vegetables</name>
+                <budget devise="Eur">10</budget>
+                <!-- Budget for this recipe (in Euros) -->
+                <type>Main Course</type>
+                <!-- Type of recipe: Main Course -->
             </recipe>
             <recipe>
-  <!-- Third recipe: Raspberry foam -->
-                <name>Raspberry foam</name>   <!-- Name of the recipe:  Raspberry foam -->
-                <budget devise="Eur">20</budget>   <!-- Budget for this recipe (in Euros) -->
-                <type>Dessert</type>   <!-- Type of dish: Dessert -->
+                <!-- Third recipe: Raspberry foam -->
+                <name>Raspberry foam</name>
+                <budget devise="Eur">20</budget>
+                <!-- Budget for this recipe (in Euros) -->
+                <type>Dessert</type>
+                <!-- Type of dish: Dessert -->
             </recipe>
         </recipes>
     </menuPlan>
-
-     Menu Plan 2 
- <!-- Start of the second menu plan -->
+    
+    <!-- Start of the second menu plan -->
     <menuPlan>
-        <totalBudget devise="Eur">75</totalBudget>   <!-- Total budget for menu plan 2 (in Euros) -->
+        <totalBudget devise="Eur">75</totalBudget>
+        <!-- Total budget for menu plan 2 (in Euros) -->
+        
         <recipes>
- <!-- List of recipes for this menu plan -->
+            <!-- List of recipes for this menu plan -->
             <recipe>
-    <!-- First recipe: Express tuna brandade --> 
-                <name>Express tuna brandade</name>   <!-- Name of the recipe:  Express tuna brandade -->
-                <budget devise="Eur">5</budget>   <!-- Budget for this recipe (in Euros) -->
-                <type>Starter</type>     <!-- Type of dish: Starter -->
+                <!-- First recipe: Express tuna brandade -->
+                <name>Express tuna brandade</name>
+                <budget devise="Eur">5</budget>
+                <!-- Budget for this recipe (in Euros) -->
+                <type>Starter</type>
+                <!-- Type of dish: Starter -->
             </recipe>
             <recipe>
-   <!-- Second recipe: Boeuf Bourguignon -->
-                <name>Boeuf Bourguignon</name>   <!-- Name of the recipe: Boeuf Bourguignon -->
-                <budget devise="Eur">60</budget>   <!-- Budget for this recipe (in Euros) -->
-                <type>main course</type>   <!-- Type of dish: Main Course -->  
+                <!-- Second recipe: Boeuf Bourguignon -->
+                <name>Boeuf Bourguignon</name>
+                <budget devise="Eur">60</budget>
+                <!-- Budget for this recipe (in Euros) -->
+                <type>Main Course</type>
+                <!-- Type of dish: Main Course -->
             </recipe>
             <recipe>
-   <!-- Third recipe: Chocolate Cake -->
-                <name>Chocolate Cake</name>   <!-- Name of the recipe:Chocolate Cake -->
-                <budget currency="Eur">10</budget>   <!-- Budget for this recipe (in Euros) -->
-                <type>Dessert</type>   <!-- Type of dish: Dessert -->
+                <!-- Third recipe: Chocolate Cake -->
+                <name>Chocolate Cake</name>
+                <budget devise="Eur">10</budget>
+                <!-- Budget for this recipe (in Euros) -->
+                <type>Dessert</type>
+                <!-- Type of dish: Dessert -->
             </recipe>
         </recipes>
     </menuPlan>
-
-     Menu Plan 3
+    
+    <!-- Start of the third menu plan -->
     <menuPlan>
- <!-- Start of the third menu plan -->
-        <totalBudget devise="Eur">50</totalBudget>  <!-- Total budget for menu plan 3 (in Euros) -->
+        <totalBudget devise="Eur">50</totalBudget>
+        <!-- Total budget for menu plan 3 (in Euros) -->
+        
         <recipes>
             <recipe>
-    <!-- First recipe: Quinoa pancake -->
-                <name>Quinoa pancake</name> <!-- Name of the recipe:Quinoa pancake-->
-                <budget devise="Eur">10</budget>   <!-- Budget for this recipe (in Euros) -->
-                <type>Starter</type>    <!-- Type of dish: Starter -->
+                <!-- First recipe: Quinoa pancake -->
+                <name>Quinoa pancake</name>
+                <budget devise="Eur">10</budget>
+                <!-- Budget for this recipe (in Euros) -->
+                <type>Starter</type>
+                <!-- Type of dish: Starter -->
             </recipe>
             <recipe>
-   <!-- Second recipe: Wok of Chinese noodles with vegetables
-                <name>Wok of chinese noodles with vegetables</name>   <!-- Name of the recipe: Wok of Chinese noodles with vegetables-->
-                <budget devise="Eur">20</budget>   <!-- Budget for this recipe (in Euros) -->
-                <type>Main Course</type>   <!-- Type of dish: Main Course -->
+                <!-- Second recipe: Wok of Chinese noodles with vegetables -->
+                <name>Wok of Chinese noodles with vegetables</name>
+                <budget devise="Eur">20</budget>
+                <!-- Budget for this recipe (in Euros) -->
+                <type>Main Course</type>
+                <!-- Type of dish: Main Course -->
             </recipe>
             <recipe>
-  <!-- Third recipe: Raspberry Foam -->
-                <name>Raspberry Foam</name>   <!-- Name of the recipe:Raspberry Foam -->
-                <budget devise="Eur">20</budget>  <!-- Budget for this recipe (in Euros) --> 
-                <type>Dessert</type>  <!-- Type of dish: Dessert -->
+                <!-- Third recipe: Raspberry Foam -->
+                <name>Raspberry Foam</name>
+                <budget devise="Eur">20</budget>
+                <!-- Budget for this recipe (in Euros) -->
+                <type>Dessert</type>
+                <!-- Type of dish: Dessert -->
             </recipe>
         </recipes>
     </menuPlan>
