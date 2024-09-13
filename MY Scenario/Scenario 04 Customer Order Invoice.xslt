@@ -2,15 +2,10 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <!--
   Stylesheet Description: Transforms XML order data into HTML invoices.
-
-  Purpose: This XSLT stylesheet converts XML data into well-formatted HTML documents for each customer. It generates an invoice with customer details, ordered items, total price, and delivery date.
-
-  Formatting: The stylesheet assumes customer addresses are already in a single formatted string, so it directly outputs them. Email addresses are displayed as plain text; consider adding a hyperlink format if clickable links are needed.
-
-  Functionality: The <xsl:for-each> loop processes each <Customer> element individually. Each customer’s details are presented in HTML format, with sections clearly separated for readability.
   -->
 
   <xsl:output method="html" indent="yes"/>
+  <!-- Output the transformed XML as HTML with indentation for readability -->
 
   <!-- Main template that matches the root of the XML document -->
   <xsl:template match="/">
@@ -18,8 +13,12 @@
       <body>
         <!-- Loop through each <Customer> element to generate individual invoices -->
         <xsl:for-each select="//Customer">
+          <!-- Display customer invoice ID -->
+          <!-- @invoiceID refers to the attribute invoiceID of the current <Customer> element -->
+          <h1>Invoice ID: <xsl:value-of select="@invoiceID"/></h1>
+
           <!-- Display customer name as a header -->
-          <h1>Order details for <xsl:value-of select="CustomerName"/></h1>
+          <h2>Order details for <xsl:value-of select="CustomerName"/></h2>
 
           <!-- Display customer address -->
           <p>Address: <xsl:value-of select="CustomerAddress"/></p>
@@ -31,7 +30,7 @@
           <p>Email: <xsl:value-of select="Cust_email"/></p>
 
           <!-- Section header for ordered items -->
-          <h2>Ordered items:</h2>
+          <h3>Ordered items:</h3>
           <ul>
             <!-- Loop through each item in the recipelist and list them -->
             <xsl:for-each select="recipelist/item">
