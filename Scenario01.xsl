@@ -23,7 +23,7 @@
             <body>
                 <h1>Recipe Book</h1>   <!-- Main title of the HTML page -->
 
-                <xsl:for-each select="recipeBook/recipe">  <!-- Loop through each recipe in the XML document -->
+                <xsl:for-each select="Root/recipe">  <!-- Loop through each recipe in the XML document -->
 
                     <div class="recipe">  <!-- Div containing information for a single recipe -->
 
@@ -37,9 +37,9 @@
 
                         <p><strong>Budget:</strong> <xsl:value-of select="budget/@devise"/></p>  <!-- Displays the budget and devise -->
 
-                        <p><strong>Cooking Time:</strong> <xsl:value-of select="times/cookingTime"/> <xsl:value-of select="times/cookingTime/@unit"/></p>  <!-- Displays cooking time and unit -->
+                        <p><strong>cooking_time:</strong> <xsl:value-of select="times/cookingTime"/> <xsl:value-of select="times/cookingTime/@unit"/></p>  <!-- Displays cooking time and unit -->
 
-                        <p><strong>Preparation Time:</strong> <xsl:value-of select="times/preparationTime"/> <xsl:value-of select="times/preparationTime/@unit"/></p>  <!-- Displays preparation time and unit -->
+                        <p><strong>preparation_time:</strong> <xsl:value-of select="times/preparationTime"/> <xsl:value-of select="times/preparationTime/@unit"/></p>  <!-- Displays preparation time and unit -->
 
                         <p><strong>Level:</strong> <xsl:value-of select="level"/></p>   <!-- Displays the difficulty level -->
 
@@ -47,10 +47,10 @@
 
                         <p><strong>Rating:</strong> <xsl:value-of select="rating"/></p>  <!-- Displays the recipe rating -->
                         
-                        <h3>Ingredients:</h3>  <!-- Title for the ingredients section -->
+                        <h3>Ingredient:</h3>  <!-- Title for the ingredients section -->
 
                         <ul class="ingredients">
-                            <xsl:for-each select="ingredients/ingredient">  <!-- Loop through each ingredient in the recipe -->
+                            <xsl:for-each select="ingredient_rec/ingredient">  <!-- Loop through each ingredient in the recipe -->
 
                                 <li><xsl:value-of select="ingredient_name"/>: <xsl:value-of select="ingredient_quantity"/></li>  <!-- Displays the ingredient name and quantity -->
 
@@ -59,8 +59,8 @@
 
                         <h3>Steps:</h3>  <!-- Title for the steps section -->
 
-                        <ol class="steps">
-                            <xsl:for-each select="steps/step">  <!-- Loop through each step in the recipe -->
+                        <ol class="step">
+                            <xsl:for-each select="step/step">  <!-- Loop through each step in the recipe -->
 
                                 <li><xsl:value-of select="."/></li>  <!-- Displays the content of each step -->
                             </xsl:for-each>
