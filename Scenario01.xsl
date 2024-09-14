@@ -37,9 +37,9 @@
 
                         <p><strong>Budget:</strong> <xsl:value-of select="budget/@devise"/></p>  <!-- Displays the budget and devise -->
 
-                        <p><strong>cooking_time:</strong> <xsl:value-of select="times/cookingTime"/> <xsl:value-of select="times/cooking_time/@unit"/></p>  <!-- Displays cooking time and unit -->
+                        <p><strong>cooking_time:</strong> <xsl:value-of select="times/cooking_time"/> <xsl:value-of select="times/cooking_time/@unit"/></p>  <!-- Displays cooking time and unit -->
 
-                        <p><strong>preparation_time:</strong> <xsl:value-of select="times/preparationTime"/> <xsl:value-of select="times/preparation_time/@unit"/></p>  <!-- Displays preparation time and unit -->
+                        <p><strong>preparation_time:</strong> <xsl:value-of select="times/preparation_time"/> <xsl:value-of select="times/preparation_time/@unit"/></p>  <!-- Displays preparation time and unit -->
 
                         <p><strong>Level:</strong> <xsl:value-of select="level"/></p>   <!-- Displays the difficulty level -->
 
