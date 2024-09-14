@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>  <!-- XML declaration of version and encoding -->
 
-<recipeBook>  <!-- Root element for the recipe book -->
+<Root>  <!-- Root element for the recipe book -->
     <recipe>   <!-- Start of a recipe entry -->
 
         <image src="https://2.bp.blogspot.com/-cWcQAc1hUzk/XEczXGdFtfI/AAAAAAAAAEc/uI3qOXC9cpEDfhexj8YyT6LpFUNVGHINACLcBGAs/s1600/dynamic_resize.jpg" alt="Boeuf Bourguignon"/>  <!-- Image of the recipe -->
@@ -9,21 +9,21 @@
 
         <RefCategorie RefCatID='TRA1'>Traditional</RefCategorie>  <!-- Category reference with ID and name -->
 
-        <type>main course</type>   <!-- Type of dish -->
+        <type>main course</type>   <!-- Type --> 
 
         <budget devise="60 Eur"/> <!-- Budget and devise -->
 
-        <times> <!-- Cooking and preparation times -->
+         <!-- Cooking and preparation times -->
 
-            <cookingTime unit="hours">1</cookingTime>  <!-- Cooking time and unit -->
-            <preparationTime unit="hours">4</preparationTime>  <!-- Preparation time and unit -->
-        </times>
+            <cooking_time unit="hours">1</cooking_time>  <!-- Cooking time and unit -->
+            <preparation_time unit="hours">4</preparation_time>  <!-- Preparation time and unit -->
+       
         <level>easy</level>  <!-- Difficulty level -->
 
         <number_serving>4</number_serving>  <!-- Number of servings -->
 
-        <rating>4 stars</rating>  <!-- Recipe rating -->
-
+        <rating>4</rating>  <!-- Recipe rating -->
+        <rating>stars</rating>
         <ingredients>   <!-- List of ingredients -->
 
             <ingredient>
@@ -68,7 +68,7 @@
             </ingredient>
         </ingredients>
 
-        <steps>  <!-- Cooking steps -->
+        <step>  <!-- Cooking steps -->
             <step>Cut beef into 3 to 4 cm cubes. Peel onions, carrots, and garlic.</step>
             <step>Brown onions and bacon in a large casserole dish.</step>
             <step>Add meat and carrots, then sprinkle with flour.</step>
@@ -76,7 +76,7 @@
             <step>Simmer gently for 3 hours.</step>
             <step>Add the sliced mushrooms and cook for a further half-hour.</step>
             <step>Serve with pasta or steamed potatoes.</step>
-        </steps>
+        </step>
     </recipe>
     <recipe>
         <image src="https://i.pinimg.com/originals/c0/c6/95/c0c695dc63a639849b231aa4adeb25f4.jpg" alt="Chocolate Cake"/>   <!-- Image of the recipe -->
@@ -89,15 +89,17 @@
 
         <budget devise="10 Eur"/>  <!-- Budget and devise -->
 
-        <times>
-            <cookingTime unit="minutes">30</cookingTime>  <!-- Cooking time and unit -->
-            <preparationTime unit="minutes">10</preparationTime>  <!-- Preparation time and unit -->
-        </times>
+       
+            <cooking_time unit="minutes">30</cooking_time>  <!-- Cooking time and unit -->
+            <preparation_time unit="minutes">10</preparation_time>  <!-- Preparation time and unit -->
+   
         <level>easy</level>  <!-- Difficulty level -->
 
         <number_serving>4</number_serving>  <!-- Number of servings -->
 
-        <rating>5 stars</rating>  <!-- Recipe rating -->
+        <rating>5</rating> <!-- Recipe rating -->
+        <rating>stars</rating>
+        
         <ingredients>  <!-- List of ingredients -->
 
             <ingredient>
@@ -122,7 +124,7 @@
             </ingredient>
         </ingredients>
 
-        <steps>  <!-- Cooking steps -->
+        <step>  <!-- Cooking steps -->
             <step>Preheat your oven to 180°C (gas mark 6).</step>
             <step>In a saucepan, melt the chocolate and chopped butter over a very low heat.</step>
             <step>In a bowl, add the sugar, eggs, and flour. Mix well.</step>
@@ -130,7 +132,7 @@
             <step>Butter and flour your cake tin, then pour in the cake batter.</step>
             <step>Bake for approximately 20 minutes.</step>
             <step>When you take the cake out of the oven, it doesn't look quite cooked. Let it cool, then remove from the mold.</step>
-        </steps>
+        </step>
     </recipe>
     <recipe>
         <image src="https://elavegan.com/wp-content/uploads/2020/10/eating-vegetable-stir-fry-noodles-with-chopsticks.jpg" alt="Wok of Chinese Noodles with Vegetables"/>  <!-- Image of the recipe -->
@@ -141,17 +143,19 @@
 
         <type>main course</type>  <!-- Type -->
         <budget devise="20 Eur"/>  <!-- Budget and devise -->
-        <times>
-            <cookingTime unit="minutes">10</cookingTime>  <!-- Cooking time and unit -->
-            <preparationTime unit="minutes">5</preparationTime>  <!-- preparation time and unit -->
-        </times>
+    
+            <cooking_time unit="minutes">10</cooking_time>  <!-- Cooking time and unit -->
+            <preparation_time unit="minutes">5</preparation_time>  <!-- preparation time and unit -->
+        
         <level>middle</level>  <!-- Difficulty level -->
 
         <number_serving>3</number_serving>  <!-- Number of servings -->
 
-        <rating>3 stars</rating>  <!-- Recipe rating -->
+        <rating>3</rating>  <!-- Recipe rating -->
+        <rating>stars</rating>
 
         <ingredients>  <!-- List of ingredients -->
+            
             <ingredient>
                 <ingredient_name>Noodles</ingredient_name>
                 <ingredient_quantity>200 gram</ingredient_quantity>
@@ -178,7 +182,7 @@
             </ingredient>
         </ingredients>
 
-        <steps>   <!-- Cooking steps -->
+        <step>   <!-- Cooking steps -->
             <step>Heat the water for the pasta.</step>
             <step>Chop the garlic, ginger, and shallot.</step>
             <step>Cut the zucchini, bell pepper, and broccoli into small cubes.</step>
@@ -193,7 +197,7 @@
             <step>Add sashimi sauce or classic wok sauce and stir.</step>
             <step>Cook until water has almost evaporated.</step>
             <step>Serve hot in bowls with chopsticks.</step>
-        </steps>
+        </step>
     </recipe>
     <recipe>
         <image src="https://unpointculture.com/wp-content/uploads/2023/06/meilleure-recette-gaspacho.jpg" alt="Gaspacho"/>  <!-- Image of the recipe -->
@@ -206,15 +210,16 @@
 
         <budget devise="25 Eur"/>   <!-- Budget and devise -->
 
-        <times>
-            <cookingTime unit="minutes">0</cookingTime>  <!-- Cooking time and unit -->
-            <preparationTime unit="minutes">15</preparationTime>  <!-- Preparation time and unit -->
-        </times>
-        <level>miiddle</level>  <!-- Difficulty level -->
+      
+            <cooking_time unit="minutes">0</cooking_time>  <!-- Cooking time and unit -->
+            <preparation_time unit="minutes">15</preparation_time>  <!-- Preparation time and unit -->
+      
+        <level>middle</level>  <!-- Difficulty level -->
 
         <number_serving>4</number_serving>  <!-- Number of servings -->
 
-        <rating>5stars</rating>  <!-- Recipe rating -->
+        <rating>5</rating>  <!-- Recipe rating -->
+        <rating>stars</rating>
 
         <ingredients>   <!-- List of ingredients -->
 
@@ -260,11 +265,11 @@
             </ingredient>
         </ingredients>
 
-        <steps>  <!-- Cooking steps -->
+        <step>  <!-- Cooking steps -->
             <step>Place all coarsely chopped ingredients in a blender.</step>
             <step>Start the machine on low speed and finish on high speed. If you're in a hurry, freeze for 30 minutes. Otherwise, refrigerate as long as possible.</step>
             <step>Add ice cubes just before serving.</step>
-             </steps>
+             </step>
     </recipe>
     <recipe>
         <image src="https://assets.afcdn.com/recipe/20171019/73572_w1944h1242c1cx1759cy2639.jpg" alt="Express Tuna Brandade"/>  <!-- Image of the recipe -->
@@ -277,15 +282,16 @@
 
         <budget devise="5 Eur"/>  <!-- Budget and devise -->
 
-        <times>
-            <cookingTime unit="minutes">10</cookingTime>  <!-- Cooking time and unit -->
-            <preparationTime unit="minutes">20</preparationTime>   <!-- Preparation time and unit -->
-        </times>
+       
+            <cooking_time unit="minutes">10</cooking_time>  <!-- Cooking time and unit -->
+            <preparation_time unit="minutes">20</preparation_time>   <!-- Preparation time and unit -->
+     
         <level>easy</level>   <!-- Difficulty level -->
 
         <number_serving>2</number_serving>  <!-- Number of servings -->
 
-        <rating>2 stars</rating>  <!-- Recipe rating -->
+        <rating>2</rating>  <!-- Recipe rating -->
+        <rating>stars</rating>
  
         <ingredients>  <!-- List of ingredients -->
 
@@ -307,12 +313,12 @@
             </ingredient>
         </ingredients>
 
-        <steps>   <!-- Cooking steps -->
+        <step>   <!-- Cooking steps -->
             <step>Preheat oven to thermostat 8 (250°C). Prepare the purée according to the packet instructions.</step>
             <step>Mash the tuna crumbs with the olive oil and pressed garlic.</step>
             <step>Mix the tuna with the purée and place in a buttered baking dish.</step>
             <step>Brown in the oven for 10 to 15 minutes and serve immediately with a green salad or carrot salad.</step>
-            </steps>
+            </step>
     </recipe>
     <recipe>
         <image src="https://i.pinimg.com/originals/45/bc/07/45bc073d9543885a6316815eeedaf79b.jpg" alt="Quinoa Pancake"/>  <!-- Image of the recipe -->
@@ -325,15 +331,16 @@
 
         <budget devise="10 Eur"/>  <!-- Budget and devise -->
 
-        <times>
-            <cookingTime unit="minutes">15</cookingTime>  <!-- Cooking time and unit -->
-            <preparationTime unit="minutes">5</preparationTime>  <!-- Preparation time and unit -->
-        </times>
+      
+            <cooking_time unit="minutes">15</cooking_time>  <!-- Cooking time and unit -->
+            <preparation_time unit="minutes">5</preparation_time>  <!-- Preparation time and unit -->
+     
         <level>expert</level>  <!-- Difficulty level -->
 
         <number_serving>4</number_serving>  <!-- Number of servings -->
 
-        <rating>3 stars</rating>  <!-- Recipe rating -->
+        <rating>3</rating>  <!-- Recipe rating -->
+        <rating>stars</rating>
 
         <ingredients>   <!-- List of ingredients -->
 
@@ -371,13 +378,13 @@
             </ingredient>
         </ingredients>
 
-        <steps>  <!-- Cooking steps -->
+        <step>  <!-- Cooking steps -->
             <step>Cook the quinoa in boiling water for ten minutes.</step>
             <step>Finely dice the garlic and onion.</step>
             <step>Drain the quinoa and add the onions and garlic, along with the spices, thyme, grated Parmesan and olive oil.</step>
             <step>Add the eggs and mix well.</step>
             <step>Heat a frying pan with a drizzle of olive oil. Form the dough into small balls and cook for about 2 minutes on each side. </step>
-            </steps>
+            </step>
     </recipe>
     <recipe>
         <image src="https://girlcooksworld.com/wp-content/uploads/2019/04/IMG_4906.jpg" alt="Raspberry Foam"/>  <!-- Image of the recipe -->
@@ -390,16 +397,17 @@
 
         <budget devise="20 Eur"/>  <!-- Budget and devise -->
 
-        <times>
-            <cookingTime unit="minutes">2</cookingTime>  <!-- Cooking time and unit -->
+   
+            <cooking_time unit="minutes">2</cooking_time>  <!-- Cooking time and unit -->
 
-            <preparationTime unit="minutes">20</preparationTime>   <!-- Preparation time and unit --> 
-        </times>
+            <preparation_time unit="minutes">20</preparation_time>   <!-- Preparation time and unit --> 
+      
         <level>expert</level>  <!-- Difficulty level -->
 
         <number_serving>2</number_serving>  <!-- Number of servings -->
 
-        <rating>5 stars</rating>  <!-- Recipe rating -->
+        <rating>5</rating>  <!-- Recipe rating -->
+        <rating>stars</rating>
 
         <ingredients>  <!-- List of ingredients -->
 
@@ -421,7 +429,7 @@
             </ingredient>
         </ingredients>
 
-        <steps>   <!-- Cooking steps -->
+        <step>   <!-- Cooking steps -->
             <step>Blend the raspberries and strain to remove the seeds.</step>
             <step>Add a dash of lemon juice to soften the acidity.</step>
             <step>Add 10 g of sugar to the raspberry pulp and blend. Set aside.
@@ -430,7 +438,7 @@
             <step>As soon as the mixture begins to bubble, stop cooking.</step>
             <step>Drizzle in the sugar syrup while continuing to whisk the egg whites. The texture should be smooth and shiny.</step>
             <step>Incorporate the raspberry pulp and mix again until you obtain an airy mousse.</step>   
-        </steps>
+        </step>
     </recipe>
     <recipe>
         <image src="https://ovenschotels.com/wp-content/uploads/2021/09/witlofschotel-ham-kaas.jpg" alt="Chicory and Ham"/>  <!-- Image of the recipe -->
@@ -443,16 +451,17 @@
 
         <budget devise="10 Eur"/>  <!-- Budget and devise -->
 
-        <times>
-            <cookingTime unit="minutes">15</cookingTime>  <!-- Cooking time and unit -->
-            <preparationTime unit="minutes">20</preparationTime>  <!-- preparation time and unit -->
+      
+            <cooking_time unit="minutes">15</cooking_time>  <!-- Cooking time and unit -->
+            <preparation_time unit="minutes">20</preparation_time>  <!-- preparation time and unit -->
 
-        </times>
+        
         <level>middle</level>   <!-- Difficulty level -->
 
         <number_serving>4</number_serving>  <!-- Number of servings -->
 
-        <rating>2 stars</rating>   <!-- Recipe rating -->
+        <rating>2</rating>   <!-- Recipe rating -->
+        <rating>stars</rating>
 
         <ingredients>  <!-- List of ingredients -->
 
@@ -482,7 +491,7 @@
             </ingredient>
         </ingredients>
 
-        <steps>  <!-- Cooking steps -->
+        <step>  <!-- Cooking steps -->
             <step>Preheat oven to th.7 (210°C).</step>
             <step>Steam endives</step>
             <step>Wrap each chicory in a slice of ham and place in a baking dish.</step>
@@ -490,6 +499,6 @@
             <step>Allow to thicken over low heat, stirring constantly. Add nutmeg and pepper. Set aside.</step>
             <step>Wrap each endive in a slice of ham and place in a lightly oiled gratin dish. Cover with béchamel sauce and sprinkle with grated Gruyère.</step>
             <step>Place in the oven for 15 to 20 min, then grill for a few minutes.</step>
-        </steps>
+        </step>
     </recipe>
-</recipeBook>
+</Root>
