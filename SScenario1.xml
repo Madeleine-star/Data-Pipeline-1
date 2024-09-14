@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipe_box_database_schemaV6.xsd">
+	<recipes>
+		<recipe>
+        <image src="https://2.bp.blogspot.com/-cWcQAc1hUzk/XEczXGdFtfI/AAAAAAAAAEc/uI3qOXC9cpEDfhexj8YyT6LpFUNVGHINACLcBGAs/s1600/dynamic_resize.jpg" alt="Boeuf Bourguignon"/>  <!-- Image of the recipe -->
+
+			<name>Boeuf Bourguignon</name>
+			<NutID nutRef='BEE_NUT'/>
+			<ingredient_rec IngRef='BEE'>
+				<ingredient_name>Beef</ingredient_name>
+				<ingredient_quantity unit='kilogram'>1.5</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='BAC'>
+				<ingredient_name>Bacon</ingredient_name>
+				<ingredient_quantity unit='gram'>200</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='BUT'>
+				<ingredient_name>Butter</ingredient_name>
+				<ingredient_quantity unit='gram'>60</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='ONI'>
+				<ingredient_name>Onions</ingredient_name>
+				<ingredient_quantity unit='quantity'>10</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='CAR'>
+				<ingredient_name>Carotte</ingredient_name>
+				<ingredient_quantity unit='quantity'>2</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='GAR'>
+				<ingredient_name>Garlic</ingredient_name>
+				<ingredient_quantity unit='quantity'>2</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='FLO'>
+				<ingredient_name>Flour</ingredient_name>
+				<ingredient_quantity unit='gram'>40</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='WIN'>
+				<ingredient_name>Red Wine</ingredient_name>
+				<ingredient_quantity unit='liter'>0.50</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='BRO'>
+				<ingredient_name>Broth</ingredient_name>
+				<ingredient_quantity unit='liter'>0.50</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='MUS'>
+				<ingredient_name>Mushrooms</ingredient_name>
+				<ingredient_quantity unit='gram'>250</ingredient_quantity>
+			</ingredient_rec>
+			<RefCategorie RefCatID='TRA1'>Traditional</RefCategorie>
+			<type>main course</type>
+			<Budget devise='Eur'>60</Budget>
+			<cooking_time unit='hour'>1</cooking_time>
+			<preparation_time unit='hours'>4</preparation_time>
+			<level>easy</level>
+			<number_serving>4</number_serving>
+			<step>
+			Cut beef into 3 to 4 cm cubes. Peel onions, carrots and garlic.
+            Brown onions and bacon in a large casserole dish.
+            Add meat and carrots, then sprinkle with flour.
+            Pour in the stock, red wine, bouquet garni and crushed garlic cloves.
+            Simmer gently for 3 hours.
+            Add the sliced mushrooms and cook for a further half-hour.
+            Serve with pasta or steamed potatoes.
+			</step>
+			<rating>4</rating>
+			<rating>starts</rating>
+		</recipe>
+		<recipe>
+        <image src="https://i.pinimg.com/originals/c0/c6/95/c0c695dc63a639849b231aa4adeb25f4.jpg" alt="Chocolate Cake"/>   <!-- Image of the recipe -->
+
+			<name>Chocoloat cake</name>
+			<NutID nutRef='CHO_NUT'/>
+			<ingredient_rec IngRef='FLO'>
+				<ingredient_name>Flour</ingredient_name>
+				<ingredient_quantity unit='gram'>33.5</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='SUG'>
+				<ingredient_name>Sugar</ingredient_name>
+				<ingredient_quantity unit='gram'>66.5</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='BUT'>
+				<ingredient_name>Butter</ingredient_name>
+				<ingredient_quantity unit='gram'>66.5</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='CHO'>
+				<ingredient_name>Chocolat</ingredient_name>
+				<ingredient_quantity unit='gram'>133.5</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='EGG'>
+				<ingredient_name>Eggs</ingredient_name>
+				<ingredient_quantity unit='quantity'>2</ingredient_quantity>
+			</ingredient_rec>
+			<RefCategorie RefCatID='TRA2'>Traditional</RefCategorie>
+			<type>dessert</type>
+			<Budget devise='Eur'>10</Budget>
+			<cooking_time unit='min'>30</cooking_time>
+			<preparation_time unit='min'>10</preparation_time>
+			<level>easy</level>
+			<number_serving>4</number_serving>
+			<step>
+			Preheat your oven to 180°C (gas mark 6). In a saucepan, melt the chocolate and chopped butter over a very low heat.
+			In a bowl, add the sugar, eggs and flour. Mix well.
+			Add the chocolate/butter mixture. Mix well.
+			Butter and flour your cake tin, then pour in the cake batter.
+			Bake for approximately 20 minutes.
+			When you take the cake out of the oven, it doesn't look quite cooked. Let it cool, then remove from the mold.
+			</step>
+			<rating>5</rating>
+			<rating>starts</rating>
+		</recipe>
+		<recipe>
+        <image src="https://elavegan.com/wp-content/uploads/2020/10/eating-vegetable-stir-fry-noodles-with-chopsticks.jpg" alt="Wok of Chinese Noodles with Vegetables"/>  <!-- Image of the recipe -->
+
+			<name>Wok of chinese noodles with vegetables</name>
+			<NutID nutRef='WOK_NUT'/>
+			<ingredient_rec IngRef='NOO'>
+				<ingredient_name>Noodles</ingredient_name>
+				<ingredient_quantity unit='gram'>200</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='OIL'>
+				<ingredient_name>Olive oil</ingredient_name>
+				<ingredient_quantity unit='liter'>0.1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='GIN'>
+				<ingredient_name>Ginger</ingredient_name>
+				<ingredient_quantity unit='gram'>10</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='RPE'>
+				<ingredient_name>Red pepper</ingredient_name>
+				<ingredient_quantity unit='gram'>250</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='ZUC'>
+				<ingredient_name>Zucchini</ingredient_name>
+				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='SHA'>
+				<ingredient_name>Shallot</ingredient_name>
+				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
+			</ingredient_rec>
+			<RefCategorie RefCatID='WOR1'>World flavors</RefCategorie>
+			<type>main course</type>
+			<Budget devise='Eur'>20</Budget>
+			<cooking_time unit='min'>10</cooking_time>
+			<preparation_time unit='min'>5</preparation_time>
+			<level>middle</level>
+			<number_serving>3</number_serving>
+			<step>
+			Heat the water for the pasta.
+Start by preparing the ingredients:
+Chop the garlic, ginger and shallot.
+Cut the zucchini, bell pepper and broccoli into small cubes.
+When the water boils, add the noodles and cook for 5 minutes, or as long as you normally cook your noodles. They should not be too soft.
+Heat the oil in a wok.
+When it's very hot, quickly fry the ginger, then add the garlic and shallot.
+Immediately add the zucchini pieces and cover for 3 minutes, stirring occasionally.
+If the mixture tends to burn, add a little more water.
+Remove the noodles from the water, drain slightly and add to the wok mixture.
+Add the bell pepper and broccoli pieces and 3 tablespoons of soy sauce. Cover for 3 minutes over medium heat.
+Add sashimi sauce or classic wok sauce and stir.
+Cook until water has almost evaporated.
+Serve hot in bowls with chopsticks.
+			</step>
+			<rating>3</rating>
+			<rating>starts</rating>
+		</recipe>
+		<recipe>
+        <image src="https://unpointculture.com/wp-content/uploads/2023/06/meilleure-recette-gaspacho.jpg" alt="Gaspacho"/>  <!-- Image of the recipe -->
+
+			<name>Gaspacho</name>
+			<NutID nutRef='GAS_NUT'/>
+			<ingredient_rec IngRef='SUG'>
+				<ingredient_name>Sugar</ingredient_name>
+				<ingredient_quantity unit='gram'>5</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='OIL'>
+				<ingredient_name>Olive oil</ingredient_name>
+				<ingredient_quantity unit='liter'>0.2</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='VIN'>
+				<ingredient_name>Balsamic vinegar</ingredient_name>
+				<ingredient_quantity unit='liter'>0.1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='GPE'>
+				<ingredient_name>Green pepper</ingredient_name>
+				<ingredient_quantity unit='gram'>500</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='TOM'>
+				<ingredient_name>Tomato</ingredient_name>
+				<ingredient_quantity unit='gram'>800</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='HPE'>
+				<ingredient_name>Hot pepper</ingredient_name>
+				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='CUC'>
+				<ingredient_name>Cucumber</ingredient_name>
+				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='ONI'>
+				<ingredient_name>Onion</ingredient_name>
+				<ingredient_quantity unit='gram'>0.5</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='GAR'>
+				<ingredient_name>Garlic</ingredient_name>
+				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='WAT'>
+				<ingredient_name>Water</ingredient_name>
+				<ingredient_quantity unit='liter'>0.15</ingredient_quantity>
+			</ingredient_rec>
+			<RefCategorie RefCatID='WOR2'>World flavors</RefCategorie>
+			<type>starter</type>
+			<Budget devise='Eur'>25</Budget>
+			<cooking_time unit='min'>0</cooking_time>
+			<preparation_time unit='min'>15</preparation_time>
+			<level>middle</level>
+			<number_serving>4</number_serving>
+			<step>
+			Place all coarsely chopped ingredients in a blender.
+Start the machine on low speed and finish on high speed. If you're in a hurry, freeze for 30 minutes. Otherwise, refrigerate as long as possible.
+Add ice cubes just before serving.
+			</step>
+			<rating>5</rating>
+			<rating>starts</rating>
+		</recipe>
+		<recipe>
+        <image src="https://assets.afcdn.com/recipe/20171019/73572_w1944h1242c1cx1759cy2639.jpg" alt="Express Tuna Brandade"/>  <!-- Image of the recipe -->
+
+			<name>Express tuna brandade</name>
+			<NutID nutRef='EXP_NUT'/>
+			<ingredient_rec IngRef='MAS'>
+				<ingredient_name>Deshydrate mashed potato</ingredient_name>
+				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='OIL'>
+				<ingredient_name>Olive oil</ingredient_name>
+				<ingredient_quantity unit='liter'>0.2</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='TUN'>
+				<ingredient_name>Tuna</ingredient_name>
+				<ingredient_quantity unit='gram'>200</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='GAR'>
+				<ingredient_name>Garlic</ingredient_name>
+				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
+			</ingredient_rec>
+			<RefCategorie RefCatID='EXP1'>Express</RefCategorie>
+			<type>starter</type>
+			<Budget devise='Eur'>5</Budget>
+			<cooking_time unit='min'>10</cooking_time>
+			<preparation_time unit='min'>20</preparation_time>
+			<level>easy</level>
+			<number_serving>2</number_serving>
+			<step>
+			Preheat oven to thermostat 8 (250°C). Prepare the purée according to the packet instructions.
+Mash the tuna crumbs with the olive oil and pressed garlic.
+Mix the tuna with the purée and place in a buttered baking dish.
+Brown in the oven for 10 to 15 minutes and serve immediately with a green salad or carrot salad.
+			</step>
+			<rating>2</rating>
+			<rating>starts</rating>
+		</recipe>
+		<recipe>
+        <image src="https://i.pinimg.com/originals/45/bc/07/45bc073d9543885a6316815eeedaf79b.jpg" alt="Quinoa Pancake"/>  <!-- Image of the recipe -->
+
+			<name>Quinoa pancake</name>
+			<NutID nutRef='QUI_NUT'/>
+			<ingredient_rec IngRef='QUI'>
+				<ingredient_name>Quinoa</ingredient_name>
+				<ingredient_quantity unit='gram'>200</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='OIL'>
+				<ingredient_name>Olive oil</ingredient_name>
+				<ingredient_quantity unit='liter'>0.2</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='PAR'>
+				<ingredient_name>Parmesan</ingredient_name>
+				<ingredient_quantity unit='gram'>10</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='ONI'>
+				<ingredient_name>Onion</ingredient_name>
+				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='GAR'>
+				<ingredient_name>Garlic</ingredient_name>
+				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='THY'>
+				<ingredient_name>Thyme</ingredient_name>
+				<ingredient_quantity unit='quantity'>4</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='HPE'>
+				<ingredient_name>Hot pepper</ingredient_name>
+				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='EGG'>
+				<ingredient_name>Eggs</ingredient_name>
+				<ingredient_quantity unit='quantity'>2</ingredient_quantity>
+			</ingredient_rec>
+			<RefCategorie RefCatID='EXP2'>Express</RefCategorie>
+			<type>starter</type>
+			<Budget devise='Eur'>10</Budget>
+			<cooking_time unit='min'>15</cooking_time>
+			<preparation_time unit='min'>5</preparation_time>
+			<level>expert</level>
+			<number_serving>4</number_serving>
+			<step>
+			Cook the quinoa in boiling water for ten minutes.
+Finely dice the garlic and onion.
+Drain the quinoa and add the onions and garlic, along with the spices, thyme, grated Parmesan and olive oil.
+Add the eggs and mix well.
+Heat a frying pan with a drizzle of olive oil. Form the dough into small balls and cook for about 2 minutes on each side. 
+			</step>
+			<rating>3</rating>
+			<rating>starts</rating>
+		</recipe>
+		<recipe>
+        <image src="https://girlcooksworld.com/wp-content/uploads/2019/04/IMG_4906.jpg" alt="Raspberry Foam"/>  <!-- Image of the recipe -->
+
+			<name>Raspberry foam</name>
+			<NutID nutRef='RAS_NUT'/>
+			<ingredient_rec IngRef='SUG'>
+				<ingredient_name>Sugar</ingredient_name>
+				<ingredient_quantity unit='gram'>30</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='EGG'>
+				<ingredient_name>Eggs</ingredient_name>
+				<ingredient_quantity unit='quantity'>1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='LEM'>
+				<ingredient_name>Lemon</ingredient_name>
+				<ingredient_quantity unit='liter'>0.1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='RAS'>
+				<ingredient_name>Raspberry</ingredient_name>
+				<ingredient_quantity unit='gram'>86.5</ingredient_quantity>
+			</ingredient_rec>
+			<RefCategorie RefCatID='LIG1'>Light</RefCategorie>
+			<type>dessert</type>
+			<Budget devise='Eur'>20</Budget>
+			<cooking_time unit='min'>2</cooking_time>
+			<preparation_time unit='min'>20</preparation_time>
+			<level>expert</level>
+			<number_serving>2</number_serving>
+			<step>
+			Blend the raspberries and strain to remove the seeds.
+Add a dash of lemon juice to soften the acidity.
+Add 10 g of sugar to the raspberry pulp and blend. Set aside.
+Start whipping the egg whites until stiff. At the same time, prepare a sugar syrup with 30 g water and 80 g sugar.
+As soon as the mixture begins to bubble, stop cooking.
+Drizzle in the sugar syrup while continuing to whisk the egg whites. The texture should be smooth and shiny.
+Incorporate the raspberry pulp and mix again until you obtain an airy mousse.
+			</step>
+			<rating>5</rating>
+			<rating>starts</rating>
+		</recipe>
+		<recipe>
+        <image src="https://ovenschotels.com/wp-content/uploads/2021/09/witlofschotel-ham-kaas.jpg" alt="Chicory and Ham"/>  <!-- Image of the recipe -->
+
+			<name>Chicory and ham</name>
+			<NutID nutRef='CHI_NUT'/>
+			<ingredient_rec IngRef='CHI'>
+				<ingredient_name>Chicory</ingredient_name>
+				<ingredient_quantity unit='quantity'>4</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='MIL'>
+				<ingredient_name>Milk</ingredient_name>
+				<ingredient_quantity unit='liter'>0.1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='OIL'>
+				<ingredient_name>olive oil</ingredient_name>
+				<ingredient_quantity unit='liter'>0.1</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='HAM'>
+				<ingredient_name>Ham</ingredient_name>
+				<ingredient_quantity unit='gram'>300</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='FLO'>
+				<ingredient_name>Flour</ingredient_name>
+				<ingredient_quantity unit='gram'>10</ingredient_quantity>
+			</ingredient_rec>
+			<ingredient_rec IngRef='GRU'>
+				<ingredient_name>Gruyere</ingredient_name>
+				<ingredient_quantity unit='gram'>60</ingredient_quantity>
+			</ingredient_rec>
+			<RefCategorie RefCatID='LIG2'>Light</RefCategorie>
+			<type>main course</type>
+			<Budget devise='Eur'>10</Budget>
+			<cooking_time unit='min'>15</cooking_time>
+			<preparation_time unit='min'>20</preparation_time>
+			<level>middle</level>
+			<number_serving>4</number_serving>
+			<step>
+			Preheat oven to th.7 (210°C).
+Steam endives
+Meanwhile, prepare the béchamel sauce: pour the cornflour into a saucepan and dissolve it first in a small amount of cold skimmed milk, then gradually add the rest of the milk while stirring. Allow to thicken over low heat, stirring constantly. Add nutmeg and pepper. Set aside.
+Wrap each endive in a slice of ham and place in a lightly oiled gratin dish. Cover with béchamel sauce and sprinkle with grated Gruyère.
+Place in the oven for 15 to 20 min, then grill for a few minutes.
+			</step>
+			<rating>2</rating>
+			<rating>starts</rating>
+		</recipe>
+	</recipes>
+</Root>
