@@ -1,0 +1,53 @@
+<html>
+   <body>
+      <h1>Recipe List by Category</h1>
+      <h2>Traditional</h2>
+      <ul>
+         <li>
+            <h3>Boeuf Bourguinon </h3>
+         </li>
+         <li>
+            <h3>Chocolat cake</h3>
+            <p>
+               <strong>Description:</strong>A complete menu for all the family</p>
+         </li>
+      </ul>
+      <h2>Express</h2>
+      <ul>
+         <li>
+            <h3>Express tuna brandade</h3>
+            <p>
+               <strong>Description:</strong>Ligth, quick, and efficacity for all occasions</p>
+         </li>
+         <li>
+            <h3>quinoa pancake</h3>
+         </li>
+      </ul>
+      <h2>World flavors</h2>
+      <ul>
+         <li>
+            <h3>Wok of chinese noodles with vegetables</h3>
+            <p>
+               <strong>Description:</strong>A menu for romantic occasion with a dessert for free!</p>
+         </li>
+         <li>
+            <h3>Gaspacho</h3>
+            <p>
+               <strong>Description:</strong>A menu for romantic occasion with a dessert for free!</p>
+         </li>
+      </ul>
+      <h2>Light</h2>
+      <ul>
+         <li>
+            <h3>Raspberry foam</h3>
+            <p>
+               <strong>Description:</strong>A menu for romantic occasion with a dessert for free!</p>
+         </li>
+         <li>
+            <h3>chicory and ham </h3>
+            <p>
+               <strong>Description:</strong>Ligth, quick, and efficacity for all occasions</p>
+         </li>
+      </ul>
+   </body>
+</html>
