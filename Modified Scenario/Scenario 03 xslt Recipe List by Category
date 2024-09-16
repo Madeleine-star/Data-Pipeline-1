@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
+  <!-- Formatted output in HTML -->
+  <xsl:output method="html" indent="yes"/>
+
+  <!-- Template for the root element -->
+  <xsl:template match="/Root">
+    <html>
+      <body>
+        <!-- Main heading for the HTML document -->
+        <h1>Recipe List by Category</h1>
+
+        <!-- Loop through each unique category -->
+        <xsl:for-each select="Categories[not(Categorie=preceding-sibling::Categories/Categorie)]">
+          <!-- Display the category as a subheading -->
+          <h2><xsl:value-of select="Categorie"/></h2>
+          <ul>
+            <!-- Loop through all recipes that match the current category -->
+            <xsl:for-each select="//Categories[Categorie=current()/Categorie]/recipe_cat">
+              <li>
+                <!-- Display the recipe name -->
+                <h3><xsl:value-of select="."/></h3>
+                <!-- Display the recipe description -->
+                <xsl:variable name="recipeName" select="."/>
+                <xsl:for-each select="/Root/menus/menu[recipelist[contains(., $recipeName)]]">
+                  <p><strong>Description:</strong> <xsl:value-of select="Description"/></p>
+                </xsl:for-each>
+              </li>
+            </xsl:for-each>
+          </ul>
+        </xsl:for-each>
+
+      </body>
+    </html>
+  </xsl:template>
+
+</xsl:stylesheet>
