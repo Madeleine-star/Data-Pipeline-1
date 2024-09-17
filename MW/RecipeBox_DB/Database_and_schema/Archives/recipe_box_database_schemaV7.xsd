@@ -171,11 +171,6 @@
 			<xs:pattern value="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?//=]*)"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<!--<xs:simpleType name="imageName">
-		<xs:restriction base="xs:string">
-			<xs:pattern value="[a-zA-Z]{300}"/>
-		</xs:restriction>
-	</xs:simpleType>-->
 	<xs:complexType name='RefCat'>
 		<!--
 		This type add an attribute in addition of the string element in it

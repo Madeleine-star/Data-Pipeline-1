@@ -19,10 +19,6 @@ In the JSON file we will only have the data about the customer of the compagny.
 }
 	</xsl:template>
 	
-	<xsl:templates match='Root/Customers/Customer'>
-
-	</xsl:templates>
-	
 	<xsl:template match="Root/Customers/Customer">
 {"Customer_Name":"<xsl:value-of select="CustomerName"/>",
 "Customer_Address":"<xsl:value-of select="CustomerAddress[1]"/>",

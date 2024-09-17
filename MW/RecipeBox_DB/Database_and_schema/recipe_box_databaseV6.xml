@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipe_box_database_schemaV7.xsd"><!--Start of the database of the recip box compagny and the schema which defined it-->
-	<recipes><!--This element contain all the recipe propose by the compagny-->
-		<recipe><!--This element defined for each recipe how to realized it as well as the ingredient needed for-->
-			<image src="https://2.bp.blogspot.com/-cWcQAc1hUzk/XEczXGdFtfI/AAAAAAAAAEc/uI3qOXC9cpEDfhexj8YyT6LpFUNVGHINACLcBGAs/s1600/dynamic_resize.jpg"/><!-- Image of the recipe -->
-			<name>Boeuf Bourguignon</name><!--Recipe name-->
-			<NutID nutRef='BEE_NUT'/><!--Nutrition fact ID of the recipe-->
-			<ingredient_rec IngRef='BEE'><!--reference of the ingredient in the ingredient partie and defined each ingredient name and quantity-->
-				<ingredient_name>Beef</ingredient_name><!--name of the ingredient-->
-				<ingredient_quantity unit='kilogram'>1.5</ingredient_quantity><!--Ingredient's quantity needed for the recipe-->
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipe_box_database_schemaV8.xsd">
+	<!--Start of the database of the recip box compagny and the schema which defined it-->
+	<recipes>
+		<!--This element contain all the recipe propose by the compagny-->
+		<recipe>
+			<!--This element defined for each recipe how to realized it as well as the ingredient needed for-->
+			<image src="https://2.bp.blogspot.com/-cWcQAc1hUzk/XEczXGdFtfI/AAAAAAAAAEc/uI3qOXC9cpEDfhexj8YyT6LpFUNVGHINACLcBGAs/s1600/dynamic_resize.jpg"/>
+			<!-- Image of the recipe -->
+			<name>Boeuf Bourguignon</name>
+			<!--Recipe name-->
+			<NutID nutRef='BEE_NUT'/>
+			<!--Nutrition fact ID of the recipe-->
+			<ingredient_rec IngRef='BEE'>
+				<!--reference of the ingredient in the ingredient partie and defined each ingredient name and quantity-->
+				<ingredient_name>Beef</ingredient_name>
+				<!--name of the ingredient-->
+				<ingredient_quantity unit='kilogram'>1.5</ingredient_quantity>
+				<!--Ingredient's quantity needed for the recipe-->
 			</ingredient_rec>
 			<ingredient_rec IngRef='BAC'>
 				<ingredient_name>Bacon</ingredient_name>
@@ -45,14 +54,22 @@
 				<ingredient_name>Mushrooms</ingredient_name>
 				<ingredient_quantity unit='gram'>250</ingredient_quantity>
 			</ingredient_rec>
-			<RefCategorie RefCatID='TRA1'>Traditional</RefCategorie><!--Recipe's categorie and it's ID-->
-			<type>main course</type><!--Recipe type-->
-			<Budget devise='Eur'>60</Budget><!--Recipe price and in attibute the devise used-->
-			<cooking_time unit='hour'>1</cooking_time><!--cooking time for the recipe-->
-			<preparation_time unit='hours'>4</preparation_time><!--preparation time for the recipe-->
-			<level>easy</level><!--level of the recipe-->
-			<number_serving>4</number_serving><!--the number of serving for which the recipe ingredient is described-->
-			<step><!--The step to realized the recipe-->
+			<RefCategorie RefCatID='TRA1'>Traditional</RefCategorie>
+			<!--Recipe's categorie and it's ID-->
+			<type>main course</type>
+			<!--Recipe type-->
+			<Budget devise='Eur'>60</Budget>
+			<!--Recipe price and in attibute the devise used-->
+			<cooking_time unit='hour'>1</cooking_time>
+			<!--cooking time for the recipe-->
+			<preparation_time unit='hours'>4</preparation_time>
+			<!--preparation time for the recipe-->
+			<level>easy</level>
+			<!--level of the recipe-->
+			<number_serving>4</number_serving>
+			<!--the number of serving for which the recipe ingredient is described-->
+			<step>
+				<!--The step to realized the recipe-->
 			Cut beef into 3 to 4 cm cubes. Peel onions, carrots and garlic.
             Brown onions and bacon in a large casserole dish.
             Add meat and carrots, then sprinkle with flour.
@@ -61,8 +78,10 @@
             Add the sliced mushrooms and cook for a further half-hour.
             Serve with pasta or steamed potatoes.
 			</step>
-			<rating>4</rating><!--Rating number-->
-			<rating>starts</rating><!--rating units-->
+			<rating>4</rating>
+			<!--Rating number-->
+			<rating>starts</rating>
+			<!--rating units-->
 		</recipe>
 		<recipe>
 			<image src="https://i.pinimg.com/originals/c0/c6/95/c0c695dc63a639849b231aa4adeb25f4.jpg"/>
@@ -161,7 +180,7 @@ Serve hot in bowls with chopsticks.
 			<rating>starts</rating>
 		</recipe>
 		<recipe>
-		<image src="https://unpointculture.com/wp-content/uploads/2023/06/meilleure-recette-gaspacho.jpg"/>
+			<image src="https://unpointculture.com/wp-content/uploads/2023/06/meilleure-recette-gaspacho.jpg"/>
 			<name>Gaspacho</name>
 			<NutID nutRef='GAS_NUT'/>
 			<ingredient_rec IngRef='SUG'>
@@ -348,9 +367,8 @@ Incorporate the raspberry pulp and mix again until you obtain an airy mousse.
 			<rating>starts</rating>
 		</recipe>
 		<recipe>
-		<image src="https://ovenschotels.com/wp-content/uploads/2021/09/witlofschotel-ham-kaas.jpg"/>
+			<image src="https://ovenschotels.com/wp-content/uploads/2021/09/witlofschotel-ham-kaas.jpg"/>
 			<name>Chicory and ham</name>
-			
 			<NutID nutRef='CHI_NUT'/>
 			<ingredient_rec IngRef='CHI'>
 				<ingredient_name>Chicory</ingredient_name>
@@ -394,11 +412,16 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<rating>starts</rating>
 		</recipe>
 	</recipes>
-	<ingredients><!--This element described all the ingredient property present in each recipe-->
-		<ingredient IngredientID='CHI'><!--ingredient ID and the start of each ingredient element-->
-			<name>Chicory</name><!--Ingredient name-->
-			<season>Autumn</season><!--ingredient growing season-->
-			<Budget devise='Eur'>4</Budget><!--ingredient price and the devise-->
+	<ingredients>
+		<!--This element described all the ingredient property present in each recipe-->
+		<ingredient IngredientID='CHI'>
+			<!--ingredient ID and the start of each ingredient element-->
+			<name>Chicory</name>
+			<!--Ingredient name-->
+			<season>Autumn</season>
+			<!--ingredient growing season-->
+			<Budget devise='Eur'>4</Budget>
+			<!--ingredient price and the devise-->
 		</ingredient>
 		<ingredient IngredientID='MIL'>
 			<name>Milk</name>
@@ -576,15 +599,24 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<Budget devise='Eur'>3</Budget>
 		</ingredient>
 	</ingredients>
-	<menus><!--This element devine all the menu proposed by the compagny-->
-		<menu><!--This element defined each menu-->
-			<name>Family Dinner</name><!--menu name-->
-			<number_recipe>2</number_recipe><!--The number of recipe in the menue-->
-			<recipelist>Boeuf Bourguignon Chocolat cake</recipelist><!--list of recipe in the menu-->
-			<Budget devise='Eur'>60</Budget><!--the price of the menu reduced compared to each recipe buy separately and the devise-->
-			<rating>4</rating><!--The menu rating number-->
-			<rating>starts</rating><!--The menu rating units-->
-			<Description>A complete menu for all the family</Description><!--a little description of the recipe for attracting the customer-->
+	<menus>
+		<!--This element devine all the menu proposed by the compagny-->
+		<menu>
+			<!--This element defined each menu-->
+			<name>Family Dinner</name>
+			<!--menu name-->
+			<number_recipe>2</number_recipe>
+			<!--The number of recipe in the menue-->
+			<recipelist>Boeuf Bourguignon Chocolat cake</recipelist>
+			<!--list of recipe in the menu-->
+			<Budget devise='Eur'>60</Budget>
+			<!--the price of the menu reduced compared to each recipe buy separately and the devise-->
+			<rating>4</rating>
+			<!--The menu rating number-->
+			<rating>starts</rating>
+			<!--The menu rating units-->
+			<Description>A complete menu for all the family</Description>
+			<!--a little description of the recipe for attracting the customer-->
 		</menu>
 		<menu>
 			<name>Romantic Dinner</name>
@@ -605,16 +637,26 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<Description>Ligth, quick, and efficacity for all occasions</Description>
 		</menu>
 	</menus>
-	<Nutritions><!--This element defined the nutrion fact of all the recipe propose by the compagny-->
-		<Nutrition><!--This element defined for each recipe the nutrion fact of a specific recipe refer by the recipe ID below per serving-->
-			<RecipeID nutRef='BEE_NUT'/><!--The recipe ID for which the nutrition facts are defined-->
-			<recipe_name>Boeuf Bourguignon</recipe_name><!--Name of the recipe-->
-			<energy unit='kcal'>711</energy><!--Number of calories for the recipe with it's unit-->
-			<total_fat unit='gram'>37</total_fat><!--fat quantity for the recipe with it's unit-->
-			<cholesterol unit='mgram'>189</cholesterol><!--cholesterol quantity for the recipe with it's unit-->
-			<salt unit='gram'>0.6</salt><!--salt quantity for the recipe with it's unit-->
-			<total_carbohydrate unit='gram'>24</total_carbohydrate><!--Carbohydrate quantity for the recipe with it's unit-->
-			<protein unit='gram'>59</protein><!--Protein quantity for the recipe with it's unit-->
+	<Nutritions>
+		<!--This element defined the nutrion fact of all the recipe propose by the compagny-->
+		<Nutrition>
+			<!--This element defined for each recipe the nutrion fact of a specific recipe refer by the recipe ID below per serving-->
+			<RecipeID nutRef='BEE_NUT'/>
+			<!--The recipe ID for which the nutrition facts are defined-->
+			<recipe_name>Boeuf Bourguignon</recipe_name>
+			<!--Name of the recipe-->
+			<energy unit='kcal'>711</energy>
+			<!--Number of calories for the recipe with it's unit-->
+			<total_fat unit='gram'>37</total_fat>
+			<!--fat quantity for the recipe with it's unit-->
+			<cholesterol unit='mgram'>189</cholesterol>
+			<!--cholesterol quantity for the recipe with it's unit-->
+			<salt unit='gram'>0.6</salt>
+			<!--salt quantity for the recipe with it's unit-->
+			<total_carbohydrate unit='gram'>24</total_carbohydrate>
+			<!--Carbohydrate quantity for the recipe with it's unit-->
+			<protein unit='gram'>59</protein>
+			<!--Protein quantity for the recipe with it's unit-->
 		</Nutrition>
 		<Nutrition>
 			<RecipeID nutRef='GAS_NUT'/>
@@ -687,21 +729,36 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<protein unit='gram'>17.6</protein>
 		</Nutrition>
 	</Nutritions>
-	<Compagny_infos><!--This element defined the compagny information-->
-		<name>RecBox</name><!--Compagny name-->
-		<Compagny_address>9 recipe road 10461 NY USA</Compagny_address><!--Compagny's physical address-->
-		<compagny_phone>88-77-66-55-44</compagny_phone><!--compagny phone number-->
-		<compagny_email>RecBox@gmail.com</compagny_email><!--compagny email address-->
+	<Compagny_infos>
+		<!--This element defined the compagny information-->
+		<name>RecBox</name>
+		<!--Compagny name-->
+		<Compagny_address>9 recipe road 10461 NY USA</Compagny_address>
+		<!--Compagny's physical address-->
+		<compagny_phone>88-77-66-55-44</compagny_phone>
+		<!--compagny phone number-->
+		<compagny_email>RecBox@gmail.com</compagny_email>
+		<!--compagny email address-->
 	</Compagny_infos>
-	<Customers><!--This element defined the information about the customer of the compagny-->
-		<Customer><!--This element defined the customer information-->
-			<CustomerName>Charles Dupont</CustomerName><!--Customer's name-->
-			<CustomerAddress>19 liberty avenue </CustomerAddress><!--Customer's street address-->
-			<CustomerAddress>New York NY</CustomerAddress><!--Customer's city and state-->
-			<CustomerAddress> 10461 USA</CustomerAddress><!--Customer's postal code and country-->
-			<Phone_number>84-56-89-34-17</Phone_number><!--Customer's phone number-->
-			<Cust_email>CharlesD@gmail.com</Cust_email><!--Customer's email address-->
-			<Invoice CustInvID='CD01'/><!--Customer ID attached to the invoices-->
+	<Customers>
+		<!--This element defined the information about the customer of the compagny-->
+		<Customer>
+			<!--This element defined the customer information-->
+			<CustomerName>Charles Dupont</CustomerName>
+			<!--Customer's name-->
+			<CustomerAddress>19 liberty avenue </CustomerAddress>
+			<!--Customer's street address-->
+			<CustomerAddress>New York NY</CustomerAddress>
+			<!--Customer's city and state-->
+			<CustomerAddress> 10461 USA</CustomerAddress>
+			<!--Customer's postal code and country-->
+			<Phone_number>84-56-89-34-17</Phone_number>
+			<!--Customer's phone number-->
+			<Cust_email>CharlesD@gmail.com</Cust_email>
+			<!--Customer's email address-->
+			<Invoice CustInvID='CD01'/>
+			<Invoice CustInvID='CD02'/>
+			<!--Customer ID attached to the invoices-->
 		</Customer>
 		<Customer>
 			<CustomerName>Senera Durand</CustomerName>
@@ -711,6 +768,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<Phone_number>98-65-98-17-34</Phone_number>
 			<Cust_email>SeneraD@yahoo.com</Cust_email>
 			<Invoice CustInvID='SD01'/>
+			<Invoice CustInvID='SD02'/>
 		</Customer>
 		<Customer>
 			<CustomerName>Alexis Wimbledon</CustomerName>
@@ -720,6 +778,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<Phone_number>52-90-36-71-43</Phone_number>
 			<Cust_email>AlexisW@hotmail.com</Cust_email>
 			<Invoice CustInvID='AW01'/>
+			<Invoice CustInvID='AW02'/>
 		</Customer>
 		<Customer>
 			<CustomerName>Caroline Start</CustomerName>
@@ -729,49 +788,106 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 			<Phone_number>48-65-98-43-71</Phone_number>
 			<Cust_email>CarolineS@gmail.com</Cust_email>
 			<Invoice CustInvID='CS01'/>
+			<Invoice CustInvID='CS02'/>
 		</Customer>
 	</Customers>
-	<Invoices><!--This element recapitulate all the invoice due by the compagny-->
-		<invoice invoiceID='CD01'><!--This element defined for each invoice the ID of the customer which refer to it-->
-			<rec_list><!--The recipe list order by the customer-->
-				<recipe>Gaspacho</recipe><!--recipe name-->
-				<recipe_price>25</recipe_price><!--recipe price-->
+	<Invoices>
+		<!--This element recapitulate all the invoice due by the compagny-->
+		<invoice invoiceID='CD01'>
+			<!--This element defined for each invoice the ID of the customer which refer to it-->
+			<rec_list>
+				<!--The recipe list order by the customer-->
+				<recipe>Gaspacho</recipe>
+				<!--recipe name-->
+				<recipe_price devise='euros'>25</recipe_price>
+				<!--recipe price and it's devise-->
 			</rec_list>
-			<number_delivered>1</number_delivered><!--Number of time the delivery is made at least one time-->
-			<delivery_frequency>daily</delivery_frequency><!--frequence of the delivery for this invoice-->
-			<delivery_date>2024-09-29</delivery_date><!--The date of the fisrt delivery-->
+			<number_delivered>1</number_delivered>
+			<!--Number of time the delivery is made at least one time-->
+			<delivery_frequency>daily</delivery_frequency>
+			<!--frequence of the delivery for this invoice-->
+			<delivery_startDate>2023-09-29</delivery_startDate>
+			<!--The date of the fisrt delivery-->
+			<delivery_EndDate>2023-10-29</delivery_EndDate>
+			<!--The date of the last delivery-->
+		</invoice>
+		<invoice invoiceID='CD02'>
+			<rec_list>
+				<recipe>Raspberry foam</recipe>
+				<recipe_price devise='euros'>20</recipe_price>
+			</rec_list>
+			<number_delivered>4</number_delivered>
+			<delivery_frequency>once week</delivery_frequency>
+			<delivery_startDate>2024-09-08</delivery_startDate>
+			<delivery_EndDate>2024-09-15</delivery_EndDate>
 		</invoice>
 		<invoice invoiceID='SD01'>
 			<rec_list>
 				<recipe>Wok of chinese noodles with vegetables </recipe>
-				<recipe_price>20</recipe_price>
+				<recipe_price devise='euros'>20</recipe_price>
 			</rec_list>
 			<number_delivered>3</number_delivered>
 			<delivery_frequency>twice week</delivery_frequency>
-			<delivery_date>2023-08-08</delivery_date>
+			<delivery_startDate>2023-08-08</delivery_startDate>
+			<delivery_EndDate>2023-12-08</delivery_EndDate>
+		</invoice>
+		<invoice invoiceID='SD02'>
+			<rec_list>
+				<recipe>Gaspacho</recipe>
+				<recipe_price devise='euros'>25</recipe_price>
+			</rec_list>
+			<number_delivered>2</number_delivered>
+			<delivery_frequency>twice week</delivery_frequency>
+			<delivery_startDate>2024-06-25</delivery_startDate>
+			<delivery_EndDate>2024-09-25</delivery_EndDate>
 		</invoice>
 		<invoice invoiceID='AW01'>
 			<rec_list>
 				<recipe>Raspberry foam</recipe>
-				<recipe_price>20</recipe_price>
+				<recipe_price devise='euros'>20</recipe_price>
 			</rec_list>
 			<number_delivered>1</number_delivered>
 			<delivery_frequency>daily</delivery_frequency>
-			<delivery_date>2024-12-21</delivery_date>
+			<delivery_startDate>2024-01-21</delivery_startDate>
+			<delivery_EndDate>2024-01-21</delivery_EndDate>
+		</invoice>
+		<invoice invoiceID='AW02'>
+			<rec_list>
+				<recipe>Wok of chinese noodles with vegetables </recipe>
+				<recipe_price devise='euros'>20</recipe_price>
+			</rec_list>
+			<number_delivered>1</number_delivered>
+			<delivery_frequency>daily</delivery_frequency>
+			<delivery_startDate>2024-08-08</delivery_startDate>
+			<delivery_EndDate>2024-08-08</delivery_EndDate>
 		</invoice>
 		<invoice invoiceID='CS01'>
 			<rec_list>
 				<recipe>Quinoa pancake</recipe>
-				<recipe_price>10</recipe_price>
+				<recipe_price devise='euros'>10</recipe_price>
 			</rec_list>
 			<number_delivered>2</number_delivered>
 			<delivery_frequency>once week</delivery_frequency>
-			<delivery_date>2024-04-03</delivery_date>
+			<delivery_startDate>2024-04-03</delivery_startDate>
+			<delivery_EndDate>2024-05-03</delivery_EndDate>
+		</invoice>
+		<invoice invoiceID='CS02'>
+			<rec_list>
+				<recipe>Express tuna branbade</recipe>
+				<recipe_price devise='euros'>10</recipe_price>
+			</rec_list>
+			<number_delivered>4</number_delivered>
+			<delivery_frequency>twice week</delivery_frequency>
+			<delivery_startDate>2024-05-15</delivery_startDate>
+			<delivery_EndDate>2024-05-15</delivery_EndDate>
 		</invoice>
 	</Invoices>
-	<Categories CatID='TRA1'><!--This element attribute a category to a recipe, the number is the order of the recipe in the recipe list of the compagny -->
-		<Categorie>Traditional</Categorie><!--Categorie name-->
-		<recipe_cat>Boeuf Bourguinon </recipe_cat><!--Recipe name-->
+	<Categories CatID='TRA1'>
+		<!--This element attribute a category to a recipe, the number is the order of the recipe in the recipe list of the compagny -->
+		<Categorie>Traditional</Categorie>
+		<!--Categorie name-->
+		<recipe_cat>Boeuf Bourguinon </recipe_cat>
+		<!--Recipe name-->
 	</Categories>
 	<Categories CatID='TRA2'>
 		<Categorie>Traditional</Categorie>
@@ -801,6 +917,7 @@ Place in the oven for 15 to 20 min, then grill for a few minutes.
 		<Categorie>Light</Categorie>
 		<recipe_cat>chicory and ham </recipe_cat>
 	</Categories>
-</Root><!--End of the database of the recip box compagny-->
+</Root>
+<!--End of the database of the recip box compagny-->
 
 
