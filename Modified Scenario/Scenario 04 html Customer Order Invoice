@@ -1,0 +1,52 @@
+<html>
+   <body>
+      <h1>Invoice ID: CD01</h1>
+      <h2>Order details for Charles Dupont</h2>
+      <p>Address: 19 liberty avenue </p>
+      <p>Phone number: 84-56-89-34-17</p>
+      <p>Email: CharlesD@gmail.com</p>
+      <h3>Ordered items:</h3>
+      <ul>
+         <li>Gaspacho</li>
+         <h3>Order total: 25 euros</h3>
+         <p>Delivery start date: 2023-09-29</p>
+         <p>Delivery end date: 2023-10-29</p>
+      </ul>
+      <h1>Invoice ID: SD01</h1>
+      <h2>Order details for Senera Durand</h2>
+      <p>Address: 18 union road </p>
+      <p>Phone number: 98-65-98-17-34</p>
+      <p>Email: SeneraD@yahoo.com</p>
+      <h3>Ordered items:</h3>
+      <ul>
+         <li>Wok of chinese noodles with vegetables </li>
+         <h3>Order total: 20 euros</h3>
+         <p>Delivery start date: 2023-08-08</p>
+         <p>Delivery end date: 2023-12-08</p>
+      </ul>
+      <h1>Invoice ID: AW01</h1>
+      <h2>Order details for Alexis Wimbledon</h2>
+      <p>Address: 509 toto avenue </p>
+      <p>Phone number: 52-90-36-71-43</p>
+      <p>Email: AlexisW@hotmail.com</p>
+      <h3>Ordered items:</h3>
+      <ul>
+         <li>Raspberry foam</li>
+         <h3>Order total: 20 euros</h3>
+         <p>Delivery start date: 2024-01-21</p>
+         <p>Delivery end date: 2024-01-21</p>
+      </ul>
+      <h1>Invoice ID: CS01</h1>
+      <h2>Order details for Caroline Start</h2>
+      <p>Address: 344 MainStreet </p>
+      <p>Phone number: 48-65-98-43-71</p>
+      <p>Email: CarolineS@gmail.com</p>
+      <h3>Ordered items:</h3>
+      <ul>
+         <li>Quinoa pancake</li>
+         <h3>Order total: 10 euros</h3>
+         <p>Delivery start date: 2024-04-03</p>
+         <p>Delivery end date: 2024-05-03</p>
+      </ul>
+   </body>
+</html>
