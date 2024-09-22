@@ -19,13 +19,8 @@
             <!-- Loop through all recipes that match the current category -->
             <xsl:for-each select="//Categories[Categorie=current()/Categorie]/recipe_cat">
               <li>
-                <!-- Display the recipe name -->
+                <!-- Display the recipe name without description -->
                 <h3><xsl:value-of select="."/></h3>
-                <!-- Display the recipe description -->
-                <xsl:variable name="recipeName" select="."/>
-                <xsl:for-each select="/Root/menus/menu[recipelist[contains(., $recipeName)]]">
-                  <p><strong>Description:</strong> <xsl:value-of select="Description"/></p>
-                </xsl:for-each>
               </li>
             </xsl:for-each>
           </ul>
