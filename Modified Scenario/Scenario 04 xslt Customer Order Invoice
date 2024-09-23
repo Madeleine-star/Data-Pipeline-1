@@ -1,90 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<!--
-  Stylesheet Description: Transforms XML order data into HTML invoices.
-  -->
-	<xsl:output method="html" indent="yes"/>
-	<!-- Output the transformed XML as HTML with indentation for readability -->
-	<!-- Main template that matches the root of the XML document -->
-	<xsl:template match="/">
-		<html>
-			<body>
-				<xsl:for-each select="Root">
-					<xsl:apply-templates select="Customers/Customer"/>
-				</xsl:for-each>
-			</body>
-		</html>
-	</xsl:template>
-	<xsl:template match="Customers/Customer">
-		<h1>Invoice ID: <xsl:value-of select="Invoice/@CustInvID"/>
-		</h1>
-		<h2>Order details for <xsl:value-of select="CustomerName"/>
-		</h2>
-		<p>Address: <xsl:value-of select="CustomerAddress"/>
-		</p>
-		<p>Phone number: <xsl:value-of select="Phone_number"/>
-		</p>
-		<p>Email: <xsl:value-of select="Cust_email"/>
-		</p>
-		<h3>Ordered items:</h3>
-		<ul>
-		<xsl:if test="Invoice/@CustInvID = 'AW01'">
-		<xsl:apply-templates select="//parent::Root/Invoices/invoice[@invoiceID='AW01']"/>
-		</xsl:if>
-		<xsl:if test="Invoice/@CustInvID = 'CS01'">
-		<xsl:apply-templates select="//parent::Root/Invoices/invoice[@invoiceID='CS01']"/>
-		</xsl:if>
-		<xsl:if test="Invoice/@CustInvID = 'SD01'">
-		<xsl:apply-templates select="//parent::Root/Invoices/invoice[@invoiceID='SD01']"/>
-		</xsl:if>
-		<xsl:if test="Invoice/@CustInvID = 'CD01'">
-		<xsl:apply-templates select="//parent::Root/Invoices/invoice[@invoiceID='CD01']"/>
-		</xsl:if>
-		</ul>
-	</xsl:template>
-	<xsl:template match="Invoices/invoice[@invoiceID='AW01']">
-		
-			<li>
-				<b><xsl:value-of select="rec_list/recipe"/></b>
-			</li>
-			<p>Order total: <xsl:value-of select="rec_list/recipe_price"/><xsl:text> </xsl:text><xsl:value-of select="rec_list/recipe_price/@devise"/>
-			</p>
-			<p>Delivery start date: <xsl:value-of select="delivery_startDate"/>
-			</p>
-			<p>Delivery end date: <xsl:value-of select="delivery_EndDate"/></p>
+    <!-- 
+    The XSLT stylesheet transforms XML order data into HTML invoice format. 
+    The version attribute specifies that this uses XSLT 1.0.
+    -->
 
-	</xsl:template>
-	<xsl:template match="Invoices/invoice[@invoiceID='CS01']">
-		
-			<li>
-				<b><xsl:value-of select="rec_list/recipe"/></b>
-			</li>
-			<p>Order total: <xsl:value-of select="rec_list/recipe_price"/><xsl:text> </xsl:text><xsl:value-of select="rec_list/recipe_price/@devise"/></p>
-			<p>Delivery start date: <xsl:value-of select="delivery_startDate"/>
-			</p>
-			<p>Delivery end date: <xsl:value-of select="delivery_EndDate"/></p>
+    <!-- Output HTML format with indentation for readability -->
+    <xsl:output method="html" indent="yes"/>
 
-	</xsl:template>
-	<xsl:template match="Invoices/invoice[@invoiceID='CD01']">
-		
-			<li>
-				<b><xsl:value-of select="rec_list/recipe"/></b>
-			</li>
-			<p>Order total: <xsl:value-of select="rec_list/recipe_price"/><xsl:text> </xsl:text><xsl:value-of select="rec_list/recipe_price/@devise"/></p>
-			<p>Delivery start date: <xsl:value-of select="delivery_startDate"/>
-			</p>
-			<p>Delivery end date: <xsl:value-of select="delivery_EndDate"/></p>
+    <!-- Main template that matches the root node of the XML document -->
+    <xsl:template match="/">
+        <html>
+            <body>
+                <!-- 
+                Loop through the Root element to process customer data.
+                The `for-each` selects the Root node and applies templates to each Customer node.
+                -->
+                <xsl:for-each select="Root">
+                    <!-- Apply the Customer template for each Customer node found under Root -->
+                    <xsl:apply-templates select="Customers/Customer"/>
+                </xsl:for-each>
+            </body>
+        </html>
+    </xsl:template>
 
-	</xsl:template>
-	<xsl:template match="Invoices/invoice[@invoiceID='SD01']">
-		
-			<li>
-				<b><xsl:value-of select="rec_list/recipe"/></b>
-			</li>
-			<p>Order total: <xsl:value-of select="rec_list/recipe_price"/><xsl:text> </xsl:text><xsl:value-of select="rec_list/recipe_price/@devise"/></p>
-			<p>Delivery start date: <xsl:value-of select="delivery_startDate"/>
-			</p>
-			<p>Delivery end date: <xsl:value-of select="delivery_EndDate"/></p>
+    <!-- Template for Customer details -->
+    <xsl:template match="Customers/Customer">
+        <!-- 
+        Displays the invoice ID and customer details.
+        The `xsl:value-of` element extracts and displays values from the XML.
+        -->
+        <h1>Invoice ID: <xsl:value-of select="Invoice/@CustInvID"/></h1>
+        <h2>Order details for <xsl:value-of select="CustomerName"/></h2>
+        <p>Address: <xsl:value-of select="CustomerAddress"/></p>
+        <p>Phone number: <xsl:value-of select="Phone_number"/></p>
+        <p>Email: <xsl:value-of select="Cust_email"/></p>
 
-	</xsl:template>
+        <h3>Ordered items:</h3>
+        <ul>
+            <!-- 
+            Conditional logic based on the Customer's invoice ID.
+            Depending on the value of `CustInvID`, the template will apply 
+            corresponding invoice details by calling the respective invoice template.
+            -->
+            <xsl:if test="Invoice/@CustInvID = 'AW01'">
+                <!-- Apply template that matches invoice ID 'AW01' -->
+                <xsl:apply-templates select="//parent::Root/Invoices/invoice[@invoiceID='AW01']"/>
+            </xsl:if>
+            <xsl:if test="Invoice/@CustInvID = 'CS01'">
+                <xsl:apply-templates select="//parent::Root/Invoices/invoice[@invoiceID='CS01']"/>
+            </xsl:if>
+            <xsl:if test="Invoice/@CustInvID = 'SD01'">
+                <xsl:apply-templates select="//parent::Root/Invoices/invoice[@invoiceID='SD01']"/>
+            </xsl:if>
+            <xsl:if test="Invoice/@CustInvID = 'CD01'">
+                <xsl:apply-templates select="//parent::Root/Invoices/invoice[@invoiceID='CD01']"/>
+            </xsl:if>
+        </ul>
+    </xsl:template>
+
+    <!-- Template for Invoice with ID 'AW01' -->
+    <xsl:template match="Invoices/invoice[@invoiceID='AW01']">
+        <li>
+            <!-- Display recipe information -->
+            <b><xsl:value-of select="rec_list/recipe"/></b>
+        </li>
+        <p>Order total: 
+            <xsl:value-of select="rec_list/recipe_price"/>
+            <xsl:text> </xsl:text>
+            <!-- Display the currency for the recipe price -->
+            <xsl:value-of select="rec_list/recipe_price/@devise"/>
+        </p>
+        <p>Delivery start date: <xsl:value-of select="delivery_startDate"/></p>
+        <p>Delivery end date: <xsl:value-of select="delivery_EndDate"/></p>
+    </xsl:template>
+
+    <!-- Template for Invoice with ID 'CS01' -->
+    <xsl:template match="Invoices/invoice[@invoiceID='CS01']">
+        <li>
+            <b><xsl:value-of select="rec_list/recipe"/></b>
+        </li>
+        <p>Order total: 
+            <xsl:value-of select="rec_list/recipe_price"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="rec_list/recipe_price/@devise"/>
+        </p>
+        <p>Delivery start date: <xsl:value-of select="delivery_startDate"/></p>
+        <p>Delivery end date: <xsl:value-of select="delivery_EndDate"/></p>
+    </xsl:template>
+
+    <!-- Template for Invoice with ID 'CD01' -->
+    <xsl:template match="Invoices/invoice[@invoiceID='CD01']">
+        <li>
+            <b><xsl:value-of select="rec_list/recipe"/></b>
+        </li>
+        <p>Order total: 
+            <xsl:value-of select="rec_list/recipe_price"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="rec_list/recipe_price/@devise"/>
+        </p>
+        <p>Delivery start date: <xsl:value-of select="delivery_startDate"/></p>
+        <p>Delivery end date: <xsl:value-of select="delivery_EndDate"/></p>
+    </xsl:template>
+
+    <!-- Template for Invoice with ID 'SD01' -->
+    <xsl:template match="Invoices/invoice[@invoiceID='SD01']">
+        <li>
+            <b><xsl:value-of select="rec_list/recipe"/></b>
+        </li>
+        <p>Order total: 
+            <xsl:value-of select="rec_list/recipe_price"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="rec_list/recipe_price/@devise"/>
+        </p>
+        <p>Delivery start date: <xsl:value-of select="delivery_startDate"/></p>
+        <p>Delivery end date: <xsl:value-of select="delivery_EndDate"/></p>
+    </xsl:template>
 </xsl:stylesheet>
