@@ -1,59 +1,103 @@
 <html>
    <body>
-      <h1>Invoice ID: CD01</h1>
+      <!-- Invoice for customer 'Charles Dupont' -->
+      <h1>Invoice ID: CD01</h1> 
+      <!-- The customer name and their order details -->
       <h2>Order details for Charles Dupont</h2>
+      <!-- Display customer's address -->
       <p>Address: 19 liberty avenue </p>
+      <!-- Display customer's phone number -->
       <p>Phone number: 84-56-89-34-17</p>
+      <!-- Display customer's email -->
       <p>Email: CharlesD@gmail.com</p>
+      <!-- Section for ordered items -->
       <h3>Ordered items:</h3>
       <ul>
+         <!-- List item representing one product ordered -->
          <li>
+            <!-- Product ordered by the customer -->
             <b>Gaspacho</b>
          </li>
+         <!-- Total cost of the order with currency -->
          <p>Order total: 25 euros</p>
+         <!-- Delivery start date -->
          <p>Delivery start date: 2023-09-29</p>
+         <!-- Delivery end date -->
          <p>Delivery end date: 2023-10-29</p>
       </ul>
+
+      <!-- Invoice for customer 'Senera Durand' -->
       <h1>Invoice ID: SD01</h1>
+      <!-- Order details of customer 'Senera Durand' -->
       <h2>Order details for Senera Durand</h2>
+      <!-- Display customer's address -->
       <p>Address: 18 union road </p>
+      <!-- Display customer's phone number -->
       <p>Phone number: 98-65-98-17-34</p>
+      <!-- Display customer's email -->
       <p>Email: SeneraD@yahoo.com</p>
+      <!-- Section for ordered items -->
       <h3>Ordered items:</h3>
       <ul>
+         <!-- Product ordered by the customer -->
          <li>
-            <b>Wok of chinese noodles with vegetables </b>
+            <b>Wok of Chinese noodles with vegetables</b>
          </li>
+         <!-- Total cost of the order with currency -->
          <p>Order total: 20 euros</p>
+         <!-- Delivery start date -->
          <p>Delivery start date: 2023-08-08</p>
+         <!-- Delivery end date -->
          <p>Delivery end date: 2023-12-08</p>
       </ul>
+
+      <!-- Invoice for customer 'Alexis Wimbledon' -->
       <h1>Invoice ID: AW01</h1>
+      <!-- Order details for customer 'Alexis Wimbledon' -->
       <h2>Order details for Alexis Wimbledon</h2>
+      <!-- Display customer's address -->
       <p>Address: 509 toto avenue </p>
+      <!-- Display customer's phone number -->
       <p>Phone number: 52-90-36-71-43</p>
+      <!-- Display customer's email -->
       <p>Email: AlexisW@hotmail.com</p>
+      <!-- Section for ordered items -->
       <h3>Ordered items:</h3>
       <ul>
+         <!-- Product ordered by the customer -->
          <li>
             <b>Raspberry foam</b>
          </li>
+         <!-- Total cost of the order with currency -->
          <p>Order total: 20 euros</p>
+         <!-- Delivery start date -->
          <p>Delivery start date: 2024-01-21</p>
+         <!-- Delivery end date -->
          <p>Delivery end date: 2024-01-21</p>
       </ul>
+
+      <!-- Invoice for customer 'Caroline Start' -->
       <h1>Invoice ID: CS01</h1>
+      <!-- Order details for customer 'Caroline Start' -->
       <h2>Order details for Caroline Start</h2>
+      <!-- Display customer's address -->
       <p>Address: 344 MainStreet </p>
+      <!-- Display customer's phone number -->
       <p>Phone number: 48-65-98-43-71</p>
+      <!-- Display customer's email -->
       <p>Email: CarolineS@gmail.com</p>
+      <!-- Section for ordered items -->
       <h3>Ordered items:</h3>
       <ul>
+         <!-- Product ordered by the customer -->
          <li>
             <b>Quinoa pancake</b>
          </li>
+         <!-- Total cost of the order with currency -->
          <p>Order total: 10 euros</p>
+         <!-- Delivery start date -->
          <p>Delivery start date: 2024-04-03</p>
+         <!-- Delivery end date -->
          <p>Delivery end date: 2024-05-03</p>
       </ul>
    </body>
