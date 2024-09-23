@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Root element of the XSL stylesheet. This declares it as an XSLT document -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
-  <!-- Formatted output in HTML -->
+  <!-- Configures the output method as HTML with indentation for readability -->
   <xsl:output method="html" indent="yes"/>
 
-  <!-- Template for the root element -->
+  <!-- Template that matches the root element of the XML (Root in this case) -->
   <xsl:template match="/Root">
     <html>
       <body>
-        <!-- Main heading for the HTML document -->
+        <!-- Main heading of the generated HTML, displayed as "Recipe List by Category" -->
         <h1>Recipe List by Category</h1>
 
-        <!-- Loop through each unique category -->
+        <!-- Loop over each unique category in the XML, ensuring no duplicates.
+             This is done by checking that the current Categorie is not equal to any preceding sibling's Categorie. -->
         <xsl:for-each select="Categories[not(Categorie=preceding-sibling::Categories/Categorie)]">
-          <!-- Display the category as a subheading -->
+          
+          <!-- Display the name of the current category as a heading (h2) -->
           <h2><xsl:value-of select="Categorie"/></h2>
+          
+          <!-- Create an unordered list to display the recipes under the current category -->
           <ul>
-            <!-- Loop through all recipes that match the current category -->
+            
+            <!-- For each recipe that belongs to the current category, 
+                 loop through and select all matching "recipe_cat" elements. 
+                 This step ensures the recipe names under the same category are displayed. -->
             <xsl:for-each select="//Categories[Categorie=current()/Categorie]/recipe_cat">
+              
+              <!-- List item for each recipe under the current category -->
               <li>
-                <!-- Display the recipe name without description -->
+                
+                <!-- Display the recipe name (which is the value of the "recipe_cat" element) inside an h3 tag -->
                 <h3><xsl:value-of select="."/></h3>
               </li>
             </xsl:for-each>
+            
           </ul>
         </xsl:for-each>
 
