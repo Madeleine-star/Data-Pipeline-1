@@ -45,9 +45,10 @@
 	<xsl:template match="Invoices/invoice[@invoiceID='AW01']">
 		
 			<li>
-				<xsl:value-of select="rec_list/recipe"/>
+				<b><xsl:value-of select="rec_list/recipe"/></b>
 			</li>
-			<h3>Order total: <xsl:value-of select="rec_list/recipe_price"/><xsl:text> </xsl:text><xsl:value-of select="rec_list/recipe_price/@devise"/></h3>
+			<p>Order total: <xsl:value-of select="rec_list/recipe_price"/><xsl:text> </xsl:text><xsl:value-of select="rec_list/recipe_price/@devise"/>
+			</p>
 			<p>Delivery start date: <xsl:value-of select="delivery_startDate"/>
 			</p>
 			<p>Delivery end date: <xsl:value-of select="delivery_EndDate"/></p>
@@ -56,9 +57,9 @@
 	<xsl:template match="Invoices/invoice[@invoiceID='CS01']">
 		
 			<li>
-				<xsl:value-of select="rec_list/recipe"/>
+				<b><xsl:value-of select="rec_list/recipe"/></b>
 			</li>
-			<h3>Order total: <xsl:value-of select="rec_list/recipe_price"/><xsl:text> </xsl:text><xsl:value-of select="rec_list/recipe_price/@devise"/></h3>
+			<p>Order total: <xsl:value-of select="rec_list/recipe_price"/><xsl:text> </xsl:text><xsl:value-of select="rec_list/recipe_price/@devise"/></p>
 			<p>Delivery start date: <xsl:value-of select="delivery_startDate"/>
 			</p>
 			<p>Delivery end date: <xsl:value-of select="delivery_EndDate"/></p>
@@ -67,9 +68,9 @@
 	<xsl:template match="Invoices/invoice[@invoiceID='CD01']">
 		
 			<li>
-				<xsl:value-of select="rec_list/recipe"/>
+				<b><xsl:value-of select="rec_list/recipe"/></b>
 			</li>
-			<h3>Order total: <xsl:value-of select="rec_list/recipe_price"/><xsl:text> </xsl:text><xsl:value-of select="rec_list/recipe_price/@devise"/></h3>
+			<p>Order total: <xsl:value-of select="rec_list/recipe_price"/><xsl:text> </xsl:text><xsl:value-of select="rec_list/recipe_price/@devise"/></p>
 			<p>Delivery start date: <xsl:value-of select="delivery_startDate"/>
 			</p>
 			<p>Delivery end date: <xsl:value-of select="delivery_EndDate"/></p>
@@ -78,9 +79,9 @@
 	<xsl:template match="Invoices/invoice[@invoiceID='SD01']">
 		
 			<li>
-				<xsl:value-of select="rec_list/recipe"/>
+				<b><xsl:value-of select="rec_list/recipe"/></b>
 			</li>
-			<h3>Order total: <xsl:value-of select="rec_list/recipe_price"/><xsl:text> </xsl:text><xsl:value-of select="rec_list/recipe_price/@devise"/></h3>
+			<p>Order total: <xsl:value-of select="rec_list/recipe_price"/><xsl:text> </xsl:text><xsl:value-of select="rec_list/recipe_price/@devise"/></p>
 			<p>Delivery start date: <xsl:value-of select="delivery_startDate"/>
 			</p>
 			<p>Delivery end date: <xsl:value-of select="delivery_EndDate"/></p>
