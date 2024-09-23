@@ -1,40 +1,62 @@
 <html>
    <body>
+      <!-- Main heading for the page that describes the purpose of the list (Recipe List by Category) -->
       <h1>Recipe List by Category</h1>
+      
+      <!-- First category: Traditional -->
       <h2>Traditional</h2>
+      <!-- Unordered list of recipes under the "Traditional" category -->
       <ul>
+         <!-- First recipe in Traditional category: Boeuf Bourguignon -->
          <li>
-            <h3>Boeuf Bourguinon </h3>
+            <!-- Recipe name displayed as a subheading (h3) -->
+            <h3>Boeuf Bourguinon</h3>
          </li>
+         <!-- Second recipe in Traditional category: Chocolate Cake -->
          <li>
             <h3>Chocolat cake</h3>
          </li>
       </ul>
+
+      <!-- Second category: Express -->
       <h2>Express</h2>
+      <!-- Unordered list of recipes under the "Express" category -->
       <ul>
+         <!-- First recipe in Express category: Express tuna brandade -->
          <li>
             <h3>Express tuna brandade</h3>
          </li>
+         <!-- Second recipe in Express category: Quinoa pancake -->
          <li>
             <h3>quinoa pancake</h3>
          </li>
       </ul>
+
+      <!-- Third category: World flavors -->
       <h2>World flavors</h2>
+      <!-- Unordered list of recipes under the "World flavors" category -->
       <ul>
+         <!-- First recipe in World flavors category: Wok of Chinese noodles with vegetables -->
          <li>
             <h3>Wok of chinese noodles with vegetables</h3>
          </li>
+         <!-- Second recipe in World flavors category: Gaspacho -->
          <li>
             <h3>Gaspacho</h3>
          </li>
       </ul>
+
+      <!-- Fourth category: Light -->
       <h2>Light</h2>
+      <!-- Unordered list of recipes under the "Light" category -->
       <ul>
+         <!-- First recipe in Light category: Raspberry foam -->
          <li>
             <h3>Raspberry foam</h3>
          </li>
+         <!-- Second recipe in Light category: Chicory and ham -->
          <li>
-            <h3>chicory and ham </h3>
+            <h3>chicory and ham</h3>
          </li>
       </ul>
    </body>
