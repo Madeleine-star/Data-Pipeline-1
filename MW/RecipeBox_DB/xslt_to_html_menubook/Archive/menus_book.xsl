@@ -8,16 +8,16 @@ for each recipe in the menu-->
 		<html><!--Declared html style used and allow us to used html tags inside XSLT file-->
 			<body><!--The html file contain a body which is the content of the file. Because we are in a XSLT it will describe the skeleton of the file with the place of the different template we want to insert-->
 				<Div Align='CENTER'> <!--Allow to centered the title of the HTML file-->
-					<h1>Romantic Dinner Menu</h1> <!--The h tags give the size of the text element, less the number is bigger the text will be display, we use it for the different header to highlight them compared to the core-->
+					<h1>Romantic Dinner Menu</h1> <!--The h tags give the size of the text element, less the number is bigger the text will be display-->
 					<xsl:apply-templates select='Root/menus/menu[2]'/> <!--Putting a number inside [ ] in an XPATH allow us to indicate at the parser which nodes we want to select in the database-->
 				</Div>
-				<h2>Starter</h2>
+				<h2>Entrance</h2>
 				<blockquote> <!--Allow to create block of element in the code-->
 				<xsl:apply-templates select='Root/recipes/recipe[4]'/>
 				<h4>Nutrition fact:</h4>
 				<xsl:apply-templates select='Root/Nutritions/Nutrition[2]'/>
 				</blockquote>
-				<h2>Main course</h2>
+				<h2>Main</h2>
 				<blockquote>
 					<xsl:apply-templates select='Root/recipes/recipe[3]'/>
 					<h4>Nutrition fact:</h4>
@@ -33,14 +33,13 @@ for each recipe in the menu-->
 		</html>
 	</xsl:template>
 	<!--This will fill the first part of the document with the main info on the menu-->
-	<xsl:template match='menus/menu[2]'><!--This point at the parser where the template is apply through a XPATH this one it's related to the first apply-template-->
-		<p><!--This declare a paragraphe for the element cited in-->
-		<h2><xsl:value-of select="Description"/></h2>
+	<xsl:template match='menus/menu[2]'>
+		<p>
 			<h3>
 			Number of recipe:
 			<xsl:value-of select='number_recipe'/> - Price: 
 			<xsl:value-of select='Budget'/>
-				<xsl:text> </xsl:text><!--This allow to keep a space between two values return by the value-of tags which wrap it-->
+				<xsl:text> </xsl:text>
 				<xsl:value-of select='Budget/@devise'/> - Rating: <!--The XPATH with /@ specify at the parser we want the attribute of the element here Budget-->
 			<xsl:value-of select='rating[1]'/>
 				<xsl:text> </xsl:text>
@@ -61,7 +60,7 @@ for each recipe in the menu-->
 		<p>
 			<h4>Cooking time: 
 			<xsl:value-of select="cooking_time"/>
-				<xsl:text> </xsl:text>
+				<xsl:text> </xsl:text><!--This permit to insert a white space between 2 elements and to keep it-->
 				<xsl:value-of select="cooking_time/@unit"/> - 
 			Preparation time: 
 			<xsl:value-of select="preparation_time"/>
@@ -76,7 +75,7 @@ for each recipe in the menu-->
 		<table border="1" cellpadding="3"> <!--Here we declared a table and defined the border and cell type of the table-->
 			<tbody><!--Like for the html file content we declare here the content of the table-->
 				<tr><!--Here we declare the header of the table with the th tags, the style="font-size" defined the size of the text-->
-					<th style="font-size:11pt">Ingredient</th><!--This declare the header of the table with it's font-size-->
+					<th style="font-size:11pt">Ingredient</th>
 					<th style="font-size:11pt">quantity</th>
 				</tr>
 				<xsl:for-each select="ingredient_rec"><!--We used a for-each loop because we want in the table all the ingredient cited in the recipe-->
