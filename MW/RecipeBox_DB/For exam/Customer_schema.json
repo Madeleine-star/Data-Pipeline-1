@@ -27,7 +27,7 @@
                         "type": "string"
                     },
                     "Customer_PhoneNumber": {
-						"description": "Phone number of the customer, need to follow the pattern declared above"
+						"description": "Phone number of the customer, need to follow the pattern declared above",
                         "type": "string",
 						"pattern":"([0-9]{2})-([0-9]{2})-([0-9]{2})-([0-9]{2})-([0-9]{2})"
                     },
