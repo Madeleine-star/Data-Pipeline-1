@@ -5,7 +5,7 @@
 		Definition of the main content of the database
 		-->
 		<xs:complexType>
-			<!--Here we declare a complext type because it content a specific sequence of elements-->
+			<!--Here we declare a complext type because it containt a specific sequence of elements-->
 			<xs:sequence>
 				<!--That declare the element cited above need to be put in the xml file in that order-->
 				<xs:element name='recipes'>
@@ -323,12 +323,13 @@ of the price. It should look like this:
 			<xs:element name='Description' type='xs:string'/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:simpleType name='stringlist'>
-		<!--Definition of the simple type which is a list of string with maximum 200 words.
-		Here we allow it to be empty in case its a menu in construction and the recipe in it isn't yet decide by the compagny-->
+	<!--Definition of the simple type construct in 2 parts with the first define the 
+	type of element inside the list and then we apply a restriction to the list which limit at maximum 200 words and allow to be empty.
+	Here we allow it to be empty in case its a menu in construction and the recipe in it isn't yet decide by the compagny-->
+	<xs:simpleType name='stringlist'><!--First part of the list definition by the type of its content-->
 		<xs:list itemType='xs:string'/>
 	</xs:simpleType>
-	<xs:simpleType name='stringlistlim'>
+	<xs:simpleType name='stringlistlim'><!--Second part which restrict the list from 0 to 200-->
 		<xs:restriction base='stringlist'>
 			<xs:minLength value='0'/>
 			<xs:maxLength value='200'/>
