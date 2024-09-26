@@ -1,83 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- XSLT stylesheet declaration with version and namespace -->
-<xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    
-    <!-- Template to match the root element "/Root" -->
-    <xsl:template match="/Root">
-        <html>
-        <head>
-            <!-- Title of the HTML page -->
-            <title>Recipe Book</title>
-            <!-- Inline CSS for styling the output -->
-            <style>
-                body { font-family: Arial, sans-serif; margin: 20px; }   <!-- Sets the font family to Arial, with sans-serif as a fallback, and adds a 20px margin around the body -->
-                .recipe { margin-bottom: 20px; border: 1px solid #ccc; padding: 10px; }   <!--Styles the recipe containers with a 20px bottom margin, a light gray border, and 10px padding inside the border --> 
-                .recipe img { max-width: 200px; }     <!--Limits the maximum width of images inside the recipe containers to 200px -->                 
-                .ingredients, .steps { margin-top: 10px; }      <!--Adds a 10px margin above the ingredients and steps sections to separate them from preceding content -->
-            </style>
-        </head>
-        <body>
-            <!-- Main heading for the recipe book -->
-            <h1>Recipe Book</h1>
-            <!-- Apply templates for each "recipe" under the "recipes" element -->
-            <xsl:apply-templates select="recipes/recipe"/>
-        </body>
-        </html>
-    </xsl:template>
-    
-    <!-- Template for individual recipe elements -->
-    <xsl:template match="recipe">
-        <div class="recipe">
-            <!-- Display the recipe name as an H2 heading -->
-            <h2><xsl:value-of select="name"/></h2>
-            <!-- Display the image associated with the recipe -->
-            <img src="{image/@src}"/>
-            <!-- Display the category of the recipe -->
-            <p><strong>Category:</strong> <xsl:value-of select="RefCategorie"/></p>
-            <!-- Display the type of the recipe -->
-            <p><strong>Type:</strong> <xsl:value-of select="type"/></p>
-            <!-- Display the budget, followed by the devise unit -->
-            <p><strong>Budget:</strong> <xsl:value-of select="Budget"/> <xsl:value-of select="Budget/@devise"/></p>
-            <!-- Display cooking time with its unit -->
-            <p><strong>Cooking Time:</strong> <xsl:value-of select="cooking_time"/> <xsl:value-of select="cooking_time/@unit"/></p>
-            <!-- Display preparation time with its unit -->
-            <p><strong>Preparation Time:</strong> <xsl:value-of select="preparation_time"/> <xsl:value-of select="preparation_time/@unit"/></p>
-            <!-- Display the difficulty level of the recipe -->
-            <p><strong>Level:</strong> <xsl:value-of select="level"/></p>
-            <!-- Display the number of servings -->
-            <p><strong>Number of Servings:</strong> <xsl:value-of select="number_serving"/></p>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-            <!-- Section for the list of ingredients -->
-            <div class="ingredients">
-                <h3>Ingredients</h3>
-                <ul>
-                    <!-- Iterate over each ingredient and display its name and quantity with unit -->
-                    <xsl:for-each select="ingredient_rec">
-                        <li>
-                            <xsl:value-of select="ingredient_name"/>:
-                            <xsl:value-of select="ingredient_quantity"/> <xsl:value-of select="ingredient_quantity/@unit"/>
-                        </li>
-                    </xsl:for-each>
-                </ul>
-            </div>
+<!-- Main template that matches the root element of the XML document -->
+<xsl:template match="/Root">
+<html>
+<head>
+    <!-- Title of the generated HTML page -->
+    <title>Recipe Book</title>
+    <!-- Basic CSS for styling the recipe output -->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .recipe { margin-bottom: 20px; border: 1px solid #ccc; padding: 10px; }
+        .recipe img { max-width: 200px; } /* Ensures images do not exceed 200px */
+        .ingredients, .steps { margin-top: 10px; } /* Adds space around ingredients and steps */
+    </style>
+</head>
+<body>
+    <!-- Main heading for the recipe book -->
+    <h1>Recipe Book</h1>
+    <!-- Apply templates to each 'recipe' element found within the 'recipes' node -->
+    <xsl:apply-templates select="recipes/recipe"/>
+</body>
+</html>
+</xsl:template>
 
-            <!-- Section for the preparation steps -->
-            <div class="steps">
-                <h3>Preparation Steps</h3>
-                <!-- Display the steps for the recipe -->
-                <p><xsl:value-of select="step"/></p>
-            </div>
+<!-- Template for individual recipes -->
+<xsl:template match="recipe">
+<div class="recipe">
+    <!-- Display recipe name -->
+    <h2><xsl:value-of select="name"/></h2>
+    <!-- Display recipe image using the 'src' attribute from the 'image' element -->
+    <img src="{image/@src}"/>
+    <!-- Display the recipe's category -->
+    <p><strong>Category:</strong> <xsl:value-of select="RefCategorie"/></p>
+    <!-- Display the type of recipe -->
+    <p><strong>Type:</strong> <xsl:value-of select="type"/></p>
 
-            <!-- Section for ratings -->
-            <div class="rating">
-                <h3>Ratings</h3>
-                <!-- Iterate over ratings and display each rating value -->
-                <xsl:for-each select="rating">
-                    <p><xsl:value-of select="."/></p>
-                </xsl:for-each>
-            </div>
-        </div>
-    </xsl:template>
-    
+    <!-- Display the budget, with a space between the value and the currency -->
+    <p><strong>Budget:</strong> 
+        <xsl:value-of select="Budget"/> <!-- Display the budget value -->
+        <xsl:text> </xsl:text> <!-- Add a space -->
+        <xsl:value-of select="Budget/@devise"/> <!-- Display the currency (unit) -->
+    </p>
+
+    <!-- Display the cooking time with a space between the value and the unit -->
+    <p><strong>Cooking Time:</strong> 
+        <xsl:value-of select="cooking_time"/> <!-- Display cooking time value -->
+        <xsl:text> </xsl:text> <!-- Add a space -->
+        <xsl:value-of select="cooking_time/@unit"/> <!-- Display the unit -->
+    </p>
+
+    <!-- Display the preparation time with a space between the value and the unit -->
+    <p><strong>Preparation Time:</strong> 
+        <xsl:value-of select="preparation_time"/> <!-- Display preparation time value -->
+        <xsl:text> </xsl:text> <!-- Add a space -->
+        <xsl:value-of select="preparation_time/@unit"/> <!-- Display the unit -->
+    </p>
+
+    <!-- Display the difficulty level of the recipe -->
+    <p><strong>Level:</strong> <xsl:value-of select="level"/></p>
+    <!-- Display the number of servings -->
+    <p><strong>Number of Servings:</strong> <xsl:value-of select="number_serving"/></p>
+
+    <!-- Section for displaying ingredients -->
+    <div class="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+            <!-- Loop through each 'ingredient_rec' element -->
+            <xsl:for-each select="ingredient_rec">
+                <li>
+                    <!-- Display ingredient name, quantity, and unit -->
+                    <xsl:value-of select="ingredient_name"/> 
+                    <xsl:text>: </xsl:text> <!-- Add space between name and quantity -->
+                    <xsl:value-of select="ingredient_quantity"/> 
+                    <xsl:text> </xsl:text> <!-- Add a space between quantity and unit -->
+                    <xsl:value-of select="ingredient_quantity/@unit"/>
+                </li>
+            </xsl:for-each>
+        </ul>
+    </div>
+
+    <!-- Section for displaying preparation steps -->
+    <div class="steps">
+        <h3>Preparation Steps</h3>
+        <!-- Display the preparation steps as a single text block -->
+        <p><xsl:value-of select="step"/></p>
+    </div>
+
+    <!-- Section for displaying recipe ratings -->
+    <div class="rating">
+        <h3>Ratings</h3>
+        <!-- Display the first two ratings, separated by a space -->
+        <p><xsl:value-of select="rating[1]"/><xsl:text> </xsl:text><xsl:value-of select="rating[2]"/></p>
+    </div>
+</div>
+</xsl:template>
+
 </xsl:stylesheet>
