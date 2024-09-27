@@ -84,7 +84,7 @@
 		<xs:sequence>
 			<xs:element name="image">
 				<xs:complexType>
-					<xs:attribute name="src" type="url"/>
+					<xs:attribute name="src" type="xs:string"/>
 				</xs:complexType>
 			</xs:element>
 			<xs:element name='name' type='RecNameType'/>
@@ -163,15 +163,7 @@
 		</xs:sequence>
 	</xs:complexType>
 	<!--the simple and complex types attached to the element in recipe-->
-	<xs:simpleType name="url">
-		<!--Here we defined the pattern of the url we need for the recipe's image
-	for that we used a regex expression which allow a sequence of letter and numbers as well as special characters separated by slash 
-	inside curlybracket we defined the number of element allowed in each section of slash-->
-		<xs:restriction base='xs:string'>
-			<xs:pattern value="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?//=]*)"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:complexType name='RefCat'>
+		<xs:complexType name='RefCat'>
 		<!--
 		This type add an attribute in addition of the string element in it
 		The attribute must follow the CatIDType pattern define below with the first 3 letters of the category in upper case

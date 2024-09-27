@@ -1,5 +1,5 @@
 <?xml version="1.0"?><!--Version of xml used-->
-<Root xsi:noNamespaceSchemaLocation="Favorite_recipe.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><!--Declaration of the schema which validate this xml file-->
+<Root xsi:noNamespaceSchemaLocation="scenario_6schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><!--Declaration of the schema which validate this xml file, come from the xslt transformation-->
 	<Favorite>
 		<Recipe>Boeuf Bourguignon</Recipe>
 		<Note>4 starts</Note>

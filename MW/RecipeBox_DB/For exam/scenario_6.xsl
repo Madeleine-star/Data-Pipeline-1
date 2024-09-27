@@ -9,7 +9,7 @@ greater than 4. for the recipe we will return the name, the category, the level,
 meaning the sum of the cooking and preparation time) as well as the budget for it. A xsd file to validate it is create: Favorite_recipe.xsd
 -->
 	<xsl:template match="/">
-		<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Favorite_recipe.xsd"><!--This declared an element which gave to the xml file a schema file which validate it-->
+		<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scenario_6schema.xsd"><!--This declared an element which gave to the xml file a schema file which validate it-->
 			<xsl:for-each select="/Root/recipes/recipe">
 				<!--This declared a loop to get the elements recipe from the recipes part of the database-->
 			    <xsl:element name='Favorite'><!--This wrap each recipe which match the condition inside an element named Favorite-->
