@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--This start the schema declaration-->
+	<xs:element name='Root'><!--This declare the main element of the xml file-->
+		<xs:complexType><!--Here we declared the element inside the main element-->
+			<xs:sequence>
+				<xs:element name='Favorite' type='FavoriteType' minOccurs='0' maxOccurs='unbounded'/>
+				<!--We choose to allow this element to be empty because the xml file is the output 
+				of a bigger another xml file and the stylesheet transformed only a part of the
+				total xml creating empty favorite element-->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name='FavoriteType'><!--Here we declared the element contain in Favorite-->
+		<xs:sequence><!--sequence is use because all the element are display in the same orders-->
+			<xs:element name='Recipe' type='xs:string' minOccurs='0' maxOccurs='unbounded'/><!--We choose to allow all the element to be empty because we used a if condition 
+			to construct this xml and some element could be empty if they not achieve the condition-->
+			<xs:element name='Note' type='xs:string' minOccurs='0' maxOccurs='unbounded'/>
+			<xs:element name='Category' type='xs:string' minOccurs='0' maxOccurs='unbounded'/>
+			<xs:element name='Level' type='xs:string' minOccurs='0' maxOccurs='unbounded'/>
+			<xs:element name='Total_time' type='xs:string' minOccurs='0' maxOccurs='unbounded'/><!--We put total_time and no cooking_time and preparation_time because they are compute to give the value in total_time -->
+			<xs:element name='Budget' type='xs:string' minOccurs='0' maxOccurs='unbounded'/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
