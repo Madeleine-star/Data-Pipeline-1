@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Root element that contains all the recipes -->
+<Root>
+    <!-- Container for all the recipes -->
+    <recipes>
+        <!-- Individual recipe -->
+        <recipe>
+            <!-- Recipe name -->
+            <name>Boeuf Bourguignon</name>
+            <!-- Type of the recipe -->
+            <type>main course</type>
+            <!-- Budget with devise -->
+            <Budget devise="EUR">60</Budget>
+        </recipe>
+        
+        <!-- Individual recipe -->
+        <recipe>
+            <!-- Recipe name -->
+            <name>Chocoloat cake</name>
+            <!-- Type of the recipe -->
+            <type>dessert</type>
+            <!-- Budget with devise -->
+            <Budget devise="EUR">10</Budget>
+        </recipe>
+        
+        <!-- Individual recipe -->
+        <recipe>
+            <!-- Recipe name -->
+            <name>Wok of chinese noodles with vegetables</name>
+            <!-- Type of the recipe -->
+            <type>main course</type>
+            <!-- Budget with devise -->
+            <Budget devise="EUR">20</Budget>
+        </recipe>
+        
+        <!-- Individual recipe -->
+        <recipe>
+            <!-- Recipe name -->
+            <name>Gaspacho</name>
+            <!-- Type of the recipe -->
+            <type>starter</type>
+            <!-- Budget with devise -->
+            <Budget devise="EUR">25</Budget>
+        </recipe>
+        
+        <!-- Individual recipe -->
+        <recipe>
+            <!-- Recipe name -->
+            <name>Express tuna brandade</name>
+            <!-- Type of the recipe -->
+            <type>starter</type>
+            <!-- Budget with devise -->
+            <Budget devise="EUR">5</Budget>
+        </recipe>
+
+        <!-- Individual recipe -->
+        <recipe>
+            <!-- Recipe name -->
+            <name>Raspberry foam</name>
+            <!-- Type of the recipe -->
+            <type>Dessert</type>
+            <!-- Budget with devise -->
+            <Budget devise="EUR">20</Budget>
+        </recipe>
+
+        <!-- Individual recipe -->
+        <recipe>
+            <!-- Recipe name -->
+            <name>Chicory and ham</name>
+            <!-- Type of the recipe -->
+            <type>main course</type>
+            <!-- Budget with devise -->
+            <Budget devise="EUR">10</Budget>
+        </recipe>
+    </recipes>
+</Root>
